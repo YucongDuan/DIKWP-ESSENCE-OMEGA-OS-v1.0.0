@@ -23,6 +23,10 @@ jobs:
           set -euo pipefail
           stage="$(mktemp -d)"
           unzip -q source-archive.zip -d "$stage"
+          # GitHub intentionally prevents GITHUB_TOKEN from creating another
+          # workflow file. Project CI workflows are committed separately by
+          # the repository owner after the source tree has been expanded.
+          rm -rf "$stage/.github/workflows"
           cp -a "$stage"/. .
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

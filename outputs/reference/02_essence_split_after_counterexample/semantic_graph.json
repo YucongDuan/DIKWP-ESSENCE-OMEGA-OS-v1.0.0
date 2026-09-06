@@ -1,0 +1,270 @@
+{
+  "carrier_authority": 0,
+  "closure_vector": "11111",
+  "concept_aliases": [
+    {
+      "alias": "essence",
+      "authority": "readable alias only; no native semantic generation authority",
+      "resolves_to": [
+        "k-4442a98dd89c58600ab8",
+        "i-4414616ade2e93bc5acc",
+        "w-754b6e9dcdd35c75c13f"
+      ]
+    }
+  ],
+  "native_positions": [
+    "D",
+    "I",
+    "K",
+    "W",
+    "P"
+  ],
+  "records": [
+    {
+      "content": {
+        "same_semantics": "declared observations and replayable test outcomes",
+        "worlds": [
+          {
+            "carrier": "finite automaton",
+            "environment": "no hysteresis",
+            "observations": {
+              "T_DOWN": "switch@5",
+              "T_RENAME": "unchanged",
+              "T_UP": "switch@5"
+            },
+            "world_id": "W_MEMORYLESS"
+          },
+          {
+            "carrier": "finite automaton",
+            "environment": "path-dependent switching",
+            "observations": {
+              "T_DOWN": "switch@4",
+              "T_RENAME": "unchanged",
+              "T_UP": "switch@6"
+            },
+            "world_id": "W_HYSTERETIC"
+          }
+        ]
+      },
+      "position": "D",
+      "provenance": [
+        "scenario:essence-split-after-counterexample"
+      ],
+      "record_id": "d-e33560c3ed4421579183",
+      "status": "active"
+    },
+    {
+      "content": {
+        "contrasts": [
+          {
+            "relation": "different",
+            "test_id": "T_DOWN",
+            "world_a": "W_MEMORYLESS",
+            "world_b": "W_HYSTERETIC"
+          }
+        ],
+        "different_semantics": "candidate disagreements, consequential contrasts, failures, and preserved residuals",
+        "failed_candidates": [
+          "E_STATIC_THRESHOLD"
+        ],
+        "residual_ids": [
+          "R_CONTINUOUS"
+        ]
+      },
+      "position": "I",
+      "provenance": [
+        "evaluation:essence-split-after-counterexample"
+      ],
+      "record_id": "i-4414616ade2e93bc5acc",
+      "status": "active"
+    },
+    {
+      "content": {
+        "complete_semantics": "locally certified causal-generative essence candidates within the declared world family",
+        "local_status": "LOCAL_ESSENCE_CERTIFIED",
+        "selected_candidates": [
+          {
+            "candidate_id": "E_HYSTERESIS",
+            "components": [
+              "path_memory",
+              "dual_switching_rule"
+            ],
+            "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE"
+          }
+        ],
+        "ultimate_status": "ULTIMATE_ESSENCE_NOT_ESTABLISHED"
+      },
+      "position": "K",
+      "provenance": [
+        "essence-evaluation:essence-split-after-counterexample"
+      ],
+      "record_id": "k-4442a98dd89c58600ab8",
+      "status": "active"
+    },
+    {
+      "content": {
+        "constraints": [
+          {
+            "constraint_id": "V_LINEAGE",
+            "default_status": "satisfied",
+            "description": "predecessor failure must remain visible",
+            "hard": true
+          }
+        ],
+        "forbidden_inferences": [
+          "hysteresis is the universal essence of cognition",
+          "one threshold is the permanent ontology of switching"
+        ],
+        "non_aggregation": true,
+        "value_information": "compression may not erase harm, permission, provenance, refusal, or ontological residuals"
+      },
+      "position": "W",
+      "provenance": [
+        "purpose:model-audit-team"
+      ],
+      "record_id": "w-754b6e9dcdd35c75c13f",
+      "status": "active"
+    },
+    {
+      "content": {
+        "automatic_external_action_authority": 0,
+        "input_output": {
+          "input": "declared observations, worlds, tests, candidates, constraints, and residuals",
+          "output": "bounded essence certificate, lattice, residual frontier, and causal handoff"
+        },
+        "next_action": "test continuous noisy trajectories",
+        "purpose_contract": {
+          "automatic_external_action_authority": 0,
+          "lease": "one offline suite",
+          "objective": "preserve the minimal mechanism after a counterexample",
+          "owner": "model-audit-team"
+        }
+      },
+      "position": "P",
+      "provenance": [
+        "scenario:essence-split-after-counterexample"
+      ],
+      "record_id": "p-c18e6c31085861d1052f",
+      "status": "active"
+    }
+  ],
+  "routes": [
+    {
+      "generated_content": {
+        "operation": "differentiate observations through candidate comparison"
+      },
+      "route_id": "route-87dfffdeafe1d4ba0de9",
+      "route_type": "D->I",
+      "source_record_id": "d-e33560c3ed4421579183",
+      "target_record_id": "i-4414616ade2e93bc5acc"
+    },
+    {
+      "generated_content": {
+        "operation": "retain only candidates surviving falsification and ablation"
+      },
+      "route_id": "route-150a9833e311e6ff9db7",
+      "route_type": "I->K",
+      "source_record_id": "i-4414616ade2e93bc5acc",
+      "target_record_id": "k-4442a98dd89c58600ab8"
+    },
+    {
+      "generated_content": {
+        "operation": "bind value and permission constraints into the executable purpose"
+      },
+      "route_id": "route-e08044fc35ea473ec36e",
+      "route_type": "W->P",
+      "source_record_id": "w-754b6e9dcdd35c75c13f",
+      "target_record_id": "p-c18e6c31085861d1052f"
+    },
+    {
+      "generated_content": {
+        "operation": "request the next discriminating observation"
+      },
+      "route_id": "route-6d87ab4aa501b5fa1dd8",
+      "route_type": "P->D",
+      "source_record_id": "p-c18e6c31085861d1052f",
+      "target_record_id": "d-e33560c3ed4421579183"
+    },
+    {
+      "generated_content": {
+        "operation": "convert local essence into a bounded next-step contract"
+      },
+      "route_id": "route-8969da7528aca1bd1cd9",
+      "route_type": "K->P",
+      "source_record_id": "k-4442a98dd89c58600ab8",
+      "target_record_id": "p-c18e6c31085861d1052f"
+    },
+    {
+      "generated_content": {
+        "operation": "reverse-regenerate selected consequences from the bounded essence"
+      },
+      "route_id": "route-58083400633980e05e94",
+      "route_type": "P->K",
+      "source_record_id": "p-c18e6c31085861d1052f",
+      "target_record_id": "k-4442a98dd89c58600ab8"
+    },
+    {
+      "generated_content": {
+        "operation": "register regenerated consequences as explicitly checked sameness"
+      },
+      "route_id": "route-ca6c2d5a9288f6e64e39",
+      "route_type": "K->D",
+      "source_record_id": "k-4442a98dd89c58600ab8",
+      "target_record_id": "d-e33560c3ed4421579183"
+    },
+    {
+      "generated_content": {
+        "operation": "turn unresolved differences into successor obligations"
+      },
+      "route_id": "route-0d278ac0fbed8bf83ac9",
+      "route_type": "I->P",
+      "source_record_id": "i-4414616ade2e93bc5acc",
+      "target_record_id": "p-c18e6c31085861d1052f"
+    },
+    {
+      "generated_content": {
+        "operation": "allow new evidence to revise or cancel the current purpose"
+      },
+      "route_id": "route-afbf25b96ae05890456d",
+      "route_type": "D->P",
+      "source_record_id": "d-e33560c3ed4421579183",
+      "target_record_id": "p-c18e6c31085861d1052f"
+    },
+    {
+      "generated_content": {
+        "operation": "reopen a causal closure when consequence or permission changes"
+      },
+      "route_id": "route-f9fb43ac1f40a86216dc",
+      "route_type": "W->K",
+      "source_record_id": "w-754b6e9dcdd35c75c13f",
+      "target_record_id": "k-4442a98dd89c58600ab8"
+    }
+  ],
+  "supported_route_types": [
+    "D->D",
+    "D->I",
+    "D->K",
+    "D->W",
+    "D->P",
+    "I->D",
+    "I->I",
+    "I->K",
+    "I->W",
+    "I->P",
+    "K->D",
+    "K->I",
+    "K->K",
+    "K->W",
+    "K->P",
+    "W->D",
+    "W->I",
+    "W->K",
+    "W->W",
+    "W->P",
+    "P->D",
+    "P->I",
+    "P->K",
+    "P->W",
+    "P->P"
+  ]
+}

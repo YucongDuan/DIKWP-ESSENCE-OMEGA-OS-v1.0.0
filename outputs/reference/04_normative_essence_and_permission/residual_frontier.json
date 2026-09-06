@@ -1,0 +1,19 @@
+{
+  "frontier_status": "OPEN",
+  "open_items": [
+    {
+      "blocks_local_certification": false,
+      "critical": true,
+      "description": "synthetic consent does not authorize any real external action",
+      "description_zh": "合成同意不构成任何现实外部行动授权",
+      "residual_id": "R_REAL_AUTH",
+      "status": "open",
+      "type": "permission"
+    }
+  ],
+  "rule": "a residual must be typed, scoped, attributable, and linked to a reopening or settlement condition",
+  "settled_items": [],
+  "type_counts": {
+    "permission": 1
+  }
+}

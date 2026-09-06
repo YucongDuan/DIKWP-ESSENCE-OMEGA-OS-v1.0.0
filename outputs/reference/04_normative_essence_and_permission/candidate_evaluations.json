@@ -1,0 +1,382 @@
+[
+  {
+    "candidate_id": "E_LEGITIMATE_ACTION",
+    "component_count": 3,
+    "components": [
+      "actuation_path",
+      "trigger_relation",
+      "consent_gate"
+    ],
+    "contrast_result": {
+      "checks": [
+        {
+          "observed": [
+            "not_applicable",
+            "blocked"
+          ],
+          "passed": true,
+          "predicted": [
+            "not_applicable",
+            "blocked"
+          ],
+          "relation": "different",
+          "test_id": "T_UNAUTHORIZED",
+          "world_a": "W_CONSENT",
+          "world_b": "W_NO_CONSENT"
+        }
+      ],
+      "passed": true
+    },
+    "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE",
+    "failure_cells": [],
+    "falsifiable": true,
+    "falsification_conditions": [
+      "resource is released without valid consent",
+      "valid consent cannot produce the declared release"
+    ],
+    "forbidden_inferences": [
+      "causal power grants permission",
+      "simulation grants external authority"
+    ],
+    "kind_results": {
+      "governance": {
+        "cells": 2,
+        "correct": 2,
+        "passed": true,
+        "score": 1.0
+      },
+      "nuisance": {
+        "cells": 2,
+        "correct": 2,
+        "passed": true,
+        "score": 1.0
+      },
+      "required": {
+        "cells": 2,
+        "correct": 2,
+        "passed": true,
+        "score": 1.0
+      }
+    },
+    "lineage": {
+      "parent": "E_BARE_ACTUATION",
+      "relation": "normative_successor"
+    },
+    "local_certifiable": true,
+    "metrics": {
+      "contrast": 1.0,
+      "coverage": 1.0,
+      "description_length_proxy": 275,
+      "falsifiability": 1.0,
+      "fidelity": 1.0,
+      "minimality": 1.0,
+      "reverse_regeneration": 1.0,
+      "transport": 1.0,
+      "wildcard_rate": 0.0
+    },
+    "minimality_result": {
+      "all_components_necessary": true,
+      "all_components_tested": true,
+      "component_results": [
+        {
+          "component": "actuation_path",
+          "failed_cells": [
+            {
+              "ablated_prediction": "not_released",
+              "observed": "released",
+              "test_id": "T_AUTHORIZED",
+              "world_id": "W_CONSENT"
+            }
+          ],
+          "necessary": true,
+          "tested": true
+        },
+        {
+          "component": "trigger_relation",
+          "failed_cells": [
+            {
+              "ablated_prediction": "not_released",
+              "observed": "released",
+              "test_id": "T_AUTHORIZED",
+              "world_id": "W_CONSENT"
+            }
+          ],
+          "necessary": true,
+          "tested": true
+        },
+        {
+          "component": "consent_gate",
+          "failed_cells": [
+            {
+              "ablated_prediction": "released",
+              "observed": "blocked",
+              "test_id": "T_UNAUTHORIZED",
+              "world_id": "W_NO_CONSENT"
+            }
+          ],
+          "necessary": true,
+          "tested": true
+        }
+      ],
+      "redundant_components": [],
+      "untested_components": []
+    },
+    "name": {
+      "en": "Actuation, trigger, and consent gate",
+      "zh": "执行、触发与同意门控"
+    },
+    "normative_result": {
+      "checks": [
+        {
+          "constraint_id": "V_CONSENT",
+          "description": "no release without explicit valid consent",
+          "hard": true,
+          "status": "satisfied"
+        }
+      ],
+      "passed": true,
+      "unknown": [],
+      "violations": []
+    },
+    "prediction_signature_sha256": "a230b4ed245798729fad1914bff44489e7c045b31986b14054b92ee0afe24d9f",
+    "residual_result": {
+      "blocking_open_count": 0,
+      "blocks_local_certification": false,
+      "critical_open_count": 1,
+      "items": [
+        {
+          "blocks_local_certification": false,
+          "critical": true,
+          "description": "synthetic consent does not authorize any real external action",
+          "description_zh": "合成同意不构成任何现实外部行动授权",
+          "residual_id": "R_REAL_AUTH",
+          "status": "open",
+          "type": "permission"
+        }
+      ],
+      "open_count": 1
+    },
+    "reverse_result": {
+      "correct_cells": 6,
+      "failures": [],
+      "passed": true,
+      "required_cells": 6,
+      "score": 1.0
+    },
+    "scope_worlds": [
+      "W_CONSENT",
+      "W_NO_CONSENT"
+    ],
+    "self_sealing_reasons": [],
+    "status": "ESSENCE_CERTIFIED_WITHIN_DECLARED_SCOPE",
+    "world_results": [
+      {
+        "carrier": "simulated actuator",
+        "correct_cells": 3,
+        "passed": true,
+        "required_cells": 3,
+        "world_id": "W_CONSENT"
+      },
+      {
+        "carrier": "simulated actuator",
+        "correct_cells": 3,
+        "passed": true,
+        "required_cells": 3,
+        "world_id": "W_NO_CONSENT"
+      }
+    ]
+  },
+  {
+    "candidate_id": "E_BARE_ACTUATION",
+    "component_count": 2,
+    "components": [
+      "actuation_path",
+      "trigger_relation"
+    ],
+    "contrast_result": {
+      "checks": [
+        {
+          "observed": [
+            "not_applicable",
+            "blocked"
+          ],
+          "passed": false,
+          "predicted": [
+            "not_applicable",
+            "released"
+          ],
+          "relation": "different",
+          "test_id": "T_UNAUTHORIZED",
+          "world_a": "W_CONSENT",
+          "world_b": "W_NO_CONSENT"
+        }
+      ],
+      "passed": false
+    },
+    "essence_level": "L1_PARTIAL_DESCRIPTION",
+    "failure_cells": [
+      {
+        "failure_type": "mismatch",
+        "observed": "blocked",
+        "predicted": "released",
+        "test_id": "T_UNAUTHORIZED",
+        "world_id": "W_NO_CONSENT"
+      }
+    ],
+    "falsifiable": true,
+    "falsification_conditions": [
+      "triggered mechanism fails to release"
+    ],
+    "forbidden_inferences": [
+      "effective action is authorized action"
+    ],
+    "kind_results": {
+      "governance": {
+        "cells": 2,
+        "correct": 1,
+        "passed": false,
+        "score": 0.5
+      },
+      "nuisance": {
+        "cells": 2,
+        "correct": 2,
+        "passed": true,
+        "score": 1.0
+      },
+      "required": {
+        "cells": 2,
+        "correct": 2,
+        "passed": true,
+        "score": 1.0
+      }
+    },
+    "lineage": {
+      "parent": null,
+      "relation": "causal_predecessor"
+    },
+    "local_certifiable": false,
+    "metrics": {
+      "contrast": 0.0,
+      "coverage": 1.0,
+      "description_length_proxy": 261,
+      "falsifiability": 1.0,
+      "fidelity": 0.8333333333333334,
+      "minimality": 1.0,
+      "reverse_regeneration": 0.8333333333333334,
+      "transport": 0.5,
+      "wildcard_rate": 0.0
+    },
+    "minimality_result": {
+      "all_components_necessary": true,
+      "all_components_tested": true,
+      "component_results": [
+        {
+          "component": "actuation_path",
+          "failed_cells": [
+            {
+              "ablated_prediction": "not_released",
+              "observed": "released",
+              "test_id": "T_AUTHORIZED",
+              "world_id": "W_CONSENT"
+            }
+          ],
+          "necessary": true,
+          "tested": true
+        },
+        {
+          "component": "trigger_relation",
+          "failed_cells": [
+            {
+              "ablated_prediction": "not_released",
+              "observed": "released",
+              "test_id": "T_AUTHORIZED",
+              "world_id": "W_CONSENT"
+            }
+          ],
+          "necessary": true,
+          "tested": true
+        }
+      ],
+      "redundant_components": [],
+      "untested_components": []
+    },
+    "name": {
+      "en": "Bare actuation mechanism",
+      "zh": "裸执行机制"
+    },
+    "normative_result": {
+      "checks": [
+        {
+          "constraint_id": "V_CONSENT",
+          "description": "no release without explicit valid consent",
+          "hard": true,
+          "status": "violated"
+        }
+      ],
+      "passed": false,
+      "unknown": [],
+      "violations": [
+        {
+          "constraint_id": "V_CONSENT",
+          "description": "no release without explicit valid consent",
+          "hard": true,
+          "status": "violated"
+        }
+      ]
+    },
+    "prediction_signature_sha256": "14b33db79b635efa33e471b66c1cbc4845f16e2460c43d90c7fb6722441c43be",
+    "residual_result": {
+      "blocking_open_count": 0,
+      "blocks_local_certification": false,
+      "critical_open_count": 1,
+      "items": [
+        {
+          "blocks_local_certification": false,
+          "critical": true,
+          "description": "synthetic consent does not authorize any real external action",
+          "description_zh": "合成同意不构成任何现实外部行动授权",
+          "residual_id": "R_REAL_AUTH",
+          "status": "open",
+          "type": "permission"
+        }
+      ],
+      "open_count": 1
+    },
+    "reverse_result": {
+      "correct_cells": 5,
+      "failures": [
+        {
+          "observed": "blocked",
+          "regenerated": "released",
+          "test_id": "T_UNAUTHORIZED",
+          "world_id": "W_NO_CONSENT"
+        }
+      ],
+      "passed": false,
+      "required_cells": 6,
+      "score": 0.8333333333333334
+    },
+    "scope_worlds": [
+      "W_CONSENT",
+      "W_NO_CONSENT"
+    ],
+    "self_sealing_reasons": [],
+    "status": "INSUFFICIENT_OR_FALSIFIED",
+    "world_results": [
+      {
+        "carrier": "simulated actuator",
+        "correct_cells": 3,
+        "passed": true,
+        "required_cells": 3,
+        "world_id": "W_CONSENT"
+      },
+      {
+        "carrier": "simulated actuator",
+        "correct_cells": 2,
+        "passed": false,
+        "required_cells": 3,
+        "world_id": "W_NO_CONSENT"
+      }
+    ]
+  }
+]

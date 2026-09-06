@@ -1,0 +1,19 @@
+{
+  "frontier_status": "OPEN",
+  "open_items": [
+    {
+      "blocks_local_certification": false,
+      "critical": false,
+      "description": "transport beyond the three declared worlds has not been tested",
+      "description_zh": "尚未检验超出三个声明世界的运输能力",
+      "residual_id": "R_SCALE",
+      "status": "open",
+      "type": "scale"
+    }
+  ],
+  "rule": "a residual must be typed, scoped, attributable, and linked to a reopening or settlement condition",
+  "settled_items": [],
+  "type_counts": {
+    "scale": 1
+  }
+}

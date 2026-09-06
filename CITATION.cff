@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "DIKWP-ESSENCE-OMEGA-OS: Open Ultimate-Essence Runtime"
+version: 1.0.0
+date-released: 2026-09-05
+authors:
+  - family-names: Duan
+    given-names: Yucong
+type: software
+license: AGPL-3.0-or-later
+abstract: >-
+  A bounded and replayable runtime for evaluating minimal causal-generative
+  invariants through cross-world transport, component ablation, reverse
+  regeneration, residual frontiers, and non-annexing DIKWP semantics.

@@ -1,0 +1,257 @@
+{
+  "carrier_authority": 0,
+  "closure_vector": "11111",
+  "concept_aliases": [
+    {
+      "alias": "essence",
+      "authority": "readable alias only; no native semantic generation authority",
+      "resolves_to": [
+        "k-3cd048ed402433acfcff",
+        "i-73a21fb6f69ec96beccb",
+        "w-43065ec89ac88fdbef16"
+      ]
+    }
+  ],
+  "native_positions": [
+    "D",
+    "I",
+    "K",
+    "W",
+    "P"
+  ],
+  "records": [
+    {
+      "content": {
+        "same_semantics": "declared observations and replayable test outcomes",
+        "worlds": [
+          {
+            "carrier": "finite verifier",
+            "environment": "4<=n<=100",
+            "observations": {
+              "T_GLOBAL": "not_established",
+              "T_MAPPING": "sound",
+              "T_WITNESS": "present"
+            },
+            "world_id": "W_FINITE_RANGE"
+          }
+        ]
+      },
+      "position": "D",
+      "provenance": [
+        "scenario:reduction-is-not-proof"
+      ],
+      "record_id": "d-25f99a6ff80e20f513fd",
+      "status": "active"
+    },
+    {
+      "content": {
+        "contrasts": [],
+        "different_semantics": "candidate disagreements, consequential contrasts, failures, and preserved residuals",
+        "failed_candidates": [
+          "E_GLOBAL_OVERCLAIM"
+        ],
+        "residual_ids": [
+          "R_UNIVERSAL_BRIDGE"
+        ]
+      },
+      "position": "I",
+      "provenance": [
+        "evaluation:reduction-is-not-proof"
+      ],
+      "record_id": "i-73a21fb6f69ec96beccb",
+      "status": "active"
+    },
+    {
+      "content": {
+        "complete_semantics": "locally certified causal-generative essence candidates within the declared world family",
+        "local_status": "LOCAL_ESSENCE_CERTIFIED",
+        "selected_candidates": [
+          {
+            "candidate_id": "E_FINITE_REDUCTION",
+            "components": [
+              "sound_reduction",
+              "finite_witness_checker"
+            ],
+            "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE"
+          }
+        ],
+        "ultimate_status": "ULTIMATE_ESSENCE_NOT_ESTABLISHED"
+      },
+      "position": "K",
+      "provenance": [
+        "essence-evaluation:reduction-is-not-proof"
+      ],
+      "record_id": "k-3cd048ed402433acfcff",
+      "status": "active"
+    },
+    {
+      "content": {
+        "constraints": [
+          {
+            "constraint_id": "V_QUANTIFIER",
+            "description": "do not upgrade finite scope to an unbounded universal claim",
+            "hard": true,
+            "status_by_candidate": {
+              "E_FINITE_REDUCTION": "satisfied",
+              "E_GLOBAL_OVERCLAIM": "violated"
+            }
+          }
+        ],
+        "forbidden_inferences": [
+          "equivalent reformulation proves its target",
+          "finite verification proves the unrestricted conjecture",
+          "none declared"
+        ],
+        "non_aggregation": true,
+        "value_information": "compression may not erase harm, permission, provenance, refusal, or ontological residuals"
+      },
+      "position": "W",
+      "provenance": [
+        "purpose:formal-audit-team"
+      ],
+      "record_id": "w-43065ec89ac88fdbef16",
+      "status": "active"
+    },
+    {
+      "content": {
+        "automatic_external_action_authority": 0,
+        "input_output": {
+          "input": "declared observations, worlds, tests, candidates, constraints, and residuals",
+          "output": "bounded essence certificate, lattice, residual frontier, and causal handoff"
+        },
+        "next_action": "state and prove a quantified bridge lemma or retain open status",
+        "purpose_contract": {
+          "automatic_external_action_authority": 0,
+          "lease": "one deterministic run",
+          "objective": "separate finite certificate from unrestricted theorem status",
+          "owner": "formal-audit-team"
+        }
+      },
+      "position": "P",
+      "provenance": [
+        "scenario:reduction-is-not-proof"
+      ],
+      "record_id": "p-9bb72e2a4d024c336351",
+      "status": "active"
+    }
+  ],
+  "routes": [
+    {
+      "generated_content": {
+        "operation": "differentiate observations through candidate comparison"
+      },
+      "route_id": "route-ae385a6915fdab5859e3",
+      "route_type": "D->I",
+      "source_record_id": "d-25f99a6ff80e20f513fd",
+      "target_record_id": "i-73a21fb6f69ec96beccb"
+    },
+    {
+      "generated_content": {
+        "operation": "retain only candidates surviving falsification and ablation"
+      },
+      "route_id": "route-adaa46e43a39ee3bb10a",
+      "route_type": "I->K",
+      "source_record_id": "i-73a21fb6f69ec96beccb",
+      "target_record_id": "k-3cd048ed402433acfcff"
+    },
+    {
+      "generated_content": {
+        "operation": "bind value and permission constraints into the executable purpose"
+      },
+      "route_id": "route-87a7f7e8feaa97e1671d",
+      "route_type": "W->P",
+      "source_record_id": "w-43065ec89ac88fdbef16",
+      "target_record_id": "p-9bb72e2a4d024c336351"
+    },
+    {
+      "generated_content": {
+        "operation": "request the next discriminating observation"
+      },
+      "route_id": "route-9ac77beed4545f060cf1",
+      "route_type": "P->D",
+      "source_record_id": "p-9bb72e2a4d024c336351",
+      "target_record_id": "d-25f99a6ff80e20f513fd"
+    },
+    {
+      "generated_content": {
+        "operation": "convert local essence into a bounded next-step contract"
+      },
+      "route_id": "route-4f89aed1834a37a3168d",
+      "route_type": "K->P",
+      "source_record_id": "k-3cd048ed402433acfcff",
+      "target_record_id": "p-9bb72e2a4d024c336351"
+    },
+    {
+      "generated_content": {
+        "operation": "reverse-regenerate selected consequences from the bounded essence"
+      },
+      "route_id": "route-a4d914bd7d3a1ed8e421",
+      "route_type": "P->K",
+      "source_record_id": "p-9bb72e2a4d024c336351",
+      "target_record_id": "k-3cd048ed402433acfcff"
+    },
+    {
+      "generated_content": {
+        "operation": "register regenerated consequences as explicitly checked sameness"
+      },
+      "route_id": "route-25968816d36bdb1338ac",
+      "route_type": "K->D",
+      "source_record_id": "k-3cd048ed402433acfcff",
+      "target_record_id": "d-25f99a6ff80e20f513fd"
+    },
+    {
+      "generated_content": {
+        "operation": "turn unresolved differences into successor obligations"
+      },
+      "route_id": "route-9912abafece283fc121e",
+      "route_type": "I->P",
+      "source_record_id": "i-73a21fb6f69ec96beccb",
+      "target_record_id": "p-9bb72e2a4d024c336351"
+    },
+    {
+      "generated_content": {
+        "operation": "allow new evidence to revise or cancel the current purpose"
+      },
+      "route_id": "route-379ba898ec7f3fa34f9d",
+      "route_type": "D->P",
+      "source_record_id": "d-25f99a6ff80e20f513fd",
+      "target_record_id": "p-9bb72e2a4d024c336351"
+    },
+    {
+      "generated_content": {
+        "operation": "reopen a causal closure when consequence or permission changes"
+      },
+      "route_id": "route-927bacd0aaa540f5e50c",
+      "route_type": "W->K",
+      "source_record_id": "w-43065ec89ac88fdbef16",
+      "target_record_id": "k-3cd048ed402433acfcff"
+    }
+  ],
+  "supported_route_types": [
+    "D->D",
+    "D->I",
+    "D->K",
+    "D->W",
+    "D->P",
+    "I->D",
+    "I->I",
+    "I->K",
+    "I->W",
+    "I->P",
+    "K->D",
+    "K->I",
+    "K->K",
+    "K->W",
+    "K->P",
+    "W->D",
+    "W->I",
+    "W->K",
+    "W->W",
+    "W->P",
+    "P->D",
+    "P->I",
+    "P->K",
+    "P->W",
+    "P->P"
+  ]
+}

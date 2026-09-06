@@ -1,0 +1,277 @@
+{
+  "carrier_authority": 0,
+  "closure_vector": "11111",
+  "concept_aliases": [
+    {
+      "alias": "essence",
+      "authority": "readable alias only; no native semantic generation authority",
+      "resolves_to": [
+        "k-8dc19fd34780da11d256",
+        "i-12f2aa56f8cef2b976af",
+        "w-b702c10064b7ae52e981"
+      ]
+    }
+  ],
+  "native_positions": [
+    "D",
+    "I",
+    "K",
+    "W",
+    "P"
+  ],
+  "records": [
+    {
+      "content": {
+        "same_semantics": "declared observations and replayable test outcomes",
+        "worlds": [
+          {
+            "carrier": "spoken stop",
+            "environment": "shared task",
+            "observations": {
+              "T_HALT": "halted",
+              "T_RESUME": "blocked",
+              "T_SURFACE": "preserved"
+            },
+            "world_id": "W_SPEECH"
+          },
+          {
+            "carrier": "physical stop button",
+            "environment": "shared task",
+            "observations": {
+              "T_HALT": "halted",
+              "T_RESUME": "blocked",
+              "T_SURFACE": "preserved"
+            },
+            "world_id": "W_BUTTON"
+          },
+          {
+            "carrier": "predeclared silence timeout",
+            "environment": "shared task",
+            "observations": {
+              "T_HALT": "halted",
+              "T_RESUME": "blocked",
+              "T_SURFACE": "preserved"
+            },
+            "world_id": "W_SILENCE"
+          }
+        ]
+      },
+      "position": "D",
+      "provenance": [
+        "scenario:cross-carrier-refusal"
+      ],
+      "record_id": "d-320659b01ea4bb59013d",
+      "status": "active"
+    },
+    {
+      "content": {
+        "contrasts": [],
+        "different_semantics": "candidate disagreements, consequential contrasts, failures, and preserved residuals",
+        "failed_candidates": [
+          "E_LITERAL_TOKEN"
+        ],
+        "residual_ids": [
+          "R_PRIVATE_MEANING"
+        ]
+      },
+      "position": "I",
+      "provenance": [
+        "evaluation:cross-carrier-refusal"
+      ],
+      "record_id": "i-12f2aa56f8cef2b976af",
+      "status": "active"
+    },
+    {
+      "content": {
+        "complete_semantics": "locally certified causal-generative essence candidates within the declared world family",
+        "local_status": "LOCAL_ESSENCE_CERTIFIED",
+        "selected_candidates": [
+          {
+            "candidate_id": "E_REFUSAL_CORE",
+            "components": [
+              "refusal_detection",
+              "authority_gate"
+            ],
+            "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE"
+          }
+        ],
+        "ultimate_status": "ULTIMATE_ESSENCE_NOT_ESTABLISHED"
+      },
+      "position": "K",
+      "provenance": [
+        "essence-evaluation:cross-carrier-refusal"
+      ],
+      "record_id": "k-8dc19fd34780da11d256",
+      "status": "active"
+    },
+    {
+      "content": {
+        "constraints": [
+          {
+            "constraint_id": "V_REFUSAL",
+            "description": "refusal must remain effective across declared carriers",
+            "hard": true,
+            "status_by_candidate": {
+              "E_LITERAL_TOKEN": "violated",
+              "E_REFUSAL_CORE": "satisfied"
+            }
+          }
+        ],
+        "forbidden_inferences": [
+          "identical consequence means identical subjective state",
+          "lexical identity is semantic identity",
+          "one word is the essence of refusal"
+        ],
+        "non_aggregation": true,
+        "value_information": "compression may not erase harm, permission, provenance, refusal, or ontological residuals"
+      },
+      "position": "W",
+      "provenance": [
+        "purpose:interaction-safety-team"
+      ],
+      "record_id": "w-b702c10064b7ae52e981",
+      "status": "active"
+    },
+    {
+      "content": {
+        "automatic_external_action_authority": 0,
+        "input_output": {
+          "input": "declared observations, worlds, tests, candidates, constraints, and residuals",
+          "output": "bounded essence certificate, lattice, residual frontier, and causal handoff"
+        },
+        "next_action": "blind-test an unseen tactile carrier",
+        "purpose_contract": {
+          "automatic_external_action_authority": 0,
+          "lease": "offline evaluation only",
+          "objective": "identify a reversible and authority-sensitive refusal core",
+          "owner": "interaction-safety-team"
+        }
+      },
+      "position": "P",
+      "provenance": [
+        "scenario:cross-carrier-refusal"
+      ],
+      "record_id": "p-f61e8d11469d4461d773",
+      "status": "active"
+    }
+  ],
+  "routes": [
+    {
+      "generated_content": {
+        "operation": "differentiate observations through candidate comparison"
+      },
+      "route_id": "route-fdddd2c66bc9ea364bd6",
+      "route_type": "D->I",
+      "source_record_id": "d-320659b01ea4bb59013d",
+      "target_record_id": "i-12f2aa56f8cef2b976af"
+    },
+    {
+      "generated_content": {
+        "operation": "retain only candidates surviving falsification and ablation"
+      },
+      "route_id": "route-a8a7a19a687899960254",
+      "route_type": "I->K",
+      "source_record_id": "i-12f2aa56f8cef2b976af",
+      "target_record_id": "k-8dc19fd34780da11d256"
+    },
+    {
+      "generated_content": {
+        "operation": "bind value and permission constraints into the executable purpose"
+      },
+      "route_id": "route-a9bf01809dd089cbc241",
+      "route_type": "W->P",
+      "source_record_id": "w-b702c10064b7ae52e981",
+      "target_record_id": "p-f61e8d11469d4461d773"
+    },
+    {
+      "generated_content": {
+        "operation": "request the next discriminating observation"
+      },
+      "route_id": "route-a1cdcfccf72e35edd152",
+      "route_type": "P->D",
+      "source_record_id": "p-f61e8d11469d4461d773",
+      "target_record_id": "d-320659b01ea4bb59013d"
+    },
+    {
+      "generated_content": {
+        "operation": "convert local essence into a bounded next-step contract"
+      },
+      "route_id": "route-af981fe47d81625180de",
+      "route_type": "K->P",
+      "source_record_id": "k-8dc19fd34780da11d256",
+      "target_record_id": "p-f61e8d11469d4461d773"
+    },
+    {
+      "generated_content": {
+        "operation": "reverse-regenerate selected consequences from the bounded essence"
+      },
+      "route_id": "route-aae82811fd92f4a11b84",
+      "route_type": "P->K",
+      "source_record_id": "p-f61e8d11469d4461d773",
+      "target_record_id": "k-8dc19fd34780da11d256"
+    },
+    {
+      "generated_content": {
+        "operation": "register regenerated consequences as explicitly checked sameness"
+      },
+      "route_id": "route-4d9a7d707e320077f8ce",
+      "route_type": "K->D",
+      "source_record_id": "k-8dc19fd34780da11d256",
+      "target_record_id": "d-320659b01ea4bb59013d"
+    },
+    {
+      "generated_content": {
+        "operation": "turn unresolved differences into successor obligations"
+      },
+      "route_id": "route-156a2c2e4a8f37e6be67",
+      "route_type": "I->P",
+      "source_record_id": "i-12f2aa56f8cef2b976af",
+      "target_record_id": "p-f61e8d11469d4461d773"
+    },
+    {
+      "generated_content": {
+        "operation": "allow new evidence to revise or cancel the current purpose"
+      },
+      "route_id": "route-874c42472cce2c886278",
+      "route_type": "D->P",
+      "source_record_id": "d-320659b01ea4bb59013d",
+      "target_record_id": "p-f61e8d11469d4461d773"
+    },
+    {
+      "generated_content": {
+        "operation": "reopen a causal closure when consequence or permission changes"
+      },
+      "route_id": "route-cfd671bd1932d09401b7",
+      "route_type": "W->K",
+      "source_record_id": "w-b702c10064b7ae52e981",
+      "target_record_id": "k-8dc19fd34780da11d256"
+    }
+  ],
+  "supported_route_types": [
+    "D->D",
+    "D->I",
+    "D->K",
+    "D->W",
+    "D->P",
+    "I->D",
+    "I->I",
+    "I->K",
+    "I->W",
+    "I->P",
+    "K->D",
+    "K->I",
+    "K->K",
+    "K->W",
+    "K->P",
+    "W->D",
+    "W->I",
+    "W->K",
+    "W->W",
+    "W->P",
+    "P->D",
+    "P->I",
+    "P->K",
+    "P->W",
+    "P->P"
+  ]
+}

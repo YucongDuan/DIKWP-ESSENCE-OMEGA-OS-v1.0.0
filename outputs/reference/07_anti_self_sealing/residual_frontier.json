@@ -1,0 +1,19 @@
+{
+  "frontier_status": "OPEN",
+  "open_items": [
+    {
+      "blocks_local_certification": false,
+      "critical": false,
+      "description": "other causal worlds are not covered",
+      "description_zh": "其他因果世界不在覆盖范围内",
+      "residual_id": "R_OTHER_WORLDS",
+      "status": "open",
+      "type": "scope"
+    }
+  ],
+  "rule": "a residual must be typed, scoped, attributable, and linked to a reopening or settlement condition",
+  "settled_items": [],
+  "type_counts": {
+    "scope": 1
+  }
+}

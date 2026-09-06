@@ -1,0 +1,9 @@
+{
+  "browser_screenshot_status": "not_run_due_to_container_navigation_policy",
+  "contains_all_eight_scenarios": true,
+  "contains_architecture_svg": true,
+  "external_script_dependencies": 0,
+  "html_exists": true,
+  "html_size_bytes": 135075,
+  "node_script_syntax_checked": true
+}

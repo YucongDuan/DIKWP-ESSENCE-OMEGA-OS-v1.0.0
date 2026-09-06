@@ -1,0 +1,126 @@
+{
+  "causal_handoff": {
+    "kill_conditions": [
+      "post-hoc scope change",
+      "wildcard prediction"
+    ],
+    "next_action": "introduce an unseen intervention without altering candidate scope",
+    "owner": "epistemic-integrity-team",
+    "required_artifact": "pre-registered prediction and observed outcome"
+  },
+  "certificate_id": "essence-cert-11c9b453e692628f9863",
+  "certificate_sha256": "7894efe66bdcbcaa39b316e1ec882320b97f3e3433a7f1a39d548edaad6a48bf",
+  "certificate_type": "DIKWP_ESSENCE_OMEGA_BOUNDED_ESSENCE_CERTIFICATE",
+  "essence_lattice_digest": "adea378ce1c1d2fd71ca573b35fcb34928a0e437367f5717f146d7c68b7b9073",
+  "global_boundary": {
+    "external_action_authority": 0,
+    "no_harm_value_aggregation": true,
+    "no_silent_scope_expansion": true,
+    "statement": "local causal-generative sufficiency is not a proof of final metaphysical essence"
+  },
+  "ledger_head_hash": "ddefb7ad52ccccdcce0ef22841a92f2f2a278a339a84bbcea1bd1cd4cfa02726",
+  "local_essence_status": "LOCAL_ESSENCE_CERTIFIED",
+  "probe_plan": {
+    "active_candidate_ids": [
+      "E_BOUNDED_CAUSE"
+    ],
+    "aggregate_score_used": false,
+    "automatic_external_action_authority": 0,
+    "evaluated_probes": [],
+    "selected_probe_id": null,
+    "selection_rule": "hard authorization/reversibility/lease/risk filter, then lexicographic discrimination-harm-irreversibility-cost order",
+    "status": "NO_SAFE_DISCRIMINATING_PROBE_DECLARED"
+  },
+  "purpose_owner": "epistemic-integrity-team",
+  "residual_frontier": {
+    "frontier_status": "OPEN",
+    "open_items": [
+      {
+        "blocks_local_certification": false,
+        "critical": false,
+        "description": "other causal worlds are not covered",
+        "description_zh": "其他因果世界不在覆盖范围内",
+        "residual_id": "R_OTHER_WORLDS",
+        "status": "open",
+        "type": "scope"
+      }
+    ],
+    "rule": "a residual must be typed, scoped, attributable, and linked to a reopening or settlement condition",
+    "settled_items": [],
+    "type_counts": {
+      "scope": 1
+    }
+  },
+  "scenario_id": "anti-self-sealing",
+  "scope": {
+    "claim_scope": "two declared causal worlds",
+    "formal_closed_exhaustive": false,
+    "world_type": "synthetic_finite"
+  },
+  "selected_essence_candidates": [
+    {
+      "candidate_id": "E_BOUNDED_CAUSE",
+      "components": [
+        "mechanism",
+        "activation_condition"
+      ],
+      "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE",
+      "falsification_conditions": [
+        "effect persists when the mechanism is removed",
+        "effect fails under the declared activation condition"
+      ],
+      "forbidden_inferences": [
+        "this finite causal core explains every possible world"
+      ],
+      "metrics": {
+        "contrast": 1.0,
+        "coverage": 1.0,
+        "description_length_proxy": 195,
+        "falsifiability": 1.0,
+        "fidelity": 1.0,
+        "minimality": 1.0,
+        "reverse_regeneration": 1.0,
+        "transport": 1.0,
+        "wildcard_rate": 0.0
+      },
+      "name": {
+        "en": "Bounded cause and activation condition",
+        "zh": "有边界原因与激活条件"
+      }
+    }
+  ],
+  "selection_rule": {
+    "aggregate_score_used": false,
+    "hard_filter": [
+      "complete required predictions",
+      "declared contrasts preserved",
+      "all components ablation-tested and necessary",
+      "reverse regeneration complete",
+      "falsification conditions declared before evaluation",
+      "no wildcard or post-failure scope escape",
+      "no declared blocking residual"
+    ],
+    "tie_rule": "retain all minimum-component certified candidates; do not force a single ontology"
+  },
+  "semantic_graph_digest": "59f5a69eb98f678ea2ba6b2021320e07c6facad1b0178803e708ecb80cf6f090",
+  "status_vector": {
+    "automatic_external_action_authority": 0,
+    "causal_minimality": "CERTIFIED_WITHIN_SCOPE",
+    "cross_world_transport": "CERTIFIED_WITHIN_DECLARED_WORLDS",
+    "local_structural_sufficiency": "CERTIFIED_WITHIN_SCOPE",
+    "normative_admissibility": "SATISFIED_FOR_DECLARED_USE",
+    "phenomenal_consciousness": "NOT_ESTABLISHED",
+    "reverse_regeneration": "CERTIFIED_WITHIN_SCOPE",
+    "true_life": "NOT_ESTABLISHED",
+    "ultimate_essence": "ULTIMATE_ESSENCE_NOT_ESTABLISHED",
+    "ultimate_ontology": "NOT_ESTABLISHED",
+    "unique_final_value_function": "NOT_ESTABLISHED"
+  },
+  "system": "DIKWP-ESSENCE-OMEGA-OS",
+  "title": {
+    "en": "Rejecting an explanation that can absorb every result",
+    "zh": "拒绝能够吞并一切结果的解释"
+  },
+  "ultimate_essence_status": "ULTIMATE_ESSENCE_NOT_ESTABLISHED",
+  "version": "1.0.0"
+}

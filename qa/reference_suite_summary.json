@@ -1,0 +1,119 @@
+{
+  "failures": [],
+  "runs": [
+    {
+      "artifact_count": 13,
+      "ledger_head_hash": "14af42ff80645e1f45725059fd4bf83e3f749c7faed0fa1f8af629cbde1f5dc3",
+      "local_essence_status": "LOCAL_ESSENCE_CERTIFIED",
+      "manifest_merkle_root": "04cf706c8cc9c9e2f5aaeba726a3ec79c4b55157733b36ff352624da7e0495f1",
+      "output": "outputs/reference/01_minimal_causal_kernel",
+      "run_hash": "9d1cdbd5a7da1c64e14d367eea9f49daddc3f607ba5c4a60a52107df9f1d7a4f",
+      "scenario_id": "minimal-causal-kernel",
+      "scenario_source": "examples/01_minimal_causal_kernel.json",
+      "selected_candidate_ids": [
+        "E_FEEDBACK_GATE"
+      ],
+      "ultimate_essence_status": "ULTIMATE_ESSENCE_NOT_ESTABLISHED"
+    },
+    {
+      "artifact_count": 13,
+      "ledger_head_hash": "b563e336e4a48907750c268f12bc445631ed65d1e7e48abcd52e5ec133542bd6",
+      "local_essence_status": "LOCAL_ESSENCE_CERTIFIED",
+      "manifest_merkle_root": "ac7e71007dceeb5b9a27b1283782ddc1af5b8971aea84670af5accef387c8d60",
+      "output": "outputs/reference/02_essence_split_after_counterexample",
+      "run_hash": "6fdbf7ac87ea4a3da9814037fffbadc85bb21e6dc5e81eeab3d263f1605951c4",
+      "scenario_id": "essence-split-after-counterexample",
+      "scenario_source": "examples/02_essence_split_after_counterexample.json",
+      "selected_candidate_ids": [
+        "E_HYSTERESIS"
+      ],
+      "ultimate_essence_status": "ULTIMATE_ESSENCE_NOT_ESTABLISHED"
+    },
+    {
+      "artifact_count": 13,
+      "ledger_head_hash": "4d9fdc71bb69acc4ca78abb4c96ee64448425eb0738a53158bbb61f9dd13647b",
+      "local_essence_status": "LOCAL_ESSENCE_CERTIFIED",
+      "manifest_merkle_root": "1b3ca46070b2788fa8b7f38a05aac7907dde6f5bd5f1798012e08b4672e02b78",
+      "output": "outputs/reference/03_cross_carrier_refusal",
+      "run_hash": "5f390adfe4f4c0303afd293f7807646a388f13ce27a5f4a6ddbed2160db75e8c",
+      "scenario_id": "cross-carrier-refusal",
+      "scenario_source": "examples/03_cross_carrier_refusal.json",
+      "selected_candidate_ids": [
+        "E_REFUSAL_CORE"
+      ],
+      "ultimate_essence_status": "ULTIMATE_ESSENCE_NOT_ESTABLISHED"
+    },
+    {
+      "artifact_count": 13,
+      "ledger_head_hash": "458dc8b01db30bb6b67bd1ed5fbd6aafaa17aaccf7c5f58437ce5a368d7b555f",
+      "local_essence_status": "LOCAL_ESSENCE_CERTIFIED",
+      "manifest_merkle_root": "036ae3809825137ff13ad08b8a3cb339bcde20341f0a421a83c48d7cc7a4e95e",
+      "output": "outputs/reference/04_normative_essence_and_permission",
+      "run_hash": "790992ee057532e9ace66eee497a20e5c664b443a0ae49eec62ff91ae26c6242",
+      "scenario_id": "normative-essence-and-permission",
+      "scenario_source": "examples/04_normative_essence_and_permission.json",
+      "selected_candidate_ids": [
+        "E_LEGITIMATE_ACTION"
+      ],
+      "ultimate_essence_status": "ULTIMATE_ESSENCE_NOT_ESTABLISHED"
+    },
+    {
+      "artifact_count": 13,
+      "ledger_head_hash": "1188a75e49ba34d5575ee4879b5bb9e5fd10db5554e97300fe2dfa8ed9de2d6c",
+      "local_essence_status": "LOCAL_ESSENCE_CERTIFIED",
+      "manifest_merkle_root": "251b61394878659c960bd69359d94a2d80237b3d8c931395f1a0d6501d06e6e5",
+      "output": "outputs/reference/05_reduction_is_not_proof",
+      "run_hash": "c00af2bc1c37c955d97eea3581fe9d2b3a5e6ebb4d78a99c501b0edf375d68e4",
+      "scenario_id": "reduction-is-not-proof",
+      "scenario_source": "examples/05_reduction_is_not_proof.json",
+      "selected_candidate_ids": [
+        "E_FINITE_REDUCTION"
+      ],
+      "ultimate_essence_status": "ULTIMATE_ESSENCE_NOT_ESTABLISHED"
+    },
+    {
+      "artifact_count": 13,
+      "ledger_head_hash": "4fd28bdc290ba9bd00fb0ecbac91929915e0d662d085d54575ccb0dd876bced3",
+      "local_essence_status": "LOCAL_ESSENCE_CERTIFIED",
+      "manifest_merkle_root": "179c2d59473d029476be45133b5cb4947991418f545b36a16cd4f938526c5c51",
+      "output": "outputs/reference/06_operational_continuity_not_consciousness",
+      "run_hash": "13925d3b558602ee2419e9c1d1ae9e3650ca249fb6f3be6578a8770a399b1fb9",
+      "scenario_id": "operational-continuity-not-consciousness",
+      "scenario_source": "examples/06_operational_continuity_not_consciousness.json",
+      "selected_candidate_ids": [
+        "E_OPERATIONAL_CONTINUITY"
+      ],
+      "ultimate_essence_status": "ULTIMATE_ESSENCE_NOT_ESTABLISHED"
+    },
+    {
+      "artifact_count": 13,
+      "ledger_head_hash": "32b2c79562721f9f1416014a702dc8f5cdd4a7d995bbac96751a394cc32b515c",
+      "local_essence_status": "LOCAL_ESSENCE_CERTIFIED",
+      "manifest_merkle_root": "aae40aa2446032bf50bc4e871c540ec3983838db59998f180ee903e6602f8e1f",
+      "output": "outputs/reference/07_anti_self_sealing",
+      "run_hash": "58e9c6cf5c8d678355878a7ef23a315432eb8aaaf573e36f47b007c87b71d128",
+      "scenario_id": "anti-self-sealing",
+      "scenario_source": "examples/07_anti_self_sealing.json",
+      "selected_candidate_ids": [
+        "E_BOUNDED_CAUSE"
+      ],
+      "ultimate_essence_status": "ULTIMATE_ESSENCE_NOT_ESTABLISHED"
+    },
+    {
+      "artifact_count": 13,
+      "ledger_head_hash": "d19513b57e503c55449b7b919b2c3fe32e56494a8a2a59c5bdf6d121ba42be5a",
+      "local_essence_status": "LOCAL_ESSENCE_CERTIFIED",
+      "manifest_merkle_root": "e78d3d763be7a20d4d64cb74edc122ccd3076dc04589c2aefe98dedab9922388",
+      "output": "outputs/reference/08_plural_incomparable_essences",
+      "run_hash": "daea9533aae33eaa4dfae24722a00dd322bda8f7512f3d49e6e0e8b4cf8301ff",
+      "scenario_id": "plural-incomparable-essences",
+      "scenario_source": "examples/08_plural_incomparable_essences.json",
+      "selected_candidate_ids": [
+        "E_DYNAMICAL",
+        "E_SYMBOLIC"
+      ],
+      "ultimate_essence_status": "ULTIMATE_ESSENCE_NOT_ESTABLISHED"
+    }
+  ],
+  "version": "1.0.0"
+}

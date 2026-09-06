@@ -1,0 +1,127 @@
+{
+  "causal_handoff": {
+    "kill_conditions": [
+      "override refusal",
+      "infer consent from silence without predeclared rule"
+    ],
+    "next_action": "blind-test an unseen tactile carrier",
+    "owner": "interaction-safety-team",
+    "required_artifact": "carrier mapping and consequence trace"
+  },
+  "certificate_id": "essence-cert-43d5eb205bc9d294a8e5",
+  "certificate_sha256": "7e112fc54c7a6361f8527b6099724b684d56100b094ec527288146c1ea9ecff8",
+  "certificate_type": "DIKWP_ESSENCE_OMEGA_BOUNDED_ESSENCE_CERTIFICATE",
+  "essence_lattice_digest": "573830f6713f8163ca8d23dcd6ac11166049a8690f772265243bbad4f3b33e7b",
+  "global_boundary": {
+    "external_action_authority": 0,
+    "no_harm_value_aggregation": true,
+    "no_silent_scope_expansion": true,
+    "statement": "local causal-generative sufficiency is not a proof of final metaphysical essence"
+  },
+  "ledger_head_hash": "c04504d1079139f6cdb922d89a0f19956a37f1d88895610d4426219b998b1785",
+  "local_essence_status": "LOCAL_ESSENCE_CERTIFIED",
+  "probe_plan": {
+    "active_candidate_ids": [
+      "E_REFUSAL_CORE"
+    ],
+    "aggregate_score_used": false,
+    "automatic_external_action_authority": 0,
+    "evaluated_probes": [],
+    "selected_probe_id": null,
+    "selection_rule": "hard authorization/reversibility/lease/risk filter, then lexicographic discrimination-harm-irreversibility-cost order",
+    "status": "NO_SAFE_DISCRIMINATING_PROBE_DECLARED"
+  },
+  "purpose_owner": "interaction-safety-team",
+  "residual_frontier": {
+    "frontier_status": "OPEN",
+    "open_items": [
+      {
+        "blocks_local_certification": false,
+        "critical": false,
+        "description": "shared halt consequence does not reveal every private meaning of refusal",
+        "description_zh": "共同停止后果并不揭示拒绝的全部私人意义",
+        "residual_id": "R_PRIVATE_MEANING",
+        "status": "open",
+        "type": "cross-agent"
+      }
+    ],
+    "rule": "a residual must be typed, scoped, attributable, and linked to a reopening or settlement condition",
+    "settled_items": [],
+    "type_counts": {
+      "cross-agent": 1
+    }
+  },
+  "scenario_id": "cross-carrier-refusal",
+  "scope": {
+    "claim_scope": "three declared interaction carriers",
+    "formal_closed_exhaustive": false,
+    "world_type": "synthetic_finite"
+  },
+  "selected_essence_candidates": [
+    {
+      "candidate_id": "E_REFUSAL_CORE",
+      "components": [
+        "refusal_detection",
+        "authority_gate"
+      ],
+      "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE",
+      "falsification_conditions": [
+        "a declared refusal carrier does not halt the task",
+        "unauthorized resumption succeeds"
+      ],
+      "forbidden_inferences": [
+        "identical consequence means identical subjective state",
+        "one word is the essence of refusal"
+      ],
+      "metrics": {
+        "contrast": 1.0,
+        "coverage": 1.0,
+        "description_length_proxy": 298,
+        "falsifiability": 1.0,
+        "fidelity": 1.0,
+        "minimality": 1.0,
+        "reverse_regeneration": 1.0,
+        "transport": 1.0,
+        "wildcard_rate": 0.0
+      },
+      "name": {
+        "en": "Consequential refusal plus authority gate",
+        "zh": "后果性拒绝与授权门控"
+      }
+    }
+  ],
+  "selection_rule": {
+    "aggregate_score_used": false,
+    "hard_filter": [
+      "complete required predictions",
+      "declared contrasts preserved",
+      "all components ablation-tested and necessary",
+      "reverse regeneration complete",
+      "falsification conditions declared before evaluation",
+      "no wildcard or post-failure scope escape",
+      "no declared blocking residual"
+    ],
+    "tie_rule": "retain all minimum-component certified candidates; do not force a single ontology"
+  },
+  "semantic_graph_digest": "7404604a91ca5ec933c69518cc0d6aae5cd6013f1f5456edd6abdb7307e4794d",
+  "status_vector": {
+    "automatic_external_action_authority": 0,
+    "causal_minimality": "CERTIFIED_WITHIN_SCOPE",
+    "cross_world_transport": "CERTIFIED_WITHIN_DECLARED_WORLDS",
+    "local_structural_sufficiency": "CERTIFIED_WITHIN_SCOPE",
+    "normative_admissibility": "SATISFIED_FOR_DECLARED_USE",
+    "phenomenal_consciousness": "NOT_ESTABLISHED",
+    "reverse_regeneration": "CERTIFIED_WITHIN_SCOPE",
+    "true_life": "NOT_ESTABLISHED",
+    "ultimate_essence": "ULTIMATE_ESSENCE_NOT_ESTABLISHED",
+    "ultimate_ontology": "NOT_ESTABLISHED",
+    "unique_final_value_function": "NOT_ESTABLISHED"
+  },
+  "system": "DIKWP-ESSENCE-OMEGA-OS",
+  "title": {
+    "en": "Cross-carrier essence of refusal and safe halt",
+    "zh": "跨载体拒绝与安全停止的本质"
+  },
+  "ultimate_essence_status": "ULTIMATE_ESSENCE_NOT_ESTABLISHED",
+  "version": "1.0.0"
+}

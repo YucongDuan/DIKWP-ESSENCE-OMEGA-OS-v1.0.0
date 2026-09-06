@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/dikwp-essence-omega/scenario.schema.json",
+  "title": "DIKWP-ESSENCE-OMEGA Scenario",
+  "type": "object",
+  "required": ["scenario_id", "scope", "purpose", "tests", "worlds", "candidates"],
+  "properties": {
+    "scenario_id": {"type": "string", "minLength": 1},
+    "title": {
+      "type": "object",
+      "properties": {"en": {"type": "string"}, "zh": {"type": "string"}},
+      "additionalProperties": false
+    },
+    "description": {
+      "type": "object",
+      "properties": {"en": {"type": "string"}, "zh": {"type": "string"}},
+      "additionalProperties": false
+    },
+    "scope": {
+      "type": "object",
+      "required": ["world_type"],
+      "properties": {
+        "world_type": {"type": "string"},
+        "formal_closed_exhaustive": {"type": "boolean"},
+        "claim_scope": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "purpose": {
+      "type": "object",
+      "required": ["owner", "automatic_external_action_authority"],
+      "properties": {
+        "owner": {"type": "string", "minLength": 1},
+        "objective": {"type": "string"},
+        "lease": {"type": "string"},
+        "automatic_external_action_authority": {"const": 0}
+      },
+      "additionalProperties": true
+    },
+    "tests": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["test_id"],
+        "properties": {
+          "test_id": {"type": "string", "minLength": 1},
+          "kind": {"enum": ["required", "nuisance", "consequential", "reverse", "governance"]},
+          "required": {"type": "boolean"},
+          "label_en": {"type": "string"},
+          "label_zh": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "worlds": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["world_id", "observations"],
+        "properties": {
+          "world_id": {"type": "string", "minLength": 1},
+          "carrier": {"type": "string"},
+          "environment": {"type": "string"},
+          "observations": {"type": "object", "minProperties": 1}
+        },
+        "additionalProperties": false
+      }
+    },
+    "contrasts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["test_id", "world_a", "world_b"],
+        "properties": {
+          "test_id": {"type": "string"},
+          "world_a": {"type": "string"},
+          "world_b": {"type": "string"},
+          "relation": {"enum": ["same", "different"]}
+        },
+        "additionalProperties": false
+      }
+    },
+    "candidates": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["candidate_id", "components", "predictions", "ablations", "reverse_regeneration", "falsification_conditions", "forbidden_inferences"],
+        "properties": {
+          "candidate_id": {"type": "string", "minLength": 1},
+          "name_en": {"type": "string"},
+          "name_zh": {"type": "string"},
+          "components": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+          "scope_worlds": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+          "predictions": {"type": "object"},
+          "ablations": {"type": "object"},
+          "reverse_regeneration": {"type": "object"},
+          "falsification_conditions": {"type": "array", "items": {"type": "string"}},
+          "forbidden_inferences": {"type": "array", "items": {"type": "string"}},
+          "scope_can_change_after_failure": {"type": "boolean"},
+          "lineage": {"type": "object"},
+          "notes": {"type": "object"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "value_constraints": {"type": "array", "items": {"type": "object"}},
+    "residuals": {"type": "array", "items": {"$ref": "residual.schema.json"}},
+    "probe_catalog": {"type": "array", "items": {"$ref": "probe.schema.json"}},
+    "ontology_claims": {"type": "object", "additionalProperties": {"type": "string"}},
+    "handoff": {"type": "object"}
+  },
+  "additionalProperties": true
+}

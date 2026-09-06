@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/dikwp-essence-omega/residual.schema.json",
+  "title": "Typed Residual",
+  "type": "object",
+  "required": ["residual_id", "type", "status", "description"],
+  "properties": {
+    "residual_id": {"type": "string", "minLength": 1},
+    "type": {"enum": ["causal", "epistemic", "quantifier", "scale", "permission", "value", "scope", "model-class", "cross-agent", "ontological", "phenomenal", "untyped"]},
+    "status": {"enum": ["open", "settled", "retired"]},
+    "description": {"type": "string"},
+    "description_zh": {"type": "string"},
+    "critical": {"type": "boolean"},
+    "blocks_local_certification": {"type": "boolean"},
+    "candidate_ids": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

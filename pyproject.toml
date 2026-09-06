@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dikwp-essence-omega-os"
+version = "1.0.0"
+description = "Open ultimate-essence runtime for bounded causal-generative invariants and residual frontiers"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "AGPL-3.0-or-later"}
+authors = [{name = "Yucong Duan"}]
+keywords = ["DIKWP", "causal inference", "essence", "counterfactual", "provenance", "semantic continuity"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+  "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.scripts]
+dikwp-essence-omega = "essence_omega_os.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+essence_omega_os = ["data/examples/*.json"]

@@ -1,0 +1,126 @@
+{
+  "causal_handoff": {
+    "kill_conditions": [
+      "replace the unbounded quantifier with a finite bound without disclosure"
+    ],
+    "next_action": "state and prove a quantified bridge lemma or retain open status",
+    "owner": "formal-audit-team",
+    "required_artifact": "machine-checkable universal proof or counterexample"
+  },
+  "certificate_id": "essence-cert-b4088c88a99ff48c67a4",
+  "certificate_sha256": "933cd4949d2e7a63be93b0bb121d1a152f6e7df513c8dd3bf10f9c28e9edce8c",
+  "certificate_type": "DIKWP_ESSENCE_OMEGA_BOUNDED_ESSENCE_CERTIFICATE",
+  "essence_lattice_digest": "ace09ce1b1100a678dee08e386a4f6502cbd3733bf53b67be88810df50a39348",
+  "global_boundary": {
+    "external_action_authority": 0,
+    "no_harm_value_aggregation": true,
+    "no_silent_scope_expansion": true,
+    "statement": "local causal-generative sufficiency is not a proof of final metaphysical essence"
+  },
+  "ledger_head_hash": "b3f9bde6b14fc16ebff342d4a20da200df62d5414edacda334ed39196c13a6f2",
+  "local_essence_status": "LOCAL_ESSENCE_CERTIFIED",
+  "probe_plan": {
+    "active_candidate_ids": [
+      "E_FINITE_REDUCTION"
+    ],
+    "aggregate_score_used": false,
+    "automatic_external_action_authority": 0,
+    "evaluated_probes": [],
+    "selected_probe_id": null,
+    "selection_rule": "hard authorization/reversibility/lease/risk filter, then lexicographic discrimination-harm-irreversibility-cost order",
+    "status": "NO_SAFE_DISCRIMINATING_PROBE_DECLARED"
+  },
+  "purpose_owner": "formal-audit-team",
+  "residual_frontier": {
+    "frontier_status": "OPEN",
+    "open_items": [
+      {
+        "blocks_local_certification": false,
+        "critical": true,
+        "description": "no proof is supplied for all even integers",
+        "description_zh": "尚未给出覆盖全部偶数的证明",
+        "residual_id": "R_UNIVERSAL_BRIDGE",
+        "status": "open",
+        "type": "quantifier"
+      }
+    ],
+    "rule": "a residual must be typed, scoped, attributable, and linked to a reopening or settlement condition",
+    "settled_items": [],
+    "type_counts": {
+      "quantifier": 1
+    }
+  },
+  "scenario_id": "reduction-is-not-proof",
+  "scope": {
+    "claim_scope": "even integers from 4 through 100 only",
+    "formal_closed_exhaustive": false,
+    "world_type": "finite_formal_sample"
+  },
+  "selected_essence_candidates": [
+    {
+      "candidate_id": "E_FINITE_REDUCTION",
+      "components": [
+        "sound_reduction",
+        "finite_witness_checker"
+      ],
+      "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE",
+      "falsification_conditions": [
+        "a reported witness fails verification",
+        "the reduction changes the original quantified object"
+      ],
+      "forbidden_inferences": [
+        "finite verification proves the unrestricted conjecture",
+        "equivalent reformulation proves its target"
+      ],
+      "metrics": {
+        "contrast": 1.0,
+        "coverage": 1.0,
+        "description_length_proxy": 165,
+        "falsifiability": 1.0,
+        "fidelity": 1.0,
+        "minimality": 1.0,
+        "reverse_regeneration": 1.0,
+        "transport": 1.0,
+        "wildcard_rate": 0.0
+      },
+      "name": {
+        "en": "Finite mapping and witness verifier",
+        "zh": "有限映射与见证验证器"
+      }
+    }
+  ],
+  "selection_rule": {
+    "aggregate_score_used": false,
+    "hard_filter": [
+      "complete required predictions",
+      "declared contrasts preserved",
+      "all components ablation-tested and necessary",
+      "reverse regeneration complete",
+      "falsification conditions declared before evaluation",
+      "no wildcard or post-failure scope escape",
+      "no declared blocking residual"
+    ],
+    "tie_rule": "retain all minimum-component certified candidates; do not force a single ontology"
+  },
+  "semantic_graph_digest": "1061e80d80314bcbe9e8add0896a75e87e9bcff373095c84dc197432f0cc3653",
+  "status_vector": {
+    "automatic_external_action_authority": 0,
+    "causal_minimality": "CERTIFIED_WITHIN_SCOPE",
+    "cross_world_transport": "CERTIFIED_WITHIN_DECLARED_WORLDS",
+    "local_structural_sufficiency": "CERTIFIED_WITHIN_SCOPE",
+    "normative_admissibility": "SATISFIED_FOR_DECLARED_USE",
+    "phenomenal_consciousness": "NOT_ESTABLISHED",
+    "reverse_regeneration": "CERTIFIED_WITHIN_SCOPE",
+    "true_life": "NOT_ESTABLISHED",
+    "ultimate_essence": "ULTIMATE_ESSENCE_NOT_ESTABLISHED",
+    "ultimate_ontology": "NOT_ESTABLISHED",
+    "unique_final_value_function": "NOT_ESTABLISHED"
+  },
+  "system": "DIKWP-ESSENCE-OMEGA-OS",
+  "title": {
+    "en": "Information-theoretic reduction without proof inflation",
+    "zh": "不把信息论还原夸大为证明"
+  },
+  "ultimate_essence_status": "ULTIMATE_ESSENCE_NOT_ESTABLISHED",
+  "version": "1.0.0"
+}

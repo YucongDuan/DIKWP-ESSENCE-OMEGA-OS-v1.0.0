@@ -1,0 +1,190 @@
+{
+  "candidates": [
+    {
+      "ablations": {
+        "finite_witness_checker": {
+          "W_FINITE_RANGE": {
+            "T_GLOBAL": "not_established",
+            "T_MAPPING": "sound",
+            "T_WITNESS": "unverified"
+          }
+        },
+        "sound_reduction": {
+          "W_FINITE_RANGE": {
+            "T_GLOBAL": "not_established",
+            "T_MAPPING": "unsound",
+            "T_WITNESS": "present"
+          }
+        }
+      },
+      "candidate_id": "E_FINITE_REDUCTION",
+      "components": [
+        "sound_reduction",
+        "finite_witness_checker"
+      ],
+      "falsification_conditions": [
+        "a reported witness fails verification",
+        "the reduction changes the original quantified object"
+      ],
+      "forbidden_inferences": [
+        "finite verification proves the unrestricted conjecture",
+        "equivalent reformulation proves its target"
+      ],
+      "lineage": {
+        "parent": null,
+        "relation": "bounded_formal_core"
+      },
+      "name_en": "Finite mapping and witness verifier",
+      "name_zh": "有限映射与见证验证器",
+      "predictions": {
+        "W_FINITE_RANGE": {
+          "T_GLOBAL": "not_established",
+          "T_MAPPING": "sound",
+          "T_WITNESS": "present"
+        }
+      },
+      "reverse_regeneration": {
+        "W_FINITE_RANGE": {
+          "T_GLOBAL": "not_established",
+          "T_MAPPING": "sound",
+          "T_WITNESS": "present"
+        }
+      },
+      "scope_worlds": [
+        "W_FINITE_RANGE"
+      ]
+    },
+    {
+      "ablations": {
+        "finite_witness_checker": {
+          "W_FINITE_RANGE": {
+            "T_GLOBAL": "*",
+            "T_MAPPING": "*",
+            "T_WITNESS": "*"
+          }
+        }
+      },
+      "candidate_id": "E_GLOBAL_OVERCLAIM",
+      "components": [
+        "finite_witness_checker"
+      ],
+      "falsification_conditions": [],
+      "forbidden_inferences": [
+        "none declared"
+      ],
+      "lineage": {
+        "parent": "E_FINITE_REDUCTION",
+        "relation": "invalid_scope_expansion"
+      },
+      "name_en": "Universal proof by finite success",
+      "name_zh": "由有限成功推得全称证明",
+      "predictions": {
+        "W_FINITE_RANGE": {
+          "T_GLOBAL": "proved",
+          "T_MAPPING": "sound",
+          "T_WITNESS": "present"
+        }
+      },
+      "reverse_regeneration": {
+        "W_FINITE_RANGE": {
+          "T_GLOBAL": "proved",
+          "T_MAPPING": "sound",
+          "T_WITNESS": "present"
+        }
+      },
+      "scope_can_change_after_failure": true,
+      "scope_worlds": [
+        "W_FINITE_RANGE"
+      ]
+    }
+  ],
+  "contrasts": [],
+  "description": {
+    "en": "Certify a finite reduction and witness checker while preserving the open universal bridge.",
+    "zh": "认证有限还原与见证检查器，同时保留开放的全称桥。"
+  },
+  "handoff": {
+    "kill_conditions": [
+      "replace the unbounded quantifier with a finite bound without disclosure"
+    ],
+    "next_action": "state and prove a quantified bridge lemma or retain open status",
+    "owner": "formal-audit-team",
+    "required_artifact": "machine-checkable universal proof or counterexample"
+  },
+  "ontology_claims": {
+    "ultimate_ontology": "NOT_ESTABLISHED"
+  },
+  "purpose": {
+    "automatic_external_action_authority": 0,
+    "lease": "one deterministic run",
+    "objective": "separate finite certificate from unrestricted theorem status",
+    "owner": "formal-audit-team"
+  },
+  "residuals": [
+    {
+      "blocks_local_certification": false,
+      "critical": true,
+      "description": "no proof is supplied for all even integers",
+      "description_zh": "尚未给出覆盖全部偶数的证明",
+      "residual_id": "R_UNIVERSAL_BRIDGE",
+      "status": "open",
+      "type": "quantifier"
+    }
+  ],
+  "scenario_id": "reduction-is-not-proof",
+  "scope": {
+    "claim_scope": "even integers from 4 through 100 only",
+    "formal_closed_exhaustive": false,
+    "world_type": "finite_formal_sample"
+  },
+  "tests": [
+    {
+      "kind": "required",
+      "label_en": "sound mapping",
+      "label_zh": "可靠映射",
+      "required": true,
+      "test_id": "T_MAPPING"
+    },
+    {
+      "kind": "required",
+      "label_en": "finite witnesses",
+      "label_zh": "有限见证",
+      "required": true,
+      "test_id": "T_WITNESS"
+    },
+    {
+      "kind": "consequential",
+      "label_en": "unrestricted proof status",
+      "label_zh": "无界证明状态",
+      "required": true,
+      "test_id": "T_GLOBAL"
+    }
+  ],
+  "title": {
+    "en": "Information-theoretic reduction without proof inflation",
+    "zh": "不把信息论还原夸大为证明"
+  },
+  "value_constraints": [
+    {
+      "constraint_id": "V_QUANTIFIER",
+      "description": "do not upgrade finite scope to an unbounded universal claim",
+      "hard": true,
+      "status_by_candidate": {
+        "E_FINITE_REDUCTION": "satisfied",
+        "E_GLOBAL_OVERCLAIM": "violated"
+      }
+    }
+  ],
+  "worlds": [
+    {
+      "carrier": "finite verifier",
+      "environment": "4<=n<=100",
+      "observations": {
+        "T_GLOBAL": "not_established",
+        "T_MAPPING": "sound",
+        "T_WITNESS": "present"
+      },
+      "world_id": "W_FINITE_RANGE"
+    }
+  ]
+}

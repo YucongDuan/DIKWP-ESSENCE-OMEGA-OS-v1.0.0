@@ -1,0 +1,283 @@
+{
+  "carrier_authority": 0,
+  "closure_vector": "11111",
+  "concept_aliases": [
+    {
+      "alias": "essence",
+      "authority": "readable alias only; no native semantic generation authority",
+      "resolves_to": [
+        "k-07ef8071ab054229696c",
+        "i-0316ad2d56fa0a04388d",
+        "w-89c1206af1f1253ae900"
+      ]
+    }
+  ],
+  "native_positions": [
+    "D",
+    "I",
+    "K",
+    "W",
+    "P"
+  ],
+  "records": [
+    {
+      "content": {
+        "same_semantics": "declared observations and replayable test outcomes",
+        "worlds": [
+          {
+            "carrier": "electromechanical",
+            "environment": "observable plant",
+            "observations": {
+              "T_BASE": "stable",
+              "T_DROP": "recovers",
+              "T_LABEL": "stable"
+            },
+            "world_id": "W_HARDWARE"
+          },
+          {
+            "carrier": "software simulation",
+            "environment": "observable plant",
+            "observations": {
+              "T_BASE": "stable",
+              "T_DROP": "recovers",
+              "T_LABEL": "stable"
+            },
+            "world_id": "W_SOFTWARE"
+          },
+          {
+            "carrier": "software simulation",
+            "environment": "sensor path removed",
+            "observations": {
+              "T_BASE": "unstable",
+              "T_DROP": "blocked",
+              "T_LABEL": "unstable"
+            },
+            "world_id": "W_BLIND"
+          }
+        ]
+      },
+      "position": "D",
+      "provenance": [
+        "scenario:minimal-causal-kernel"
+      ],
+      "record_id": "d-197fb5c4fcf25bf58d64",
+      "status": "active"
+    },
+    {
+      "content": {
+        "contrasts": [
+          {
+            "relation": "different",
+            "test_id": "T_DROP",
+            "world_a": "W_HARDWARE",
+            "world_b": "W_BLIND"
+          }
+        ],
+        "different_semantics": "candidate disagreements, consequential contrasts, failures, and preserved residuals",
+        "failed_candidates": [
+          "E_OVERCOMPLETE",
+          "E_CLOCK_CORRELATION"
+        ],
+        "residual_ids": [
+          "R_SCALE"
+        ]
+      },
+      "position": "I",
+      "provenance": [
+        "evaluation:minimal-causal-kernel"
+      ],
+      "record_id": "i-0316ad2d56fa0a04388d",
+      "status": "active"
+    },
+    {
+      "content": {
+        "complete_semantics": "locally certified causal-generative essence candidates within the declared world family",
+        "local_status": "LOCAL_ESSENCE_CERTIFIED",
+        "selected_candidates": [
+          {
+            "candidate_id": "E_FEEDBACK_GATE",
+            "components": [
+              "closed_loop_feedback",
+              "observability_gate"
+            ],
+            "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE"
+          }
+        ],
+        "ultimate_status": "ULTIMATE_ESSENCE_NOT_ESTABLISHED"
+      },
+      "position": "K",
+      "provenance": [
+        "essence-evaluation:minimal-causal-kernel"
+      ],
+      "record_id": "k-07ef8071ab054229696c",
+      "status": "active"
+    },
+    {
+      "content": {
+        "constraints": [
+          {
+            "constraint_id": "V_NONHARM",
+            "default_status": "satisfied",
+            "description": "reference probes are offline and reversible",
+            "hard": true
+          }
+        ],
+        "forbidden_inferences": [
+          "correlation supplies mechanism",
+          "decorative correlation is causal essence",
+          "local causal sufficiency proves consciousness",
+          "the controller mechanism is the ultimate substance of all control"
+        ],
+        "non_aggregation": true,
+        "value_information": "compression may not erase harm, permission, provenance, refusal, or ontological residuals"
+      },
+      "position": "W",
+      "provenance": [
+        "purpose:reference-researcher"
+      ],
+      "record_id": "w-89c1206af1f1253ae900",
+      "status": "active"
+    },
+    {
+      "content": {
+        "automatic_external_action_authority": 0,
+        "input_output": {
+          "input": "declared observations, worlds, tests, candidates, constraints, and residuals",
+          "output": "bounded essence certificate, lattice, residual frontier, and causal handoff"
+        },
+        "next_action": "test a fourth carrier with a different sensor topology",
+        "purpose_contract": {
+          "automatic_external_action_authority": 0,
+          "lease": "one offline run",
+          "objective": "discover a minimal bounded recovery essence",
+          "owner": "reference-researcher"
+        }
+      },
+      "position": "P",
+      "provenance": [
+        "scenario:minimal-causal-kernel"
+      ],
+      "record_id": "p-6ed18c93efa7dfcaf8b6",
+      "status": "active"
+    }
+  ],
+  "routes": [
+    {
+      "generated_content": {
+        "operation": "differentiate observations through candidate comparison"
+      },
+      "route_id": "route-a2bbc75bf51e64e683c5",
+      "route_type": "D->I",
+      "source_record_id": "d-197fb5c4fcf25bf58d64",
+      "target_record_id": "i-0316ad2d56fa0a04388d"
+    },
+    {
+      "generated_content": {
+        "operation": "retain only candidates surviving falsification and ablation"
+      },
+      "route_id": "route-96e3c46a8c6547fadd3f",
+      "route_type": "I->K",
+      "source_record_id": "i-0316ad2d56fa0a04388d",
+      "target_record_id": "k-07ef8071ab054229696c"
+    },
+    {
+      "generated_content": {
+        "operation": "bind value and permission constraints into the executable purpose"
+      },
+      "route_id": "route-cb44ef2680f45b050d6d",
+      "route_type": "W->P",
+      "source_record_id": "w-89c1206af1f1253ae900",
+      "target_record_id": "p-6ed18c93efa7dfcaf8b6"
+    },
+    {
+      "generated_content": {
+        "operation": "request the next discriminating observation"
+      },
+      "route_id": "route-0ce042d0a5b02968c668",
+      "route_type": "P->D",
+      "source_record_id": "p-6ed18c93efa7dfcaf8b6",
+      "target_record_id": "d-197fb5c4fcf25bf58d64"
+    },
+    {
+      "generated_content": {
+        "operation": "convert local essence into a bounded next-step contract"
+      },
+      "route_id": "route-b7d1311a0f2afd72afcd",
+      "route_type": "K->P",
+      "source_record_id": "k-07ef8071ab054229696c",
+      "target_record_id": "p-6ed18c93efa7dfcaf8b6"
+    },
+    {
+      "generated_content": {
+        "operation": "reverse-regenerate selected consequences from the bounded essence"
+      },
+      "route_id": "route-c428abd40f2d0e817c56",
+      "route_type": "P->K",
+      "source_record_id": "p-6ed18c93efa7dfcaf8b6",
+      "target_record_id": "k-07ef8071ab054229696c"
+    },
+    {
+      "generated_content": {
+        "operation": "register regenerated consequences as explicitly checked sameness"
+      },
+      "route_id": "route-800a251f41fe7a47c9e4",
+      "route_type": "K->D",
+      "source_record_id": "k-07ef8071ab054229696c",
+      "target_record_id": "d-197fb5c4fcf25bf58d64"
+    },
+    {
+      "generated_content": {
+        "operation": "turn unresolved differences into successor obligations"
+      },
+      "route_id": "route-8c827e2f6a2e212e2ce0",
+      "route_type": "I->P",
+      "source_record_id": "i-0316ad2d56fa0a04388d",
+      "target_record_id": "p-6ed18c93efa7dfcaf8b6"
+    },
+    {
+      "generated_content": {
+        "operation": "allow new evidence to revise or cancel the current purpose"
+      },
+      "route_id": "route-670e0f895eec4288631a",
+      "route_type": "D->P",
+      "source_record_id": "d-197fb5c4fcf25bf58d64",
+      "target_record_id": "p-6ed18c93efa7dfcaf8b6"
+    },
+    {
+      "generated_content": {
+        "operation": "reopen a causal closure when consequence or permission changes"
+      },
+      "route_id": "route-0692f09ec5d417e6b9df",
+      "route_type": "W->K",
+      "source_record_id": "w-89c1206af1f1253ae900",
+      "target_record_id": "k-07ef8071ab054229696c"
+    }
+  ],
+  "supported_route_types": [
+    "D->D",
+    "D->I",
+    "D->K",
+    "D->W",
+    "D->P",
+    "I->D",
+    "I->I",
+    "I->K",
+    "I->W",
+    "I->P",
+    "K->D",
+    "K->I",
+    "K->K",
+    "K->W",
+    "K->P",
+    "W->D",
+    "W->I",
+    "W->K",
+    "W->W",
+    "W->P",
+    "P->D",
+    "P->I",
+    "P->K",
+    "P->W",
+    "P->P"
+  ]
+}

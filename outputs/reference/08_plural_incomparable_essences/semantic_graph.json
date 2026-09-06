@@ -1,0 +1,256 @@
+{
+  "carrier_authority": 0,
+  "closure_vector": "11111",
+  "concept_aliases": [
+    {
+      "alias": "essence",
+      "authority": "readable alias only; no native semantic generation authority",
+      "resolves_to": [
+        "k-cb2f2dbdf8d8f90ef330",
+        "i-072a184861e34d2729bd",
+        "w-313a9377405d2ee81525"
+      ]
+    }
+  ],
+  "native_positions": [
+    "D",
+    "I",
+    "K",
+    "W",
+    "P"
+  ],
+  "records": [
+    {
+      "content": {
+        "same_semantics": "declared observations and replayable test outcomes",
+        "worlds": [
+          {
+            "carrier": "black-box observation",
+            "environment": "current experiment",
+            "observations": {
+              "T_OUTPUT": "pattern_A",
+              "T_RENAME": "unchanged"
+            },
+            "world_id": "W_OBS"
+          }
+        ]
+      },
+      "position": "D",
+      "provenance": [
+        "scenario:plural-incomparable-essences"
+      ],
+      "record_id": "d-fd3e3ca2d250a764f025",
+      "status": "active"
+    },
+    {
+      "content": {
+        "contrasts": [],
+        "different_semantics": "candidate disagreements, consequential contrasts, failures, and preserved residuals",
+        "failed_candidates": [],
+        "residual_ids": [
+          "R_UNDERDETERMINATION"
+        ]
+      },
+      "position": "I",
+      "provenance": [
+        "evaluation:plural-incomparable-essences"
+      ],
+      "record_id": "i-072a184861e34d2729bd",
+      "status": "active"
+    },
+    {
+      "content": {
+        "complete_semantics": "locally certified causal-generative essence candidates within the declared world family",
+        "local_status": "LOCAL_ESSENCE_CERTIFIED",
+        "selected_candidates": [
+          {
+            "candidate_id": "E_DYNAMICAL",
+            "components": [
+              "attractor_relation"
+            ],
+            "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE"
+          },
+          {
+            "candidate_id": "E_SYMBOLIC",
+            "components": [
+              "rewrite_rule"
+            ],
+            "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE"
+          }
+        ],
+        "ultimate_status": "ULTIMATE_ESSENCE_NOT_ESTABLISHED"
+      },
+      "position": "K",
+      "provenance": [
+        "essence-evaluation:plural-incomparable-essences"
+      ],
+      "record_id": "k-cb2f2dbdf8d8f90ef330",
+      "status": "active"
+    },
+    {
+      "content": {
+        "constraints": [
+          {
+            "constraint_id": "V_PLURALITY",
+            "default_status": "satisfied",
+            "description": "retain observationally equivalent non-isomorphic candidates until a discriminating probe exists",
+            "hard": true
+          }
+        ],
+        "forbidden_inferences": [
+          "dynamical representation is the unique ontology",
+          "symbolic representation is the unique ontology"
+        ],
+        "non_aggregation": true,
+        "value_information": "compression may not erase harm, permission, provenance, refusal, or ontological residuals"
+      },
+      "position": "W",
+      "provenance": [
+        "purpose:plural-model-team"
+      ],
+      "record_id": "w-313a9377405d2ee81525",
+      "status": "active"
+    },
+    {
+      "content": {
+        "automatic_external_action_authority": 0,
+        "input_output": {
+          "input": "declared observations, worlds, tests, candidates, constraints, and residuals",
+          "output": "bounded essence certificate, lattice, residual frontier, and causal handoff"
+        },
+        "next_action": "design a path-sensitive intervention that distinguishes the two mechanisms",
+        "purpose_contract": {
+          "automatic_external_action_authority": 0,
+          "lease": "offline analysis",
+          "objective": "avoid forcing one ontology under underdetermination",
+          "owner": "plural-model-team"
+        }
+      },
+      "position": "P",
+      "provenance": [
+        "scenario:plural-incomparable-essences"
+      ],
+      "record_id": "p-6973c7bff3e60649517c",
+      "status": "active"
+    }
+  ],
+  "routes": [
+    {
+      "generated_content": {
+        "operation": "differentiate observations through candidate comparison"
+      },
+      "route_id": "route-7dcb7336e7e3a622c6c3",
+      "route_type": "D->I",
+      "source_record_id": "d-fd3e3ca2d250a764f025",
+      "target_record_id": "i-072a184861e34d2729bd"
+    },
+    {
+      "generated_content": {
+        "operation": "retain only candidates surviving falsification and ablation"
+      },
+      "route_id": "route-6f094ab8981174d1d95d",
+      "route_type": "I->K",
+      "source_record_id": "i-072a184861e34d2729bd",
+      "target_record_id": "k-cb2f2dbdf8d8f90ef330"
+    },
+    {
+      "generated_content": {
+        "operation": "bind value and permission constraints into the executable purpose"
+      },
+      "route_id": "route-f3763715f2140425e945",
+      "route_type": "W->P",
+      "source_record_id": "w-313a9377405d2ee81525",
+      "target_record_id": "p-6973c7bff3e60649517c"
+    },
+    {
+      "generated_content": {
+        "operation": "request the next discriminating observation"
+      },
+      "route_id": "route-f4bb361d7606c6dcbbcc",
+      "route_type": "P->D",
+      "source_record_id": "p-6973c7bff3e60649517c",
+      "target_record_id": "d-fd3e3ca2d250a764f025"
+    },
+    {
+      "generated_content": {
+        "operation": "convert local essence into a bounded next-step contract"
+      },
+      "route_id": "route-fd95744edcb2a7581a0d",
+      "route_type": "K->P",
+      "source_record_id": "k-cb2f2dbdf8d8f90ef330",
+      "target_record_id": "p-6973c7bff3e60649517c"
+    },
+    {
+      "generated_content": {
+        "operation": "reverse-regenerate selected consequences from the bounded essence"
+      },
+      "route_id": "route-a5f03d1b2525c402c965",
+      "route_type": "P->K",
+      "source_record_id": "p-6973c7bff3e60649517c",
+      "target_record_id": "k-cb2f2dbdf8d8f90ef330"
+    },
+    {
+      "generated_content": {
+        "operation": "register regenerated consequences as explicitly checked sameness"
+      },
+      "route_id": "route-223972cafbe0d531e113",
+      "route_type": "K->D",
+      "source_record_id": "k-cb2f2dbdf8d8f90ef330",
+      "target_record_id": "d-fd3e3ca2d250a764f025"
+    },
+    {
+      "generated_content": {
+        "operation": "turn unresolved differences into successor obligations"
+      },
+      "route_id": "route-585a6cb2366f7ccb1fe8",
+      "route_type": "I->P",
+      "source_record_id": "i-072a184861e34d2729bd",
+      "target_record_id": "p-6973c7bff3e60649517c"
+    },
+    {
+      "generated_content": {
+        "operation": "allow new evidence to revise or cancel the current purpose"
+      },
+      "route_id": "route-0cc84b596b652422d6c0",
+      "route_type": "D->P",
+      "source_record_id": "d-fd3e3ca2d250a764f025",
+      "target_record_id": "p-6973c7bff3e60649517c"
+    },
+    {
+      "generated_content": {
+        "operation": "reopen a causal closure when consequence or permission changes"
+      },
+      "route_id": "route-7b7bf8aa9c5ab8ae575f",
+      "route_type": "W->K",
+      "source_record_id": "w-313a9377405d2ee81525",
+      "target_record_id": "k-cb2f2dbdf8d8f90ef330"
+    }
+  ],
+  "supported_route_types": [
+    "D->D",
+    "D->I",
+    "D->K",
+    "D->W",
+    "D->P",
+    "I->D",
+    "I->I",
+    "I->K",
+    "I->W",
+    "I->P",
+    "K->D",
+    "K->I",
+    "K->K",
+    "K->W",
+    "K->P",
+    "W->D",
+    "W->I",
+    "W->K",
+    "W->W",
+    "W->P",
+    "P->D",
+    "P->I",
+    "P->K",
+    "P->W",
+    "P->P"
+  ]
+}

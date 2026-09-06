@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/dikwp-essence-omega/semantic-record.schema.json",
+  "title": "DIKWP Native Semantic Record",
+  "type": "object",
+  "required": ["position", "content", "provenance", "status", "record_id"],
+  "properties": {
+    "position": {"enum": ["D", "I", "K", "W", "P"]},
+    "content": {"type": "object"},
+    "provenance": {"type": "array", "items": {"type": "string"}},
+    "status": {"enum": ["active", "contested", "superseded", "retired"]},
+    "record_id": {"type": "string"}
+  },
+  "additionalProperties": false
+}

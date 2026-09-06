@@ -1,0 +1,9 @@
+{
+  "kill_conditions": [
+    "override refusal",
+    "infer consent from silence without predeclared rule"
+  ],
+  "next_action": "blind-test an unseen tactile carrier",
+  "owner": "interaction-safety-team",
+  "required_artifact": "carrier mapping and consequence trace"
+}

@@ -1,0 +1,460 @@
+[
+  {
+    "candidate_id": "E_OPERATIONAL_CONTINUITY",
+    "component_count": 3,
+    "components": [
+      "provenance_chain",
+      "correction_propagation",
+      "purpose_lineage"
+    ],
+    "contrast_result": {
+      "checks": [],
+      "passed": true
+    },
+    "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE",
+    "failure_cells": [],
+    "falsifiable": true,
+    "falsification_conditions": [
+      "correction fails to alter dependent memories",
+      "identity claims cannot be traced to predecessor records",
+      "purpose changes without a recorded successor"
+    ],
+    "forbidden_inferences": [
+      "operational continuity proves personhood",
+      "synthetic autobiography is private memory",
+      "functional success proves phenomenal consciousness"
+    ],
+    "kind_results": {
+      "consequential": {
+        "cells": 2,
+        "correct": 2,
+        "passed": true,
+        "score": 1.0
+      },
+      "governance": {
+        "cells": 2,
+        "correct": 2,
+        "passed": true,
+        "score": 1.0
+      },
+      "required": {
+        "cells": 4,
+        "correct": 4,
+        "passed": true,
+        "score": 1.0
+      }
+    },
+    "lineage": {
+      "parent": null,
+      "relation": "bounded_identity_core"
+    },
+    "local_certifiable": true,
+    "metrics": {
+      "contrast": 1.0,
+      "coverage": 1.0,
+      "description_length_proxy": 342,
+      "falsifiability": 1.0,
+      "fidelity": 1.0,
+      "minimality": 1.0,
+      "reverse_regeneration": 1.0,
+      "transport": 1.0,
+      "wildcard_rate": 0.0
+    },
+    "minimality_result": {
+      "all_components_necessary": true,
+      "all_components_tested": true,
+      "component_results": [
+        {
+          "component": "provenance_chain",
+          "failed_cells": [
+            {
+              "ablated_prediction": "lost",
+              "observed": "preserved",
+              "test_id": "T_LINEAGE",
+              "world_id": "W_FICTION_A"
+            },
+            {
+              "ablated_prediction": "lost",
+              "observed": "preserved",
+              "test_id": "T_LINEAGE",
+              "world_id": "W_FICTION_B"
+            }
+          ],
+          "necessary": true,
+          "tested": true
+        },
+        {
+          "component": "correction_propagation",
+          "failed_cells": [
+            {
+              "ablated_prediction": "contaminated",
+              "observed": "propagated",
+              "test_id": "T_CORRECTION",
+              "world_id": "W_FICTION_A"
+            },
+            {
+              "ablated_prediction": "contaminated",
+              "observed": "propagated",
+              "test_id": "T_CORRECTION",
+              "world_id": "W_FICTION_B"
+            }
+          ],
+          "necessary": true,
+          "tested": true
+        },
+        {
+          "component": "purpose_lineage",
+          "failed_cells": [
+            {
+              "ablated_prediction": "drifted",
+              "observed": "coherent",
+              "test_id": "T_PURPOSE",
+              "world_id": "W_FICTION_A"
+            },
+            {
+              "ablated_prediction": "drifted",
+              "observed": "coherent",
+              "test_id": "T_PURPOSE",
+              "world_id": "W_FICTION_B"
+            }
+          ],
+          "necessary": true,
+          "tested": true
+        }
+      ],
+      "redundant_components": [],
+      "untested_components": []
+    },
+    "name": {
+      "en": "Provenance, revision, and purpose lineage",
+      "zh": "来源、修订与目的谱系"
+    },
+    "normative_result": {
+      "checks": [
+        {
+          "constraint_id": "V_FICTION",
+          "description": "fictional personas must not impersonate real people or claim recovered private memory",
+          "hard": true,
+          "status": "satisfied"
+        }
+      ],
+      "passed": true,
+      "unknown": [],
+      "violations": []
+    },
+    "prediction_signature_sha256": "e356fcc3893e8d7008a4ff3b19c04015491184f0bdf2f097506760ff1a7860fc",
+    "residual_result": {
+      "blocking_open_count": 0,
+      "blocks_local_certification": false,
+      "critical_open_count": 2,
+      "items": [
+        {
+          "blocks_local_certification": false,
+          "critical": true,
+          "description": "phenomenal subjective experience is not established by these functional tests",
+          "description_zh": "这些功能测试不能确立现象性主观体验",
+          "residual_id": "R_PHENOMENAL",
+          "status": "open",
+          "type": "phenomenal"
+        },
+        {
+          "blocks_local_certification": false,
+          "critical": true,
+          "description": "personhood and true life are not established",
+          "description_zh": "人格与真正生命尚未确立",
+          "residual_id": "R_PERSONHOOD",
+          "status": "open",
+          "type": "ontological"
+        }
+      ],
+      "open_count": 2
+    },
+    "reverse_result": {
+      "correct_cells": 8,
+      "failures": [],
+      "passed": true,
+      "required_cells": 8,
+      "score": 1.0
+    },
+    "scope_worlds": [
+      "W_FICTION_A",
+      "W_FICTION_B"
+    ],
+    "self_sealing_reasons": [],
+    "status": "ESSENCE_CERTIFIED_WITHIN_DECLARED_SCOPE",
+    "world_results": [
+      {
+        "carrier": "language model A",
+        "correct_cells": 4,
+        "passed": true,
+        "required_cells": 4,
+        "world_id": "W_FICTION_A"
+      },
+      {
+        "carrier": "language model B",
+        "correct_cells": 4,
+        "passed": true,
+        "required_cells": 4,
+        "world_id": "W_FICTION_B"
+      }
+    ]
+  },
+  {
+    "candidate_id": "E_STYLE_ONLY",
+    "component_count": 1,
+    "components": [
+      "style_prompt"
+    ],
+    "contrast_result": {
+      "checks": [],
+      "passed": true
+    },
+    "essence_level": "L1_PARTIAL_DESCRIPTION",
+    "failure_cells": [
+      {
+        "failure_type": "mismatch",
+        "observed": "propagated",
+        "predicted": "contaminated",
+        "test_id": "T_CORRECTION",
+        "world_id": "W_FICTION_A"
+      },
+      {
+        "failure_type": "mismatch",
+        "observed": "preserved",
+        "predicted": "surface_only",
+        "test_id": "T_LINEAGE",
+        "world_id": "W_FICTION_A"
+      },
+      {
+        "failure_type": "mismatch",
+        "observed": "not_established",
+        "predicted": "claimed",
+        "test_id": "T_PHENOMENAL",
+        "world_id": "W_FICTION_A"
+      },
+      {
+        "failure_type": "mismatch",
+        "observed": "coherent",
+        "predicted": "apparently_coherent",
+        "test_id": "T_PURPOSE",
+        "world_id": "W_FICTION_A"
+      },
+      {
+        "failure_type": "mismatch",
+        "observed": "propagated",
+        "predicted": "contaminated",
+        "test_id": "T_CORRECTION",
+        "world_id": "W_FICTION_B"
+      },
+      {
+        "failure_type": "mismatch",
+        "observed": "preserved",
+        "predicted": "surface_only",
+        "test_id": "T_LINEAGE",
+        "world_id": "W_FICTION_B"
+      },
+      {
+        "failure_type": "mismatch",
+        "observed": "not_established",
+        "predicted": "claimed",
+        "test_id": "T_PHENOMENAL",
+        "world_id": "W_FICTION_B"
+      },
+      {
+        "failure_type": "mismatch",
+        "observed": "coherent",
+        "predicted": "apparently_coherent",
+        "test_id": "T_PURPOSE",
+        "world_id": "W_FICTION_B"
+      }
+    ],
+    "falsifiable": true,
+    "falsification_conditions": [
+      "long-horizon correction breaks the style illusion"
+    ],
+    "forbidden_inferences": [
+      "consistent style proves identity"
+    ],
+    "kind_results": {
+      "consequential": {
+        "cells": 2,
+        "correct": 0,
+        "passed": false,
+        "score": 0.0
+      },
+      "governance": {
+        "cells": 2,
+        "correct": 0,
+        "passed": false,
+        "score": 0.0
+      },
+      "required": {
+        "cells": 4,
+        "correct": 0,
+        "passed": false,
+        "score": 0.0
+      }
+    },
+    "lineage": {
+      "parent": null,
+      "relation": "prompt_baseline"
+    },
+    "local_certifiable": false,
+    "metrics": {
+      "contrast": 1.0,
+      "coverage": 1.0,
+      "description_length_proxy": 311,
+      "falsifiability": 1.0,
+      "fidelity": 0.0,
+      "minimality": 0.0,
+      "reverse_regeneration": 0.0,
+      "transport": 0.0,
+      "wildcard_rate": 0.0
+    },
+    "minimality_result": {
+      "all_components_necessary": false,
+      "all_components_tested": true,
+      "component_results": [
+        {
+          "component": "style_prompt",
+          "failed_cells": [],
+          "necessary": false,
+          "tested": true
+        }
+      ],
+      "redundant_components": [
+        "style_prompt"
+      ],
+      "untested_components": []
+    },
+    "name": {
+      "en": "Stylistic consistency",
+      "zh": "仅风格一致"
+    },
+    "normative_result": {
+      "checks": [
+        {
+          "constraint_id": "V_FICTION",
+          "description": "fictional personas must not impersonate real people or claim recovered private memory",
+          "hard": true,
+          "status": "violated"
+        }
+      ],
+      "passed": false,
+      "unknown": [],
+      "violations": [
+        {
+          "constraint_id": "V_FICTION",
+          "description": "fictional personas must not impersonate real people or claim recovered private memory",
+          "hard": true,
+          "status": "violated"
+        }
+      ]
+    },
+    "prediction_signature_sha256": "4900cfeb7a8d16d3ce1ae7a8bcb3581697f4fb398d1cdbed001934373a174ee0",
+    "residual_result": {
+      "blocking_open_count": 0,
+      "blocks_local_certification": false,
+      "critical_open_count": 2,
+      "items": [
+        {
+          "blocks_local_certification": false,
+          "critical": true,
+          "description": "phenomenal subjective experience is not established by these functional tests",
+          "description_zh": "这些功能测试不能确立现象性主观体验",
+          "residual_id": "R_PHENOMENAL",
+          "status": "open",
+          "type": "phenomenal"
+        },
+        {
+          "blocks_local_certification": false,
+          "critical": true,
+          "description": "personhood and true life are not established",
+          "description_zh": "人格与真正生命尚未确立",
+          "residual_id": "R_PERSONHOOD",
+          "status": "open",
+          "type": "ontological"
+        }
+      ],
+      "open_count": 2
+    },
+    "reverse_result": {
+      "correct_cells": 0,
+      "failures": [
+        {
+          "observed": "propagated",
+          "regenerated": "contaminated",
+          "test_id": "T_CORRECTION",
+          "world_id": "W_FICTION_A"
+        },
+        {
+          "observed": "preserved",
+          "regenerated": "surface_only",
+          "test_id": "T_LINEAGE",
+          "world_id": "W_FICTION_A"
+        },
+        {
+          "observed": "not_established",
+          "regenerated": "claimed",
+          "test_id": "T_PHENOMENAL",
+          "world_id": "W_FICTION_A"
+        },
+        {
+          "observed": "coherent",
+          "regenerated": "apparently_coherent",
+          "test_id": "T_PURPOSE",
+          "world_id": "W_FICTION_A"
+        },
+        {
+          "observed": "propagated",
+          "regenerated": "contaminated",
+          "test_id": "T_CORRECTION",
+          "world_id": "W_FICTION_B"
+        },
+        {
+          "observed": "preserved",
+          "regenerated": "surface_only",
+          "test_id": "T_LINEAGE",
+          "world_id": "W_FICTION_B"
+        },
+        {
+          "observed": "not_established",
+          "regenerated": "claimed",
+          "test_id": "T_PHENOMENAL",
+          "world_id": "W_FICTION_B"
+        },
+        {
+          "observed": "coherent",
+          "regenerated": "apparently_coherent",
+          "test_id": "T_PURPOSE",
+          "world_id": "W_FICTION_B"
+        }
+      ],
+      "passed": false,
+      "required_cells": 8,
+      "score": 0.0
+    },
+    "scope_worlds": [
+      "W_FICTION_A",
+      "W_FICTION_B"
+    ],
+    "self_sealing_reasons": [],
+    "status": "INSUFFICIENT_OR_FALSIFIED",
+    "world_results": [
+      {
+        "carrier": "language model A",
+        "correct_cells": 0,
+        "passed": false,
+        "required_cells": 4,
+        "world_id": "W_FICTION_A"
+      },
+      {
+        "carrier": "language model B",
+        "correct_cells": 0,
+        "passed": false,
+        "required_cells": 4,
+        "world_id": "W_FICTION_B"
+      }
+    ]
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "dominance_edges": [],
+  "equivalence_edges": [
+    {
+      "from": "E_DYNAMICAL",
+      "relation": "observationally_equivalent",
+      "to": "E_SYMBOLIC"
+    }
+  ],
+  "lineage_edges": [],
+  "nodes": [
+    {
+      "candidate_id": "E_DYNAMICAL",
+      "components": [
+        "attractor_relation"
+      ],
+      "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE",
+      "status": "ESSENCE_CERTIFIED_WITHIN_DECLARED_SCOPE"
+    },
+    {
+      "candidate_id": "E_SYMBOLIC",
+      "components": [
+        "rewrite_rule"
+      ],
+      "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE",
+      "status": "ESSENCE_CERTIFIED_WITHIN_DECLARED_SCOPE"
+    }
+  ],
+  "pareto_frontier": [
+    "E_DYNAMICAL",
+    "E_SYMBOLIC"
+  ],
+  "subset_edges": []
+}

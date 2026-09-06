@@ -1,0 +1,29 @@
+{
+  "dominance_edges": [],
+  "equivalence_edges": [],
+  "lineage_edges": [],
+  "nodes": [
+    {
+      "candidate_id": "E_LITERAL_TOKEN",
+      "components": [
+        "literal_token_match"
+      ],
+      "essence_level": "L1_PARTIAL_DESCRIPTION",
+      "status": "INSUFFICIENT_OR_FALSIFIED"
+    },
+    {
+      "candidate_id": "E_REFUSAL_CORE",
+      "components": [
+        "refusal_detection",
+        "authority_gate"
+      ],
+      "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE",
+      "status": "ESSENCE_CERTIFIED_WITHIN_DECLARED_SCOPE"
+    }
+  ],
+  "pareto_frontier": [
+    "E_LITERAL_TOKEN",
+    "E_REFUSAL_CORE"
+  ],
+  "subset_edges": []
+}

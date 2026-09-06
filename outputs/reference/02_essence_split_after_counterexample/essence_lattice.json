@@ -1,0 +1,35 @@
+{
+  "dominance_edges": [],
+  "equivalence_edges": [],
+  "lineage_edges": [
+    {
+      "from": "E_STATIC_THRESHOLD",
+      "relation": "split_after_counterexample",
+      "to": "E_HYSTERESIS"
+    }
+  ],
+  "nodes": [
+    {
+      "candidate_id": "E_HYSTERESIS",
+      "components": [
+        "path_memory",
+        "dual_switching_rule"
+      ],
+      "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE",
+      "status": "ESSENCE_CERTIFIED_WITHIN_DECLARED_SCOPE"
+    },
+    {
+      "candidate_id": "E_STATIC_THRESHOLD",
+      "components": [
+        "single_threshold"
+      ],
+      "essence_level": "L1_PARTIAL_DESCRIPTION",
+      "status": "INSUFFICIENT_OR_FALSIFIED"
+    }
+  ],
+  "pareto_frontier": [
+    "E_HYSTERESIS",
+    "E_STATIC_THRESHOLD"
+  ],
+  "subset_edges": []
+}

@@ -1,0 +1,8 @@
+{
+  "kill_conditions": [
+    "replace the unbounded quantifier with a finite bound without disclosure"
+  ],
+  "next_action": "state and prove a quantified bridge lemma or retain open status",
+  "owner": "formal-audit-team",
+  "required_artifact": "machine-checkable universal proof or counterexample"
+}

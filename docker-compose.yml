@@ -1,0 +1,6 @@
+services:
+  essence-omega:
+    build: .
+    command: ["demo", "--output", "/app/outputs/docker-demo"]
+    volumes:
+      - ./outputs:/app/outputs

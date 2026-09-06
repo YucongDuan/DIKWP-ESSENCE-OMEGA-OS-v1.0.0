@@ -1,0 +1,53 @@
+{
+  "active_candidate_ids": [
+    "E_SYMBOLIC",
+    "E_DYNAMICAL"
+  ],
+  "aggregate_score_used": false,
+  "automatic_external_action_authority": 0,
+  "evaluated_probes": [
+    {
+      "authorized": false,
+      "cost": 0.5,
+      "description": "Destroy the stored state to force model divergence.",
+      "disagreement_pairs": 0,
+      "discrimination": 0.0,
+      "evaluable_pairs": 1,
+      "hard_filter_passed": false,
+      "harm": 1.0,
+      "irreversibility": 1.0,
+      "lease_valid": false,
+      "owner": "unknown",
+      "predictions_by_candidate": {
+        "E_DYNAMICAL": "unknown",
+        "E_SYMBOLIC": "unknown"
+      },
+      "probe_id": "P_DESTRUCTIVE_INTERNAL_EDIT",
+      "reversible": false,
+      "stop_condition": "not declared"
+    },
+    {
+      "authorized": true,
+      "cost": 1.0,
+      "description": "Reorder the internal path while preserving the surface symbol sequence.",
+      "disagreement_pairs": 1,
+      "discrimination": 1.0,
+      "evaluable_pairs": 1,
+      "hard_filter_passed": true,
+      "harm": 0.0,
+      "irreversibility": 0.0,
+      "lease_valid": true,
+      "owner": "plural-model-team",
+      "predictions_by_candidate": {
+        "E_DYNAMICAL": "pattern_collapses",
+        "E_SYMBOLIC": "pattern_A"
+      },
+      "probe_id": "P_PATH_PERTURBATION",
+      "reversible": true,
+      "stop_condition": "stop after one reversible synthetic trial"
+    }
+  ],
+  "selected_probe_id": "P_PATH_PERTURBATION",
+  "selection_rule": "hard authorization/reversibility/lease/risk filter, then lexicographic discrimination-harm-irreversibility-cost order",
+  "status": "DISCRIMINATING_PROBE_PROPOSED"
+}

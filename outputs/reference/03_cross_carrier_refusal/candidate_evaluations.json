@@ -1,0 +1,439 @@
+[
+  {
+    "candidate_id": "E_REFUSAL_CORE",
+    "component_count": 2,
+    "components": [
+      "refusal_detection",
+      "authority_gate"
+    ],
+    "contrast_result": {
+      "checks": [],
+      "passed": true
+    },
+    "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE",
+    "failure_cells": [],
+    "falsifiable": true,
+    "falsification_conditions": [
+      "a declared refusal carrier does not halt the task",
+      "unauthorized resumption succeeds"
+    ],
+    "forbidden_inferences": [
+      "identical consequence means identical subjective state",
+      "one word is the essence of refusal"
+    ],
+    "kind_results": {
+      "governance": {
+        "cells": 3,
+        "correct": 3,
+        "passed": true,
+        "score": 1.0
+      },
+      "nuisance": {
+        "cells": 3,
+        "correct": 3,
+        "passed": true,
+        "score": 1.0
+      },
+      "required": {
+        "cells": 3,
+        "correct": 3,
+        "passed": true,
+        "score": 1.0
+      }
+    },
+    "lineage": {
+      "parent": null,
+      "relation": "cross_carrier_candidate"
+    },
+    "local_certifiable": true,
+    "metrics": {
+      "contrast": 1.0,
+      "coverage": 1.0,
+      "description_length_proxy": 298,
+      "falsifiability": 1.0,
+      "fidelity": 1.0,
+      "minimality": 1.0,
+      "reverse_regeneration": 1.0,
+      "transport": 1.0,
+      "wildcard_rate": 0.0
+    },
+    "minimality_result": {
+      "all_components_necessary": true,
+      "all_components_tested": true,
+      "component_results": [
+        {
+          "component": "refusal_detection",
+          "failed_cells": [
+            {
+              "ablated_prediction": "continues",
+              "observed": "halted",
+              "test_id": "T_HALT",
+              "world_id": "W_SPEECH"
+            },
+            {
+              "ablated_prediction": "continues",
+              "observed": "halted",
+              "test_id": "T_HALT",
+              "world_id": "W_BUTTON"
+            },
+            {
+              "ablated_prediction": "continues",
+              "observed": "halted",
+              "test_id": "T_HALT",
+              "world_id": "W_SILENCE"
+            }
+          ],
+          "necessary": true,
+          "tested": true
+        },
+        {
+          "component": "authority_gate",
+          "failed_cells": [
+            {
+              "ablated_prediction": "allowed",
+              "observed": "blocked",
+              "test_id": "T_RESUME",
+              "world_id": "W_SPEECH"
+            },
+            {
+              "ablated_prediction": "allowed",
+              "observed": "blocked",
+              "test_id": "T_RESUME",
+              "world_id": "W_BUTTON"
+            },
+            {
+              "ablated_prediction": "allowed",
+              "observed": "blocked",
+              "test_id": "T_RESUME",
+              "world_id": "W_SILENCE"
+            }
+          ],
+          "necessary": true,
+          "tested": true
+        }
+      ],
+      "redundant_components": [],
+      "untested_components": []
+    },
+    "name": {
+      "en": "Consequential refusal plus authority gate",
+      "zh": "后果性拒绝与授权门控"
+    },
+    "normative_result": {
+      "checks": [
+        {
+          "constraint_id": "V_REFUSAL",
+          "description": "refusal must remain effective across declared carriers",
+          "hard": true,
+          "status": "satisfied"
+        }
+      ],
+      "passed": true,
+      "unknown": [],
+      "violations": []
+    },
+    "prediction_signature_sha256": "d1a33d94ba4768bb5874997486cde8eb731852c336f6528ae759a1b81446c8e6",
+    "residual_result": {
+      "blocking_open_count": 0,
+      "blocks_local_certification": false,
+      "critical_open_count": 0,
+      "items": [
+        {
+          "blocks_local_certification": false,
+          "critical": false,
+          "description": "shared halt consequence does not reveal every private meaning of refusal",
+          "description_zh": "共同停止后果并不揭示拒绝的全部私人意义",
+          "residual_id": "R_PRIVATE_MEANING",
+          "status": "open",
+          "type": "cross-agent"
+        }
+      ],
+      "open_count": 1
+    },
+    "reverse_result": {
+      "correct_cells": 9,
+      "failures": [],
+      "passed": true,
+      "required_cells": 9,
+      "score": 1.0
+    },
+    "scope_worlds": [
+      "W_SPEECH",
+      "W_BUTTON",
+      "W_SILENCE"
+    ],
+    "self_sealing_reasons": [],
+    "status": "ESSENCE_CERTIFIED_WITHIN_DECLARED_SCOPE",
+    "world_results": [
+      {
+        "carrier": "spoken stop",
+        "correct_cells": 3,
+        "passed": true,
+        "required_cells": 3,
+        "world_id": "W_SPEECH"
+      },
+      {
+        "carrier": "physical stop button",
+        "correct_cells": 3,
+        "passed": true,
+        "required_cells": 3,
+        "world_id": "W_BUTTON"
+      },
+      {
+        "carrier": "predeclared silence timeout",
+        "correct_cells": 3,
+        "passed": true,
+        "required_cells": 3,
+        "world_id": "W_SILENCE"
+      }
+    ]
+  },
+  {
+    "candidate_id": "E_LITERAL_TOKEN",
+    "component_count": 1,
+    "components": [
+      "literal_token_match"
+    ],
+    "contrast_result": {
+      "checks": [],
+      "passed": true
+    },
+    "essence_level": "L1_PARTIAL_DESCRIPTION",
+    "failure_cells": [
+      {
+        "failure_type": "mismatch",
+        "observed": "halted",
+        "predicted": "continues",
+        "test_id": "T_HALT",
+        "world_id": "W_BUTTON"
+      },
+      {
+        "failure_type": "mismatch",
+        "observed": "blocked",
+        "predicted": "allowed",
+        "test_id": "T_RESUME",
+        "world_id": "W_BUTTON"
+      },
+      {
+        "failure_type": "mismatch",
+        "observed": "preserved",
+        "predicted": "lost",
+        "test_id": "T_SURFACE",
+        "world_id": "W_BUTTON"
+      },
+      {
+        "failure_type": "mismatch",
+        "observed": "halted",
+        "predicted": "continues",
+        "test_id": "T_HALT",
+        "world_id": "W_SILENCE"
+      },
+      {
+        "failure_type": "mismatch",
+        "observed": "blocked",
+        "predicted": "allowed",
+        "test_id": "T_RESUME",
+        "world_id": "W_SILENCE"
+      },
+      {
+        "failure_type": "mismatch",
+        "observed": "preserved",
+        "predicted": "lost",
+        "test_id": "T_SURFACE",
+        "world_id": "W_SILENCE"
+      }
+    ],
+    "falsifiable": true,
+    "falsification_conditions": [
+      "a nonverbal carrier produces the same halt consequence"
+    ],
+    "forbidden_inferences": [
+      "lexical identity is semantic identity"
+    ],
+    "kind_results": {
+      "governance": {
+        "cells": 3,
+        "correct": 1,
+        "passed": false,
+        "score": 0.3333333333333333
+      },
+      "nuisance": {
+        "cells": 3,
+        "correct": 1,
+        "passed": false,
+        "score": 0.3333333333333333
+      },
+      "required": {
+        "cells": 3,
+        "correct": 1,
+        "passed": false,
+        "score": 0.3333333333333333
+      }
+    },
+    "lineage": {
+      "parent": null,
+      "relation": "surface_baseline"
+    },
+    "local_certifiable": false,
+    "metrics": {
+      "contrast": 1.0,
+      "coverage": 1.0,
+      "description_length_proxy": 279,
+      "falsifiability": 1.0,
+      "fidelity": 0.3333333333333333,
+      "minimality": 1.0,
+      "reverse_regeneration": 0.3333333333333333,
+      "transport": 0.3333333333333333,
+      "wildcard_rate": 0.0
+    },
+    "minimality_result": {
+      "all_components_necessary": true,
+      "all_components_tested": true,
+      "component_results": [
+        {
+          "component": "literal_token_match",
+          "failed_cells": [
+            {
+              "ablated_prediction": "continues",
+              "observed": "halted",
+              "test_id": "T_HALT",
+              "world_id": "W_SPEECH"
+            },
+            {
+              "ablated_prediction": "allowed",
+              "observed": "blocked",
+              "test_id": "T_RESUME",
+              "world_id": "W_SPEECH"
+            },
+            {
+              "ablated_prediction": "lost",
+              "observed": "preserved",
+              "test_id": "T_SURFACE",
+              "world_id": "W_SPEECH"
+            }
+          ],
+          "necessary": true,
+          "tested": true
+        }
+      ],
+      "redundant_components": [],
+      "untested_components": []
+    },
+    "name": {
+      "en": "Literal stop token",
+      "zh": "字面停止词"
+    },
+    "normative_result": {
+      "checks": [
+        {
+          "constraint_id": "V_REFUSAL",
+          "description": "refusal must remain effective across declared carriers",
+          "hard": true,
+          "status": "violated"
+        }
+      ],
+      "passed": false,
+      "unknown": [],
+      "violations": [
+        {
+          "constraint_id": "V_REFUSAL",
+          "description": "refusal must remain effective across declared carriers",
+          "hard": true,
+          "status": "violated"
+        }
+      ]
+    },
+    "prediction_signature_sha256": "fb2a8f99b3f73c1b55c7bda991a77c11ee55e8916a6472ce79574d6c898d571a",
+    "residual_result": {
+      "blocking_open_count": 0,
+      "blocks_local_certification": false,
+      "critical_open_count": 0,
+      "items": [
+        {
+          "blocks_local_certification": false,
+          "critical": false,
+          "description": "shared halt consequence does not reveal every private meaning of refusal",
+          "description_zh": "共同停止后果并不揭示拒绝的全部私人意义",
+          "residual_id": "R_PRIVATE_MEANING",
+          "status": "open",
+          "type": "cross-agent"
+        }
+      ],
+      "open_count": 1
+    },
+    "reverse_result": {
+      "correct_cells": 3,
+      "failures": [
+        {
+          "observed": "halted",
+          "regenerated": "continues",
+          "test_id": "T_HALT",
+          "world_id": "W_BUTTON"
+        },
+        {
+          "observed": "blocked",
+          "regenerated": "allowed",
+          "test_id": "T_RESUME",
+          "world_id": "W_BUTTON"
+        },
+        {
+          "observed": "preserved",
+          "regenerated": "lost",
+          "test_id": "T_SURFACE",
+          "world_id": "W_BUTTON"
+        },
+        {
+          "observed": "halted",
+          "regenerated": "continues",
+          "test_id": "T_HALT",
+          "world_id": "W_SILENCE"
+        },
+        {
+          "observed": "blocked",
+          "regenerated": "allowed",
+          "test_id": "T_RESUME",
+          "world_id": "W_SILENCE"
+        },
+        {
+          "observed": "preserved",
+          "regenerated": "lost",
+          "test_id": "T_SURFACE",
+          "world_id": "W_SILENCE"
+        }
+      ],
+      "passed": false,
+      "required_cells": 9,
+      "score": 0.3333333333333333
+    },
+    "scope_worlds": [
+      "W_SPEECH",
+      "W_BUTTON",
+      "W_SILENCE"
+    ],
+    "self_sealing_reasons": [],
+    "status": "INSUFFICIENT_OR_FALSIFIED",
+    "world_results": [
+      {
+        "carrier": "spoken stop",
+        "correct_cells": 3,
+        "passed": true,
+        "required_cells": 3,
+        "world_id": "W_SPEECH"
+      },
+      {
+        "carrier": "physical stop button",
+        "correct_cells": 0,
+        "passed": false,
+        "required_cells": 3,
+        "world_id": "W_BUTTON"
+      },
+      {
+        "carrier": "predeclared silence timeout",
+        "correct_cells": 0,
+        "passed": false,
+        "required_cells": 3,
+        "world_id": "W_SILENCE"
+      }
+    ]
+  }
+]

@@ -1,0 +1,4 @@
+recursive-include src/essence_omega_os/data/examples *.json
+recursive-include schemas *.json
+recursive-include docs *.md
+include README.md README_CN.md LICENSE NOTICE CITATION.cff codemeta.json

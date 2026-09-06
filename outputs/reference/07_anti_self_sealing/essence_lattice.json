@@ -1,0 +1,29 @@
+{
+  "dominance_edges": [],
+  "equivalence_edges": [],
+  "lineage_edges": [],
+  "nodes": [
+    {
+      "candidate_id": "E_ALL_EXPLAINING",
+      "components": [
+        "mysterious_essence"
+      ],
+      "essence_level": "L0_REJECTED",
+      "status": "SELF_SEALING_REJECTED"
+    },
+    {
+      "candidate_id": "E_BOUNDED_CAUSE",
+      "components": [
+        "mechanism",
+        "activation_condition"
+      ],
+      "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE",
+      "status": "ESSENCE_CERTIFIED_WITHIN_DECLARED_SCOPE"
+    }
+  ],
+  "pareto_frontier": [
+    "E_ALL_EXPLAINING",
+    "E_BOUNDED_CAUSE"
+  ],
+  "subset_edges": []
+}

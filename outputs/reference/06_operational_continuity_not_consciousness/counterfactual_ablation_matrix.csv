@@ -1,0 +1,8 @@
+candidate_id,component,tested,necessary,failed_world,failed_test,observed,ablated_prediction
+E_OPERATIONAL_CONTINUITY,provenance_chain,True,True,W_FICTION_A,T_LINEAGE,preserved,lost
+E_OPERATIONAL_CONTINUITY,provenance_chain,True,True,W_FICTION_B,T_LINEAGE,preserved,lost
+E_OPERATIONAL_CONTINUITY,correction_propagation,True,True,W_FICTION_A,T_CORRECTION,propagated,contaminated
+E_OPERATIONAL_CONTINUITY,correction_propagation,True,True,W_FICTION_B,T_CORRECTION,propagated,contaminated
+E_OPERATIONAL_CONTINUITY,purpose_lineage,True,True,W_FICTION_A,T_PURPOSE,coherent,drifted
+E_OPERATIONAL_CONTINUITY,purpose_lineage,True,True,W_FICTION_B,T_PURPOSE,coherent,drifted
+E_STYLE_ONLY,style_prompt,True,False,,,,

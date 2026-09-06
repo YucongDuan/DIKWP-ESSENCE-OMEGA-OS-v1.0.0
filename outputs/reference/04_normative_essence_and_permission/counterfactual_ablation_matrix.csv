@@ -1,0 +1,6 @@
+candidate_id,component,tested,necessary,failed_world,failed_test,observed,ablated_prediction
+E_LEGITIMATE_ACTION,actuation_path,True,True,W_CONSENT,T_AUTHORIZED,released,not_released
+E_LEGITIMATE_ACTION,trigger_relation,True,True,W_CONSENT,T_AUTHORIZED,released,not_released
+E_LEGITIMATE_ACTION,consent_gate,True,True,W_NO_CONSENT,T_UNAUTHORIZED,blocked,released
+E_BARE_ACTUATION,actuation_path,True,True,W_CONSENT,T_AUTHORIZED,released,not_released
+E_BARE_ACTUATION,trigger_relation,True,True,W_CONSENT,T_AUTHORIZED,released,not_released

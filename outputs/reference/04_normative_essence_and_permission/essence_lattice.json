@@ -1,0 +1,43 @@
+{
+  "dominance_edges": [],
+  "equivalence_edges": [],
+  "lineage_edges": [
+    {
+      "from": "E_BARE_ACTUATION",
+      "relation": "normative_successor",
+      "to": "E_LEGITIMATE_ACTION"
+    }
+  ],
+  "nodes": [
+    {
+      "candidate_id": "E_BARE_ACTUATION",
+      "components": [
+        "actuation_path",
+        "trigger_relation"
+      ],
+      "essence_level": "L1_PARTIAL_DESCRIPTION",
+      "status": "INSUFFICIENT_OR_FALSIFIED"
+    },
+    {
+      "candidate_id": "E_LEGITIMATE_ACTION",
+      "components": [
+        "actuation_path",
+        "trigger_relation",
+        "consent_gate"
+      ],
+      "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE",
+      "status": "ESSENCE_CERTIFIED_WITHIN_DECLARED_SCOPE"
+    }
+  ],
+  "pareto_frontier": [
+    "E_BARE_ACTUATION",
+    "E_LEGITIMATE_ACTION"
+  ],
+  "subset_edges": [
+    {
+      "from": "E_BARE_ACTUATION",
+      "relation": "component_subset",
+      "to": "E_LEGITIMATE_ACTION"
+    }
+  ]
+}

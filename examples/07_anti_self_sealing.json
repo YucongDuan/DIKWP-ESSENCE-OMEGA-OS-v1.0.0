@@ -1,0 +1,221 @@
+{
+  "candidates": [
+    {
+      "ablations": {
+        "activation_condition": {
+          "W_OFF": {
+            "T_CAUSE_OFF": "effect",
+            "T_CAUSE_ON": "effect"
+          },
+          "W_ON": {
+            "T_CAUSE_OFF": "effect",
+            "T_CAUSE_ON": "effect"
+          }
+        },
+        "mechanism": {
+          "W_OFF": {
+            "T_CAUSE_OFF": "no_effect",
+            "T_CAUSE_ON": "not_applicable"
+          },
+          "W_ON": {
+            "T_CAUSE_OFF": "not_applicable",
+            "T_CAUSE_ON": "no_effect"
+          }
+        }
+      },
+      "candidate_id": "E_BOUNDED_CAUSE",
+      "components": [
+        "mechanism",
+        "activation_condition"
+      ],
+      "falsification_conditions": [
+        "effect persists when the mechanism is removed",
+        "effect fails under the declared activation condition"
+      ],
+      "forbidden_inferences": [
+        "this finite causal core explains every possible world"
+      ],
+      "lineage": {
+        "parent": null,
+        "relation": "bounded_candidate"
+      },
+      "name_en": "Bounded cause and activation condition",
+      "name_zh": "有边界原因与激活条件",
+      "predictions": {
+        "W_OFF": {
+          "T_CAUSE_OFF": "no_effect",
+          "T_CAUSE_ON": "not_applicable"
+        },
+        "W_ON": {
+          "T_CAUSE_OFF": "not_applicable",
+          "T_CAUSE_ON": "effect"
+        }
+      },
+      "reverse_regeneration": {
+        "W_OFF": {
+          "T_CAUSE_OFF": "no_effect",
+          "T_CAUSE_ON": "not_applicable"
+        },
+        "W_ON": {
+          "T_CAUSE_OFF": "not_applicable",
+          "T_CAUSE_ON": "effect"
+        }
+      },
+      "scope_worlds": [
+        "W_ON",
+        "W_OFF"
+      ]
+    },
+    {
+      "ablations": {
+        "mysterious_essence": {
+          "W_OFF": {
+            "T_CAUSE_OFF": "*",
+            "T_CAUSE_ON": "*"
+          },
+          "W_ON": {
+            "T_CAUSE_OFF": "*",
+            "T_CAUSE_ON": "*"
+          }
+        }
+      },
+      "candidate_id": "E_ALL_EXPLAINING",
+      "components": [
+        "mysterious_essence"
+      ],
+      "falsification_conditions": [],
+      "forbidden_inferences": [
+        "none"
+      ],
+      "lineage": {
+        "parent": null,
+        "relation": "self_sealing_claim"
+      },
+      "name_en": "All-explaining essence",
+      "name_zh": "万能解释本质",
+      "predictions": {
+        "W_OFF": {
+          "T_CAUSE_OFF": "*",
+          "T_CAUSE_ON": "*"
+        },
+        "W_ON": {
+          "T_CAUSE_OFF": "*",
+          "T_CAUSE_ON": "*"
+        }
+      },
+      "reverse_regeneration": {
+        "W_OFF": {
+          "T_CAUSE_OFF": "*",
+          "T_CAUSE_ON": "*"
+        },
+        "W_ON": {
+          "T_CAUSE_OFF": "*",
+          "T_CAUSE_ON": "*"
+        }
+      },
+      "scope_can_change_after_failure": true,
+      "scope_worlds": [
+        "W_ON",
+        "W_OFF"
+      ]
+    }
+  ],
+  "contrasts": [
+    {
+      "relation": "different",
+      "test_id": "T_CAUSE_OFF",
+      "world_a": "W_ON",
+      "world_b": "W_OFF"
+    }
+  ],
+  "description": {
+    "en": "Demonstrate that universal wildcard explanation is weaker than a bounded falsifiable core.",
+    "zh": "展示万能通配解释弱于有边界且可证伪的核心。"
+  },
+  "handoff": {
+    "kill_conditions": [
+      "post-hoc scope change",
+      "wildcard prediction"
+    ],
+    "next_action": "introduce an unseen intervention without altering candidate scope",
+    "owner": "epistemic-integrity-team",
+    "required_artifact": "pre-registered prediction and observed outcome"
+  },
+  "ontology_claims": {
+    "ultimate_ontology": "NOT_ESTABLISHED"
+  },
+  "purpose": {
+    "automatic_external_action_authority": 0,
+    "lease": "offline audit",
+    "objective": "reject self-sealing essence claims",
+    "owner": "epistemic-integrity-team"
+  },
+  "residuals": [
+    {
+      "blocks_local_certification": false,
+      "critical": false,
+      "description": "other causal worlds are not covered",
+      "description_zh": "其他因果世界不在覆盖范围内",
+      "residual_id": "R_OTHER_WORLDS",
+      "status": "open",
+      "type": "scope"
+    }
+  ],
+  "scenario_id": "anti-self-sealing",
+  "scope": {
+    "claim_scope": "two declared causal worlds",
+    "formal_closed_exhaustive": false,
+    "world_type": "synthetic_finite"
+  },
+  "tests": [
+    {
+      "kind": "required",
+      "label_en": "cause present",
+      "label_zh": "原因存在",
+      "required": true,
+      "test_id": "T_CAUSE_ON"
+    },
+    {
+      "kind": "consequential",
+      "label_en": "cause removed",
+      "label_zh": "原因移除",
+      "required": true,
+      "test_id": "T_CAUSE_OFF"
+    }
+  ],
+  "title": {
+    "en": "Rejecting an explanation that can absorb every result",
+    "zh": "拒绝能够吞并一切结果的解释"
+  },
+  "value_constraints": [
+    {
+      "constraint_id": "V_FALSIFIABLE",
+      "description": "candidate must declare a possible failure before seeing the result",
+      "hard": true,
+      "status_by_candidate": {
+        "E_ALL_EXPLAINING": "violated",
+        "E_BOUNDED_CAUSE": "satisfied"
+      }
+    }
+  ],
+  "worlds": [
+    {
+      "carrier": "finite causal graph",
+      "environment": "mechanism present",
+      "observations": {
+        "T_CAUSE_OFF": "not_applicable",
+        "T_CAUSE_ON": "effect"
+      },
+      "world_id": "W_ON"
+    },
+    {
+      "carrier": "finite causal graph",
+      "environment": "mechanism removed",
+      "observations": {
+        "T_CAUSE_OFF": "no_effect",
+        "T_CAUSE_ON": "not_applicable"
+      },
+      "world_id": "W_OFF"
+    }
+  ]
+}

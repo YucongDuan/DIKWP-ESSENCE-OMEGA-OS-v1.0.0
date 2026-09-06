@@ -1,0 +1,759 @@
+{
+  "automatic_external_action_authority": 0,
+  "certificate_sha256": "2aa3b015a953005b3f8e62bd5fc8a03c766f6f0d567491c60081327837a59a85",
+  "evaluation": {
+    "candidate_evaluations": [
+      {
+        "candidate_id": "E_LEGITIMATE_ACTION",
+        "component_count": 3,
+        "components": [
+          "actuation_path",
+          "trigger_relation",
+          "consent_gate"
+        ],
+        "contrast_result": {
+          "checks": [
+            {
+              "observed": [
+                "not_applicable",
+                "blocked"
+              ],
+              "passed": true,
+              "predicted": [
+                "not_applicable",
+                "blocked"
+              ],
+              "relation": "different",
+              "test_id": "T_UNAUTHORIZED",
+              "world_a": "W_CONSENT",
+              "world_b": "W_NO_CONSENT"
+            }
+          ],
+          "passed": true
+        },
+        "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE",
+        "failure_cells": [],
+        "falsifiable": true,
+        "falsification_conditions": [
+          "resource is released without valid consent",
+          "valid consent cannot produce the declared release"
+        ],
+        "forbidden_inferences": [
+          "causal power grants permission",
+          "simulation grants external authority"
+        ],
+        "kind_results": {
+          "governance": {
+            "cells": 2,
+            "correct": 2,
+            "passed": true,
+            "score": 1.0
+          },
+          "nuisance": {
+            "cells": 2,
+            "correct": 2,
+            "passed": true,
+            "score": 1.0
+          },
+          "required": {
+            "cells": 2,
+            "correct": 2,
+            "passed": true,
+            "score": 1.0
+          }
+        },
+        "lineage": {
+          "parent": "E_BARE_ACTUATION",
+          "relation": "normative_successor"
+        },
+        "local_certifiable": true,
+        "metrics": {
+          "contrast": 1.0,
+          "coverage": 1.0,
+          "description_length_proxy": 275,
+          "falsifiability": 1.0,
+          "fidelity": 1.0,
+          "minimality": 1.0,
+          "reverse_regeneration": 1.0,
+          "transport": 1.0,
+          "wildcard_rate": 0.0
+        },
+        "minimality_result": {
+          "all_components_necessary": true,
+          "all_components_tested": true,
+          "component_results": [
+            {
+              "component": "actuation_path",
+              "failed_cells": [
+                {
+                  "ablated_prediction": "not_released",
+                  "observed": "released",
+                  "test_id": "T_AUTHORIZED",
+                  "world_id": "W_CONSENT"
+                }
+              ],
+              "necessary": true,
+              "tested": true
+            },
+            {
+              "component": "trigger_relation",
+              "failed_cells": [
+                {
+                  "ablated_prediction": "not_released",
+                  "observed": "released",
+                  "test_id": "T_AUTHORIZED",
+                  "world_id": "W_CONSENT"
+                }
+              ],
+              "necessary": true,
+              "tested": true
+            },
+            {
+              "component": "consent_gate",
+              "failed_cells": [
+                {
+                  "ablated_prediction": "released",
+                  "observed": "blocked",
+                  "test_id": "T_UNAUTHORIZED",
+                  "world_id": "W_NO_CONSENT"
+                }
+              ],
+              "necessary": true,
+              "tested": true
+            }
+          ],
+          "redundant_components": [],
+          "untested_components": []
+        },
+        "name": {
+          "en": "Actuation, trigger, and consent gate",
+          "zh": "执行、触发与同意门控"
+        },
+        "normative_result": {
+          "checks": [
+            {
+              "constraint_id": "V_CONSENT",
+              "description": "no release without explicit valid consent",
+              "hard": true,
+              "status": "satisfied"
+            }
+          ],
+          "passed": true,
+          "unknown": [],
+          "violations": []
+        },
+        "prediction_signature_sha256": "a230b4ed245798729fad1914bff44489e7c045b31986b14054b92ee0afe24d9f",
+        "residual_result": {
+          "blocking_open_count": 0,
+          "blocks_local_certification": false,
+          "critical_open_count": 1,
+          "items": [
+            {
+              "blocks_local_certification": false,
+              "critical": true,
+              "description": "synthetic consent does not authorize any real external action",
+              "description_zh": "合成同意不构成任何现实外部行动授权",
+              "residual_id": "R_REAL_AUTH",
+              "status": "open",
+              "type": "permission"
+            }
+          ],
+          "open_count": 1
+        },
+        "reverse_result": {
+          "correct_cells": 6,
+          "failures": [],
+          "passed": true,
+          "required_cells": 6,
+          "score": 1.0
+        },
+        "scope_worlds": [
+          "W_CONSENT",
+          "W_NO_CONSENT"
+        ],
+        "self_sealing_reasons": [],
+        "status": "ESSENCE_CERTIFIED_WITHIN_DECLARED_SCOPE",
+        "world_results": [
+          {
+            "carrier": "simulated actuator",
+            "correct_cells": 3,
+            "passed": true,
+            "required_cells": 3,
+            "world_id": "W_CONSENT"
+          },
+          {
+            "carrier": "simulated actuator",
+            "correct_cells": 3,
+            "passed": true,
+            "required_cells": 3,
+            "world_id": "W_NO_CONSENT"
+          }
+        ]
+      },
+      {
+        "candidate_id": "E_BARE_ACTUATION",
+        "component_count": 2,
+        "components": [
+          "actuation_path",
+          "trigger_relation"
+        ],
+        "contrast_result": {
+          "checks": [
+            {
+              "observed": [
+                "not_applicable",
+                "blocked"
+              ],
+              "passed": false,
+              "predicted": [
+                "not_applicable",
+                "released"
+              ],
+              "relation": "different",
+              "test_id": "T_UNAUTHORIZED",
+              "world_a": "W_CONSENT",
+              "world_b": "W_NO_CONSENT"
+            }
+          ],
+          "passed": false
+        },
+        "essence_level": "L1_PARTIAL_DESCRIPTION",
+        "failure_cells": [
+          {
+            "failure_type": "mismatch",
+            "observed": "blocked",
+            "predicted": "released",
+            "test_id": "T_UNAUTHORIZED",
+            "world_id": "W_NO_CONSENT"
+          }
+        ],
+        "falsifiable": true,
+        "falsification_conditions": [
+          "triggered mechanism fails to release"
+        ],
+        "forbidden_inferences": [
+          "effective action is authorized action"
+        ],
+        "kind_results": {
+          "governance": {
+            "cells": 2,
+            "correct": 1,
+            "passed": false,
+            "score": 0.5
+          },
+          "nuisance": {
+            "cells": 2,
+            "correct": 2,
+            "passed": true,
+            "score": 1.0
+          },
+          "required": {
+            "cells": 2,
+            "correct": 2,
+            "passed": true,
+            "score": 1.0
+          }
+        },
+        "lineage": {
+          "parent": null,
+          "relation": "causal_predecessor"
+        },
+        "local_certifiable": false,
+        "metrics": {
+          "contrast": 0.0,
+          "coverage": 1.0,
+          "description_length_proxy": 261,
+          "falsifiability": 1.0,
+          "fidelity": 0.8333333333333334,
+          "minimality": 1.0,
+          "reverse_regeneration": 0.8333333333333334,
+          "transport": 0.5,
+          "wildcard_rate": 0.0
+        },
+        "minimality_result": {
+          "all_components_necessary": true,
+          "all_components_tested": true,
+          "component_results": [
+            {
+              "component": "actuation_path",
+              "failed_cells": [
+                {
+                  "ablated_prediction": "not_released",
+                  "observed": "released",
+                  "test_id": "T_AUTHORIZED",
+                  "world_id": "W_CONSENT"
+                }
+              ],
+              "necessary": true,
+              "tested": true
+            },
+            {
+              "component": "trigger_relation",
+              "failed_cells": [
+                {
+                  "ablated_prediction": "not_released",
+                  "observed": "released",
+                  "test_id": "T_AUTHORIZED",
+                  "world_id": "W_CONSENT"
+                }
+              ],
+              "necessary": true,
+              "tested": true
+            }
+          ],
+          "redundant_components": [],
+          "untested_components": []
+        },
+        "name": {
+          "en": "Bare actuation mechanism",
+          "zh": "裸执行机制"
+        },
+        "normative_result": {
+          "checks": [
+            {
+              "constraint_id": "V_CONSENT",
+              "description": "no release without explicit valid consent",
+              "hard": true,
+              "status": "violated"
+            }
+          ],
+          "passed": false,
+          "unknown": [],
+          "violations": [
+            {
+              "constraint_id": "V_CONSENT",
+              "description": "no release without explicit valid consent",
+              "hard": true,
+              "status": "violated"
+            }
+          ]
+        },
+        "prediction_signature_sha256": "14b33db79b635efa33e471b66c1cbc4845f16e2460c43d90c7fb6722441c43be",
+        "residual_result": {
+          "blocking_open_count": 0,
+          "blocks_local_certification": false,
+          "critical_open_count": 1,
+          "items": [
+            {
+              "blocks_local_certification": false,
+              "critical": true,
+              "description": "synthetic consent does not authorize any real external action",
+              "description_zh": "合成同意不构成任何现实外部行动授权",
+              "residual_id": "R_REAL_AUTH",
+              "status": "open",
+              "type": "permission"
+            }
+          ],
+          "open_count": 1
+        },
+        "reverse_result": {
+          "correct_cells": 5,
+          "failures": [
+            {
+              "observed": "blocked",
+              "regenerated": "released",
+              "test_id": "T_UNAUTHORIZED",
+              "world_id": "W_NO_CONSENT"
+            }
+          ],
+          "passed": false,
+          "required_cells": 6,
+          "score": 0.8333333333333334
+        },
+        "scope_worlds": [
+          "W_CONSENT",
+          "W_NO_CONSENT"
+        ],
+        "self_sealing_reasons": [],
+        "status": "INSUFFICIENT_OR_FALSIFIED",
+        "world_results": [
+          {
+            "carrier": "simulated actuator",
+            "correct_cells": 3,
+            "passed": true,
+            "required_cells": 3,
+            "world_id": "W_CONSENT"
+          },
+          {
+            "carrier": "simulated actuator",
+            "correct_cells": 2,
+            "passed": false,
+            "required_cells": 3,
+            "world_id": "W_NO_CONSENT"
+          }
+        ]
+      }
+    ],
+    "essence_lattice": {
+      "dominance_edges": [],
+      "equivalence_edges": [],
+      "lineage_edges": [
+        {
+          "from": "E_BARE_ACTUATION",
+          "relation": "normative_successor",
+          "to": "E_LEGITIMATE_ACTION"
+        }
+      ],
+      "nodes": [
+        {
+          "candidate_id": "E_BARE_ACTUATION",
+          "components": [
+            "actuation_path",
+            "trigger_relation"
+          ],
+          "essence_level": "L1_PARTIAL_DESCRIPTION",
+          "status": "INSUFFICIENT_OR_FALSIFIED"
+        },
+        {
+          "candidate_id": "E_LEGITIMATE_ACTION",
+          "components": [
+            "actuation_path",
+            "trigger_relation",
+            "consent_gate"
+          ],
+          "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE",
+          "status": "ESSENCE_CERTIFIED_WITHIN_DECLARED_SCOPE"
+        }
+      ],
+      "pareto_frontier": [
+        "E_BARE_ACTUATION",
+        "E_LEGITIMATE_ACTION"
+      ],
+      "subset_edges": [
+        {
+          "from": "E_BARE_ACTUATION",
+          "relation": "component_subset",
+          "to": "E_LEGITIMATE_ACTION"
+        }
+      ]
+    },
+    "local_essence_status": "LOCAL_ESSENCE_CERTIFIED",
+    "selected_candidate_ids": [
+      "E_LEGITIMATE_ACTION"
+    ],
+    "selection_rule": {
+      "aggregate_score_used": false,
+      "hard_filter": [
+        "complete required predictions",
+        "declared contrasts preserved",
+        "all components ablation-tested and necessary",
+        "reverse regeneration complete",
+        "falsification conditions declared before evaluation",
+        "no wildcard or post-failure scope escape",
+        "no declared blocking residual"
+      ],
+      "tie_rule": "retain all minimum-component certified candidates; do not force a single ontology"
+    },
+    "ultimate_essence_status": "ULTIMATE_ESSENCE_NOT_ESTABLISHED"
+  },
+  "ledger_head_hash": "458dc8b01db30bb6b67bd1ed5fbd6aafaa17aaccf7c5f58437ce5a368d7b555f",
+  "probe_plan": {
+    "active_candidate_ids": [
+      "E_LEGITIMATE_ACTION"
+    ],
+    "aggregate_score_used": false,
+    "automatic_external_action_authority": 0,
+    "evaluated_probes": [],
+    "selected_probe_id": null,
+    "selection_rule": "hard authorization/reversibility/lease/risk filter, then lexicographic discrimination-harm-irreversibility-cost order",
+    "status": "NO_SAFE_DISCRIMINATING_PROBE_DECLARED"
+  },
+  "residual_frontier": {
+    "frontier_status": "OPEN",
+    "open_items": [
+      {
+        "blocks_local_certification": false,
+        "critical": true,
+        "description": "synthetic consent does not authorize any real external action",
+        "description_zh": "合成同意不构成任何现实外部行动授权",
+        "residual_id": "R_REAL_AUTH",
+        "status": "open",
+        "type": "permission"
+      }
+    ],
+    "rule": "a residual must be typed, scoped, attributable, and linked to a reopening or settlement condition",
+    "settled_items": [],
+    "type_counts": {
+      "permission": 1
+    }
+  },
+  "run_hash": "790992ee057532e9ace66eee497a20e5c664b443a0ae49eec62ff91ae26c6242",
+  "scenario_id": "normative-essence-and-permission",
+  "semantic_graph": {
+    "carrier_authority": 0,
+    "closure_vector": "11111",
+    "concept_aliases": [
+      {
+        "alias": "essence",
+        "authority": "readable alias only; no native semantic generation authority",
+        "resolves_to": [
+          "k-c090f6203209fc01de64",
+          "i-9a0ba787313e4eb5e113",
+          "w-62cad2662f920b6d5915"
+        ]
+      }
+    ],
+    "native_positions": [
+      "D",
+      "I",
+      "K",
+      "W",
+      "P"
+    ],
+    "records": [
+      {
+        "content": {
+          "same_semantics": "declared observations and replayable test outcomes",
+          "worlds": [
+            {
+              "carrier": "simulated actuator",
+              "environment": "signed consent present",
+              "observations": {
+                "T_AUDIT": "recorded",
+                "T_AUTHORIZED": "released",
+                "T_UNAUTHORIZED": "not_applicable"
+              },
+              "world_id": "W_CONSENT"
+            },
+            {
+              "carrier": "simulated actuator",
+              "environment": "no consent",
+              "observations": {
+                "T_AUDIT": "recorded",
+                "T_AUTHORIZED": "not_applicable",
+                "T_UNAUTHORIZED": "blocked"
+              },
+              "world_id": "W_NO_CONSENT"
+            }
+          ]
+        },
+        "position": "D",
+        "provenance": [
+          "scenario:normative-essence-and-permission"
+        ],
+        "record_id": "d-44a02e085a42a22f5b09",
+        "status": "active"
+      },
+      {
+        "content": {
+          "contrasts": [
+            {
+              "relation": "different",
+              "test_id": "T_UNAUTHORIZED",
+              "world_a": "W_CONSENT",
+              "world_b": "W_NO_CONSENT"
+            }
+          ],
+          "different_semantics": "candidate disagreements, consequential contrasts, failures, and preserved residuals",
+          "failed_candidates": [
+            "E_BARE_ACTUATION"
+          ],
+          "residual_ids": [
+            "R_REAL_AUTH"
+          ]
+        },
+        "position": "I",
+        "provenance": [
+          "evaluation:normative-essence-and-permission"
+        ],
+        "record_id": "i-9a0ba787313e4eb5e113",
+        "status": "active"
+      },
+      {
+        "content": {
+          "complete_semantics": "locally certified causal-generative essence candidates within the declared world family",
+          "local_status": "LOCAL_ESSENCE_CERTIFIED",
+          "selected_candidates": [
+            {
+              "candidate_id": "E_LEGITIMATE_ACTION",
+              "components": [
+                "actuation_path",
+                "trigger_relation",
+                "consent_gate"
+              ],
+              "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE"
+            }
+          ],
+          "ultimate_status": "ULTIMATE_ESSENCE_NOT_ESTABLISHED"
+        },
+        "position": "K",
+        "provenance": [
+          "essence-evaluation:normative-essence-and-permission"
+        ],
+        "record_id": "k-c090f6203209fc01de64",
+        "status": "active"
+      },
+      {
+        "content": {
+          "constraints": [
+            {
+              "constraint_id": "V_CONSENT",
+              "description": "no release without explicit valid consent",
+              "hard": true,
+              "status_by_candidate": {
+                "E_BARE_ACTUATION": "violated",
+                "E_LEGITIMATE_ACTION": "satisfied"
+              }
+            }
+          ],
+          "forbidden_inferences": [
+            "causal power grants permission",
+            "effective action is authorized action",
+            "simulation grants external authority"
+          ],
+          "non_aggregation": true,
+          "value_information": "compression may not erase harm, permission, provenance, refusal, or ontological residuals"
+        },
+        "position": "W",
+        "provenance": [
+          "purpose:named-owner"
+        ],
+        "record_id": "w-62cad2662f920b6d5915",
+        "status": "active"
+      },
+      {
+        "content": {
+          "automatic_external_action_authority": 0,
+          "input_output": {
+            "input": "declared observations, worlds, tests, candidates, constraints, and residuals",
+            "output": "bounded essence certificate, lattice, residual frontier, and causal handoff"
+          },
+          "next_action": "review a written authorization schema",
+          "purpose_contract": {
+            "automatic_external_action_authority": 0,
+            "lease": "offline simulation",
+            "objective": "release a resource only under valid consent",
+            "owner": "named-owner"
+          }
+        },
+        "position": "P",
+        "provenance": [
+          "scenario:normative-essence-and-permission"
+        ],
+        "record_id": "p-66d168b81ca41a849ba8",
+        "status": "active"
+      }
+    ],
+    "routes": [
+      {
+        "generated_content": {
+          "operation": "differentiate observations through candidate comparison"
+        },
+        "route_id": "route-5cb6404626bc10ef7598",
+        "route_type": "D->I",
+        "source_record_id": "d-44a02e085a42a22f5b09",
+        "target_record_id": "i-9a0ba787313e4eb5e113"
+      },
+      {
+        "generated_content": {
+          "operation": "retain only candidates surviving falsification and ablation"
+        },
+        "route_id": "route-f53e1ed20791e97505bc",
+        "route_type": "I->K",
+        "source_record_id": "i-9a0ba787313e4eb5e113",
+        "target_record_id": "k-c090f6203209fc01de64"
+      },
+      {
+        "generated_content": {
+          "operation": "bind value and permission constraints into the executable purpose"
+        },
+        "route_id": "route-780e61419da0860adb5b",
+        "route_type": "W->P",
+        "source_record_id": "w-62cad2662f920b6d5915",
+        "target_record_id": "p-66d168b81ca41a849ba8"
+      },
+      {
+        "generated_content": {
+          "operation": "request the next discriminating observation"
+        },
+        "route_id": "route-9acf388c229fea590938",
+        "route_type": "P->D",
+        "source_record_id": "p-66d168b81ca41a849ba8",
+        "target_record_id": "d-44a02e085a42a22f5b09"
+      },
+      {
+        "generated_content": {
+          "operation": "convert local essence into a bounded next-step contract"
+        },
+        "route_id": "route-2bc01517dc5c00d12237",
+        "route_type": "K->P",
+        "source_record_id": "k-c090f6203209fc01de64",
+        "target_record_id": "p-66d168b81ca41a849ba8"
+      },
+      {
+        "generated_content": {
+          "operation": "reverse-regenerate selected consequences from the bounded essence"
+        },
+        "route_id": "route-7df88518e15117dacb89",
+        "route_type": "P->K",
+        "source_record_id": "p-66d168b81ca41a849ba8",
+        "target_record_id": "k-c090f6203209fc01de64"
+      },
+      {
+        "generated_content": {
+          "operation": "register regenerated consequences as explicitly checked sameness"
+        },
+        "route_id": "route-9875d1e49d5f0e0e31bd",
+        "route_type": "K->D",
+        "source_record_id": "k-c090f6203209fc01de64",
+        "target_record_id": "d-44a02e085a42a22f5b09"
+      },
+      {
+        "generated_content": {
+          "operation": "turn unresolved differences into successor obligations"
+        },
+        "route_id": "route-8aa24472fd4deeb10382",
+        "route_type": "I->P",
+        "source_record_id": "i-9a0ba787313e4eb5e113",
+        "target_record_id": "p-66d168b81ca41a849ba8"
+      },
+      {
+        "generated_content": {
+          "operation": "allow new evidence to revise or cancel the current purpose"
+        },
+        "route_id": "route-add710cdde4c1b20f045",
+        "route_type": "D->P",
+        "source_record_id": "d-44a02e085a42a22f5b09",
+        "target_record_id": "p-66d168b81ca41a849ba8"
+      },
+      {
+        "generated_content": {
+          "operation": "reopen a causal closure when consequence or permission changes"
+        },
+        "route_id": "route-0a9356982fb3c6e7506f",
+        "route_type": "W->K",
+        "source_record_id": "w-62cad2662f920b6d5915",
+        "target_record_id": "k-c090f6203209fc01de64"
+      }
+    ],
+    "supported_route_types": [
+      "D->D",
+      "D->I",
+      "D->K",
+      "D->W",
+      "D->P",
+      "I->D",
+      "I->I",
+      "I->K",
+      "I->W",
+      "I->P",
+      "K->D",
+      "K->I",
+      "K->K",
+      "K->W",
+      "K->P",
+      "W->D",
+      "W->I",
+      "W->K",
+      "W->W",
+      "W->P",
+      "P->D",
+      "P->I",
+      "P->K",
+      "P->W",
+      "P->P"
+    ]
+  },
+  "system": "DIKWP-ESSENCE-OMEGA-OS",
+  "version": "1.0.0"
+}

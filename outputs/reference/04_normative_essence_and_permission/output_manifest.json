@@ -1,0 +1,70 @@
+{
+  "artifacts": [
+    {
+      "path": "candidate_evaluations.json",
+      "sha256": "7675a93eec226b1f893b648a5b615e780f790eb8037bfc9e748dfe290a9008a9",
+      "size_bytes": 9720
+    },
+    {
+      "path": "causal_handoff.json",
+      "sha256": "c8ba3292b2c4873e83bcea1a8373fff683d99cc0062d78495078e678ed8c13aa",
+      "size_bytes": 250
+    },
+    {
+      "path": "counterfactual_ablation_matrix.csv",
+      "sha256": "58cfa668485b11451d03c7ba6d868000a96bd7c7e767703f875d82e31259e738",
+      "size_bytes": 545
+    },
+    {
+      "path": "essence_certificate.json",
+      "sha256": "da1b53021b72810005e1557bde3ffaf73fbbf006cf26600256984cd5d8cc9582",
+      "size_bytes": 4709
+    },
+    {
+      "path": "essence_lattice.json",
+      "sha256": "95bc7928e335aa089462591fd91abc9b52057a263076542ae82ea0348e5cefc1",
+      "size_bytes": 955
+    },
+    {
+      "path": "evidence_ledger.jsonl",
+      "sha256": "42ad43f2b529ec44509e574416eb856dd8ca182264b68f8137b1d3bb5e5510c9",
+      "size_bytes": 4835
+    },
+    {
+      "path": "probe_plan.json",
+      "sha256": "01782e46cca762624904fe7c0ed9d211c94c334bbc93b7b9e0e3ae5bf919bd60",
+      "size_bytes": 388
+    },
+    {
+      "path": "report.en.md",
+      "sha256": "14af5a26018bfd3909a2c2880277dee0ec7cb09e06995ec38967823cd1b46f07",
+      "size_bytes": 1620
+    },
+    {
+      "path": "report.zh-CN.md",
+      "sha256": "a1a81563b961dacb694b977fdf872279a828b797e025c17857581a1019896161",
+      "size_bytes": 1426
+    },
+    {
+      "path": "residual_frontier.json",
+      "sha256": "341c6c9dd8b10f6e9c7b2f2b4cee192297ad602229e01a935c04c4114eca4f5b",
+      "size_bytes": 564
+    },
+    {
+      "path": "result.json",
+      "sha256": "75e837eee1ce6c316fc678cac4d4466c9d08d09efb2e896982b429443e99f1be",
+      "size_bytes": 23236
+    },
+    {
+      "path": "semantic_graph.json",
+      "sha256": "b024299ce41c3c0e40b903cdbf37f20ff9bfd4255e37aeabf0e1c07da4b93ef5",
+      "size_bytes": 8027
+    }
+  ],
+  "ledger_head_hash": "458dc8b01db30bb6b67bd1ed5fbd6aafaa17aaccf7c5f58437ce5a368d7b555f",
+  "merkle_root": "036ae3809825137ff13ad08b8a3cb339bcde20341f0a421a83c48d7cc7a4e95e",
+  "run_hash": "790992ee057532e9ace66eee497a20e5c664b443a0ae49eec62ff91ae26c6242",
+  "scenario_id": "normative-essence-and-permission",
+  "system": "DIKWP-ESSENCE-OMEGA-OS",
+  "version": "1.0.0"
+}

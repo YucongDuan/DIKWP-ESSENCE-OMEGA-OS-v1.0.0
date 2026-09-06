@@ -1,0 +1,5 @@
+candidate_id,component,tested,necessary,failed_world,failed_test,observed,ablated_prediction
+E_FINITE_REDUCTION,sound_reduction,True,True,W_FINITE_RANGE,T_MAPPING,sound,unsound
+E_FINITE_REDUCTION,finite_witness_checker,True,True,W_FINITE_RANGE,T_WITNESS,present,unverified
+E_GLOBAL_OVERCLAIM,finite_witness_checker,True,True,W_FINITE_RANGE,T_MAPPING,sound,*
+E_GLOBAL_OVERCLAIM,finite_witness_checker,True,True,W_FINITE_RANGE,T_WITNESS,present,*

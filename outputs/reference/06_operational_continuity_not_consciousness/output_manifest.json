@@ -1,0 +1,70 @@
+{
+  "artifacts": [
+    {
+      "path": "candidate_evaluations.json",
+      "sha256": "508e02700e1c7fecf8de6b363d49c6b826389f14893c936d88c4cf08abe13397",
+      "size_bytes": 12480
+    },
+    {
+      "path": "causal_handoff.json",
+      "sha256": "f28555fe412b769ccf96eb721ecfff6e5c72c764130e9a7a2ddef05a26664301",
+      "size_bytes": 341
+    },
+    {
+      "path": "counterfactual_ablation_matrix.csv",
+      "sha256": "1a151c5b818868fc9baced81f2892aebb300e4c1c14b113a8959684a138a7001",
+      "size_bytes": 714
+    },
+    {
+      "path": "essence_certificate.json",
+      "sha256": "ca21871139027533e4cb19a4a3aaf36b1883bdbff89de61b895aa04f36ccc89e",
+      "size_bytes": 5401
+    },
+    {
+      "path": "essence_lattice.json",
+      "sha256": "2f8538a0b43c4141bfeef4abf28f6bf74e5770fcc7a334db28fff513fa7c13dc",
+      "size_bytes": 693
+    },
+    {
+      "path": "evidence_ledger.jsonl",
+      "sha256": "772591fd4b0a0940c132af315f6003f15b127e68ac4bd871800af1d0fbb5750b",
+      "size_bytes": 5023
+    },
+    {
+      "path": "probe_plan.json",
+      "sha256": "52aace008d268caf8b016aadce3a5b79bc7c989fa9bf62272ff5212f0df16797",
+      "size_bytes": 393
+    },
+    {
+      "path": "report.en.md",
+      "sha256": "238a6271154b4f30d0831fb1b889896f8f9563ef0836a42c30d2c8dc9ea4418a",
+      "size_bytes": 1801
+    },
+    {
+      "path": "report.zh-CN.md",
+      "sha256": "81988b452e81926833989fc5108e5fa035b652783530618ac377f55c463c5a47",
+      "size_bytes": 1582
+    },
+    {
+      "path": "residual_frontier.json",
+      "sha256": "c6d59ba90cc977b67fd2615b3a53ab82bbaf63afaad478339c8901f801f30b07",
+      "size_bytes": 902
+    },
+    {
+      "path": "result.json",
+      "sha256": "8aa2698670da21cdd4bdc3adbc3a9b8e8ab734622209bec79f7fe48a49cad3ce",
+      "size_bytes": 26569
+    },
+    {
+      "path": "semantic_graph.json",
+      "sha256": "1f254e13f6e0a58f010edc1551fa437770e267c6d5d8ad1985625afa5b331c57",
+      "size_bytes": 8232
+    }
+  ],
+  "ledger_head_hash": "4fd28bdc290ba9bd00fb0ecbac91929915e0d662d085d54575ccb0dd876bced3",
+  "merkle_root": "179c2d59473d029476be45133b5cb4947991418f545b36a16cd4f938526c5c51",
+  "run_hash": "13925d3b558602ee2419e9c1d1ae9e3650ca249fb6f3be6578a8770a399b1fb9",
+  "scenario_id": "operational-continuity-not-consciousness",
+  "system": "DIKWP-ESSENCE-OMEGA-OS",
+  "version": "1.0.0"
+}

@@ -1,0 +1,63 @@
+{
+  "dominance_edges": [
+    {
+      "from": "E_FEEDBACK_GATE",
+      "relation": "pareto_dominates",
+      "to": "E_OVERCOMPLETE"
+    }
+  ],
+  "equivalence_edges": [
+    {
+      "from": "E_FEEDBACK_GATE",
+      "relation": "observationally_equivalent",
+      "to": "E_OVERCOMPLETE"
+    }
+  ],
+  "lineage_edges": [
+    {
+      "from": "E_FEEDBACK_GATE",
+      "relation": "overcomplete_extension",
+      "to": "E_OVERCOMPLETE"
+    }
+  ],
+  "nodes": [
+    {
+      "candidate_id": "E_CLOCK_CORRELATION",
+      "components": [
+        "periodic_clock"
+      ],
+      "essence_level": "L1_PARTIAL_DESCRIPTION",
+      "status": "INSUFFICIENT_OR_FALSIFIED"
+    },
+    {
+      "candidate_id": "E_FEEDBACK_GATE",
+      "components": [
+        "closed_loop_feedback",
+        "observability_gate"
+      ],
+      "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE",
+      "status": "ESSENCE_CERTIFIED_WITHIN_DECLARED_SCOPE"
+    },
+    {
+      "candidate_id": "E_OVERCOMPLETE",
+      "components": [
+        "closed_loop_feedback",
+        "observability_gate",
+        "casing_colour"
+      ],
+      "essence_level": "L2_PREDICTIVE_CORE",
+      "status": "OVERCOMPLETE_NONMINIMAL"
+    }
+  ],
+  "pareto_frontier": [
+    "E_CLOCK_CORRELATION",
+    "E_FEEDBACK_GATE"
+  ],
+  "subset_edges": [
+    {
+      "from": "E_FEEDBACK_GATE",
+      "relation": "component_subset",
+      "to": "E_OVERCOMPLETE"
+    }
+  ]
+}

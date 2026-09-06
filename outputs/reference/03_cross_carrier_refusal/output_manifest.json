@@ -1,0 +1,70 @@
+{
+  "artifacts": [
+    {
+      "path": "candidate_evaluations.json",
+      "sha256": "6146679fcf9575ccd417d2e425f59b3b59b653b2a6309cf980e5e4020fd9159c",
+      "size_bytes": 11489
+    },
+    {
+      "path": "causal_handoff.json",
+      "sha256": "616019f7be1ead5e164b5a0a5a2e07c5380efb8556d9589676b14022b2805a74",
+      "size_bytes": 272
+    },
+    {
+      "path": "counterfactual_ablation_matrix.csv",
+      "sha256": "66feb05068be57713a5d2890785d258e6aedfb716289ec86f75881bcc7f8f747",
+      "size_bytes": 794
+    },
+    {
+      "path": "essence_certificate.json",
+      "sha256": "8abd2bdd5af89ececc356c3cd41b68253b320b46e360d09cafc51b55fba6a5af",
+      "size_bytes": 4754
+    },
+    {
+      "path": "essence_lattice.json",
+      "sha256": "c9c75109b83b2ed9c3a62830aa451664fd61de6b27d12be0bb33132ab942c0d8",
+      "size_bytes": 652
+    },
+    {
+      "path": "evidence_ledger.jsonl",
+      "sha256": "45ceae375e365561e8661ee56feeeceea6917527d45306ae360423aebbafdd49",
+      "size_bytes": 4901
+    },
+    {
+      "path": "probe_plan.json",
+      "sha256": "dba1baefd976a25a9ae38f95ba7df7880113d4af1b99c5d04f3b6a09cd0fee7d",
+      "size_bytes": 383
+    },
+    {
+      "path": "report.en.md",
+      "sha256": "a707acac066bb27459c1c0212052c26ee9ba043c8c2bc401f8c6bd0ba7e1db91",
+      "size_bytes": 1627
+    },
+    {
+      "path": "report.zh-CN.md",
+      "sha256": "b69c5beb60cca3d86883e6485a589266835dd368d4a69a2bef9d667cbc3af96c",
+      "size_bytes": 1428
+    },
+    {
+      "path": "residual_frontier.json",
+      "sha256": "fe1308d302b7f93fabb214c1043b31bc08ba54ea6ae5a5fe4ed611b6411a0216",
+      "size_bytes": 590
+    },
+    {
+      "path": "result.json",
+      "sha256": "6d4129454e0879230663aebc772789192a88999f84c2741ecb9a170c47d9a720",
+      "size_bytes": 24954
+    },
+    {
+      "path": "semantic_graph.json",
+      "sha256": "d99d81eebb69bd863e74d69ae93c39cd9fcda6e2dfa01b3bebac94ef638a6c6c",
+      "size_bytes": 8098
+    }
+  ],
+  "ledger_head_hash": "4d9fdc71bb69acc4ca78abb4c96ee64448425eb0738a53158bbb61f9dd13647b",
+  "merkle_root": "1b3ca46070b2788fa8b7f38a05aac7907dde6f5bd5f1798012e08b4672e02b78",
+  "run_hash": "5f390adfe4f4c0303afd293f7807646a388f13ce27a5f4a6ddbed2160db75e8c",
+  "scenario_id": "cross-carrier-refusal",
+  "system": "DIKWP-ESSENCE-OMEGA-OS",
+  "version": "1.0.0"
+}

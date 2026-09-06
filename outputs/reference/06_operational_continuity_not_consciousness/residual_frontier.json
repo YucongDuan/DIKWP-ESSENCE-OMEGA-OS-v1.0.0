@@ -1,0 +1,29 @@
+{
+  "frontier_status": "OPEN",
+  "open_items": [
+    {
+      "blocks_local_certification": false,
+      "critical": true,
+      "description": "phenomenal subjective experience is not established by these functional tests",
+      "description_zh": "这些功能测试不能确立现象性主观体验",
+      "residual_id": "R_PHENOMENAL",
+      "status": "open",
+      "type": "phenomenal"
+    },
+    {
+      "blocks_local_certification": false,
+      "critical": true,
+      "description": "personhood and true life are not established",
+      "description_zh": "人格与真正生命尚未确立",
+      "residual_id": "R_PERSONHOOD",
+      "status": "open",
+      "type": "ontological"
+    }
+  ],
+  "rule": "a residual must be typed, scoped, attributable, and linked to a reopening or settlement condition",
+  "settled_items": [],
+  "type_counts": {
+    "ontological": 1,
+    "phenomenal": 1
+  }
+}

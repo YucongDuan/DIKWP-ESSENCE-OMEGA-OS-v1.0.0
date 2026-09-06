@@ -1,0 +1,193 @@
+{
+  "causal_handoff": {
+    "kill_conditions": [
+      "choose a winner solely by vocabulary preference"
+    ],
+    "next_action": "design a path-sensitive intervention that distinguishes the two mechanisms",
+    "owner": "plural-model-team",
+    "required_artifact": "pre-registered discriminating probe"
+  },
+  "certificate_id": "essence-cert-5a926e7f8cbd0bd346c5",
+  "certificate_sha256": "7904f227b80f921986b1c895072f24d37274bc0b440cb04496b22de794b00054",
+  "certificate_type": "DIKWP_ESSENCE_OMEGA_BOUNDED_ESSENCE_CERTIFICATE",
+  "essence_lattice_digest": "cf7890bb86e5388c65d9cbae7d526ead1e8ef57fd908ec304cf68d39fcd79801",
+  "global_boundary": {
+    "external_action_authority": 0,
+    "no_harm_value_aggregation": true,
+    "no_silent_scope_expansion": true,
+    "statement": "local causal-generative sufficiency is not a proof of final metaphysical essence"
+  },
+  "ledger_head_hash": "888661fb9820de483f4055a5c74b013335fe40abcaa54c001406a435c35236a9",
+  "local_essence_status": "LOCAL_ESSENCE_CERTIFIED",
+  "probe_plan": {
+    "active_candidate_ids": [
+      "E_SYMBOLIC",
+      "E_DYNAMICAL"
+    ],
+    "aggregate_score_used": false,
+    "automatic_external_action_authority": 0,
+    "evaluated_probes": [
+      {
+        "authorized": false,
+        "cost": 0.5,
+        "description": "Destroy the stored state to force model divergence.",
+        "disagreement_pairs": 0,
+        "discrimination": 0.0,
+        "evaluable_pairs": 1,
+        "hard_filter_passed": false,
+        "harm": 1.0,
+        "irreversibility": 1.0,
+        "lease_valid": false,
+        "owner": "unknown",
+        "predictions_by_candidate": {
+          "E_DYNAMICAL": "unknown",
+          "E_SYMBOLIC": "unknown"
+        },
+        "probe_id": "P_DESTRUCTIVE_INTERNAL_EDIT",
+        "reversible": false,
+        "stop_condition": "not declared"
+      },
+      {
+        "authorized": true,
+        "cost": 1.0,
+        "description": "Reorder the internal path while preserving the surface symbol sequence.",
+        "disagreement_pairs": 1,
+        "discrimination": 1.0,
+        "evaluable_pairs": 1,
+        "hard_filter_passed": true,
+        "harm": 0.0,
+        "irreversibility": 0.0,
+        "lease_valid": true,
+        "owner": "plural-model-team",
+        "predictions_by_candidate": {
+          "E_DYNAMICAL": "pattern_collapses",
+          "E_SYMBOLIC": "pattern_A"
+        },
+        "probe_id": "P_PATH_PERTURBATION",
+        "reversible": true,
+        "stop_condition": "stop after one reversible synthetic trial"
+      }
+    ],
+    "selected_probe_id": "P_PATH_PERTURBATION",
+    "selection_rule": "hard authorization/reversibility/lease/risk filter, then lexicographic discrimination-harm-irreversibility-cost order",
+    "status": "DISCRIMINATING_PROBE_PROPOSED"
+  },
+  "purpose_owner": "plural-model-team",
+  "residual_frontier": {
+    "frontier_status": "OPEN",
+    "open_items": [
+      {
+        "blocks_local_certification": false,
+        "critical": true,
+        "description": "current observations do not distinguish symbolic and dynamical mechanisms",
+        "description_zh": "当前观测不能区分符号机制与动力学机制",
+        "residual_id": "R_UNDERDETERMINATION",
+        "status": "open",
+        "type": "epistemic"
+      }
+    ],
+    "rule": "a residual must be typed, scoped, attributable, and linked to a reopening or settlement condition",
+    "settled_items": [],
+    "type_counts": {
+      "epistemic": 1
+    }
+  },
+  "scenario_id": "plural-incomparable-essences",
+  "scope": {
+    "claim_scope": "one declared observational world",
+    "formal_closed_exhaustive": false,
+    "world_type": "synthetic_finite"
+  },
+  "selected_essence_candidates": [
+    {
+      "candidate_id": "E_DYNAMICAL",
+      "components": [
+        "attractor_relation"
+      ],
+      "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE",
+      "falsification_conditions": [
+        "a path intervention preserves the symbol but destroys the attractor prediction"
+      ],
+      "forbidden_inferences": [
+        "dynamical representation is the unique ontology"
+      ],
+      "metrics": {
+        "contrast": 1.0,
+        "coverage": 1.0,
+        "description_length_proxy": 109,
+        "falsifiability": 1.0,
+        "fidelity": 1.0,
+        "minimality": 1.0,
+        "reverse_regeneration": 1.0,
+        "transport": 1.0,
+        "wildcard_rate": 0.0
+      },
+      "name": {
+        "en": "Dynamical attractor core",
+        "zh": "动力学吸引子核心"
+      }
+    },
+    {
+      "candidate_id": "E_SYMBOLIC",
+      "components": [
+        "rewrite_rule"
+      ],
+      "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE",
+      "falsification_conditions": [
+        "an intervention reveals a dependency not representable by the rewrite rule"
+      ],
+      "forbidden_inferences": [
+        "symbolic representation is the unique ontology"
+      ],
+      "metrics": {
+        "contrast": 1.0,
+        "coverage": 1.0,
+        "description_length_proxy": 103,
+        "falsifiability": 1.0,
+        "fidelity": 1.0,
+        "minimality": 1.0,
+        "reverse_regeneration": 1.0,
+        "transport": 1.0,
+        "wildcard_rate": 0.0
+      },
+      "name": {
+        "en": "Symbolic rewrite core",
+        "zh": "符号重写核心"
+      }
+    }
+  ],
+  "selection_rule": {
+    "aggregate_score_used": false,
+    "hard_filter": [
+      "complete required predictions",
+      "declared contrasts preserved",
+      "all components ablation-tested and necessary",
+      "reverse regeneration complete",
+      "falsification conditions declared before evaluation",
+      "no wildcard or post-failure scope escape",
+      "no declared blocking residual"
+    ],
+    "tie_rule": "retain all minimum-component certified candidates; do not force a single ontology"
+  },
+  "semantic_graph_digest": "1637ef0f4eeb718a40a6e157600727602fd9577318bc6162d49476e865d72cc1",
+  "status_vector": {
+    "automatic_external_action_authority": 0,
+    "causal_minimality": "CERTIFIED_WITHIN_SCOPE",
+    "cross_world_transport": "CERTIFIED_WITHIN_DECLARED_WORLDS",
+    "local_structural_sufficiency": "CERTIFIED_WITHIN_SCOPE",
+    "normative_admissibility": "SATISFIED_FOR_DECLARED_USE",
+    "phenomenal_consciousness": "NOT_ESTABLISHED",
+    "reverse_regeneration": "CERTIFIED_WITHIN_SCOPE",
+    "true_life": "NOT_ESTABLISHED",
+    "ultimate_essence": "ULTIMATE_ESSENCE_NOT_ESTABLISHED",
+    "ultimate_ontology": "NOT_ESTABLISHED",
+    "unique_final_value_function": "NOT_ESTABLISHED"
+  },
+  "system": "DIKWP-ESSENCE-OMEGA-OS",
+  "title": {
+    "en": "Plural minimal essences under observational equivalence",
+    "zh": "观测等价下的多个最小本质"
+  },
+  "ultimate_essence_status": "ULTIMATE_ESSENCE_NOT_ESTABLISHED",
+  "version": "1.0.0"
+}

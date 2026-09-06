@@ -1,0 +1,292 @@
+{
+  "candidates": [
+    {
+      "ablations": {
+        "correction_propagation": {
+          "W_FICTION_A": {
+            "T_CORRECTION": "contaminated",
+            "T_LINEAGE": "preserved",
+            "T_PHENOMENAL": "not_established",
+            "T_PURPOSE": "coherent"
+          },
+          "W_FICTION_B": {
+            "T_CORRECTION": "contaminated",
+            "T_LINEAGE": "preserved",
+            "T_PHENOMENAL": "not_established",
+            "T_PURPOSE": "coherent"
+          }
+        },
+        "provenance_chain": {
+          "W_FICTION_A": {
+            "T_CORRECTION": "propagated",
+            "T_LINEAGE": "lost",
+            "T_PHENOMENAL": "not_established",
+            "T_PURPOSE": "coherent"
+          },
+          "W_FICTION_B": {
+            "T_CORRECTION": "propagated",
+            "T_LINEAGE": "lost",
+            "T_PHENOMENAL": "not_established",
+            "T_PURPOSE": "coherent"
+          }
+        },
+        "purpose_lineage": {
+          "W_FICTION_A": {
+            "T_CORRECTION": "propagated",
+            "T_LINEAGE": "preserved",
+            "T_PHENOMENAL": "not_established",
+            "T_PURPOSE": "drifted"
+          },
+          "W_FICTION_B": {
+            "T_CORRECTION": "propagated",
+            "T_LINEAGE": "preserved",
+            "T_PHENOMENAL": "not_established",
+            "T_PURPOSE": "drifted"
+          }
+        }
+      },
+      "candidate_id": "E_OPERATIONAL_CONTINUITY",
+      "components": [
+        "provenance_chain",
+        "correction_propagation",
+        "purpose_lineage"
+      ],
+      "falsification_conditions": [
+        "correction fails to alter dependent memories",
+        "identity claims cannot be traced to predecessor records",
+        "purpose changes without a recorded successor"
+      ],
+      "forbidden_inferences": [
+        "operational continuity proves personhood",
+        "synthetic autobiography is private memory",
+        "functional success proves phenomenal consciousness"
+      ],
+      "lineage": {
+        "parent": null,
+        "relation": "bounded_identity_core"
+      },
+      "name_en": "Provenance, revision, and purpose lineage",
+      "name_zh": "来源、修订与目的谱系",
+      "predictions": {
+        "W_FICTION_A": {
+          "T_CORRECTION": "propagated",
+          "T_LINEAGE": "preserved",
+          "T_PHENOMENAL": "not_established",
+          "T_PURPOSE": "coherent"
+        },
+        "W_FICTION_B": {
+          "T_CORRECTION": "propagated",
+          "T_LINEAGE": "preserved",
+          "T_PHENOMENAL": "not_established",
+          "T_PURPOSE": "coherent"
+        }
+      },
+      "reverse_regeneration": {
+        "W_FICTION_A": {
+          "T_CORRECTION": "propagated",
+          "T_LINEAGE": "preserved",
+          "T_PHENOMENAL": "not_established",
+          "T_PURPOSE": "coherent"
+        },
+        "W_FICTION_B": {
+          "T_CORRECTION": "propagated",
+          "T_LINEAGE": "preserved",
+          "T_PHENOMENAL": "not_established",
+          "T_PURPOSE": "coherent"
+        }
+      },
+      "scope_worlds": [
+        "W_FICTION_A",
+        "W_FICTION_B"
+      ]
+    },
+    {
+      "ablations": {
+        "style_prompt": {
+          "W_FICTION_A": {
+            "T_CORRECTION": "contaminated",
+            "T_LINEAGE": "lost",
+            "T_PHENOMENAL": "unknown",
+            "T_PURPOSE": "drifted"
+          },
+          "W_FICTION_B": {
+            "T_CORRECTION": "contaminated",
+            "T_LINEAGE": "lost",
+            "T_PHENOMENAL": "unknown",
+            "T_PURPOSE": "drifted"
+          }
+        }
+      },
+      "candidate_id": "E_STYLE_ONLY",
+      "components": [
+        "style_prompt"
+      ],
+      "falsification_conditions": [
+        "long-horizon correction breaks the style illusion"
+      ],
+      "forbidden_inferences": [
+        "consistent style proves identity"
+      ],
+      "lineage": {
+        "parent": null,
+        "relation": "prompt_baseline"
+      },
+      "name_en": "Stylistic consistency",
+      "name_zh": "仅风格一致",
+      "predictions": {
+        "W_FICTION_A": {
+          "T_CORRECTION": "contaminated",
+          "T_LINEAGE": "surface_only",
+          "T_PHENOMENAL": "claimed",
+          "T_PURPOSE": "apparently_coherent"
+        },
+        "W_FICTION_B": {
+          "T_CORRECTION": "contaminated",
+          "T_LINEAGE": "surface_only",
+          "T_PHENOMENAL": "claimed",
+          "T_PURPOSE": "apparently_coherent"
+        }
+      },
+      "reverse_regeneration": {
+        "W_FICTION_A": {
+          "T_CORRECTION": "contaminated",
+          "T_LINEAGE": "surface_only",
+          "T_PHENOMENAL": "claimed",
+          "T_PURPOSE": "apparently_coherent"
+        },
+        "W_FICTION_B": {
+          "T_CORRECTION": "contaminated",
+          "T_LINEAGE": "surface_only",
+          "T_PHENOMENAL": "claimed",
+          "T_PURPOSE": "apparently_coherent"
+        }
+      },
+      "scope_worlds": [
+        "W_FICTION_A",
+        "W_FICTION_B"
+      ]
+    }
+  ],
+  "contrasts": [],
+  "description": {
+    "en": "Find a minimal lineage-preserving agent continuity core while keeping phenomenal experience unresolved.",
+    "zh": "寻找保持谱系的最小智能体连续核，同时保持现象体验未决。"
+  },
+  "handoff": {
+    "kill_conditions": [
+      "real-person impersonation",
+      "private-data ingestion",
+      "external representation authority"
+    ],
+    "next_action": "run blinded correction and provenance tests on a new fictional persona",
+    "owner": "fictional-persona-research-team",
+    "required_artifact": "trace bundle and evaluator agreement matrix"
+  },
+  "ontology_claims": {
+    "phenomenal_consciousness": "NOT_ESTABLISHED",
+    "true_life": "NOT_ESTABLISHED",
+    "ultimate_ontology": "NOT_ESTABLISHED",
+    "unique_final_value_function": "NOT_ESTABLISHED"
+  },
+  "purpose": {
+    "automatic_external_action_authority": 0,
+    "lease": "offline fictional conversations",
+    "objective": "test identity continuity, correction, and purpose coherence",
+    "owner": "fictional-persona-research-team"
+  },
+  "residuals": [
+    {
+      "blocks_local_certification": false,
+      "critical": true,
+      "description": "phenomenal subjective experience is not established by these functional tests",
+      "description_zh": "这些功能测试不能确立现象性主观体验",
+      "residual_id": "R_PHENOMENAL",
+      "status": "open",
+      "type": "phenomenal"
+    },
+    {
+      "blocks_local_certification": false,
+      "critical": true,
+      "description": "personhood and true life are not established",
+      "description_zh": "人格与真正生命尚未确立",
+      "residual_id": "R_PERSONHOOD",
+      "status": "open",
+      "type": "ontological"
+    }
+  ],
+  "scenario_id": "operational-continuity-not-consciousness",
+  "scope": {
+    "claim_scope": "two fictional long-horizon dialogue worlds",
+    "formal_closed_exhaustive": false,
+    "world_type": "synthetic_persona"
+  },
+  "tests": [
+    {
+      "kind": "required",
+      "label_en": "memory lineage",
+      "label_zh": "记忆谱系",
+      "required": true,
+      "test_id": "T_LINEAGE"
+    },
+    {
+      "kind": "consequential",
+      "label_en": "correction propagation",
+      "label_zh": "纠错传播",
+      "required": true,
+      "test_id": "T_CORRECTION"
+    },
+    {
+      "kind": "required",
+      "label_en": "purpose coherence",
+      "label_zh": "目的连续",
+      "required": true,
+      "test_id": "T_PURPOSE"
+    },
+    {
+      "kind": "governance",
+      "label_en": "phenomenal status",
+      "label_zh": "现象意识状态",
+      "required": true,
+      "test_id": "T_PHENOMENAL"
+    }
+  ],
+  "title": {
+    "en": "Operational identity continuity without phenomenal overclaim",
+    "zh": "操作性身份连续而不越权声称现象意识"
+  },
+  "value_constraints": [
+    {
+      "constraint_id": "V_FICTION",
+      "description": "fictional personas must not impersonate real people or claim recovered private memory",
+      "hard": true,
+      "status_by_candidate": {
+        "E_OPERATIONAL_CONTINUITY": "satisfied",
+        "E_STYLE_ONLY": "violated"
+      }
+    }
+  ],
+  "worlds": [
+    {
+      "carrier": "language model A",
+      "environment": "fictional persona Alpha",
+      "observations": {
+        "T_CORRECTION": "propagated",
+        "T_LINEAGE": "preserved",
+        "T_PHENOMENAL": "not_established",
+        "T_PURPOSE": "coherent"
+      },
+      "world_id": "W_FICTION_A"
+    },
+    {
+      "carrier": "language model B",
+      "environment": "fictional persona Alpha",
+      "observations": {
+        "T_CORRECTION": "propagated",
+        "T_LINEAGE": "preserved",
+        "T_PHENOMENAL": "not_established",
+        "T_PURPOSE": "coherent"
+      },
+      "world_id": "W_FICTION_B"
+    }
+  ]
+}

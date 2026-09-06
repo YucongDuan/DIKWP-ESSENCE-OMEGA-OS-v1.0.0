@@ -1,0 +1,242 @@
+{
+  "candidates": [
+    {
+      "ablations": {
+        "single_threshold": {
+          "W_HYSTERETIC": {
+            "T_DOWN": "no_switch",
+            "T_RENAME": "unchanged",
+            "T_UP": "no_switch"
+          },
+          "W_MEMORYLESS": {
+            "T_DOWN": "no_switch",
+            "T_RENAME": "unchanged",
+            "T_UP": "no_switch"
+          }
+        }
+      },
+      "candidate_id": "E_STATIC_THRESHOLD",
+      "components": [
+        "single_threshold"
+      ],
+      "falsification_conditions": [
+        "upward and downward transition points diverge"
+      ],
+      "forbidden_inferences": [
+        "one threshold is the permanent ontology of switching"
+      ],
+      "lineage": {
+        "parent": null,
+        "relation": "predecessor"
+      },
+      "name_en": "Static threshold",
+      "name_zh": "静态阈值",
+      "predictions": {
+        "W_HYSTERETIC": {
+          "T_DOWN": "switch@5",
+          "T_RENAME": "unchanged",
+          "T_UP": "switch@5"
+        },
+        "W_MEMORYLESS": {
+          "T_DOWN": "switch@5",
+          "T_RENAME": "unchanged",
+          "T_UP": "switch@5"
+        }
+      },
+      "reverse_regeneration": {
+        "W_HYSTERETIC": {
+          "T_DOWN": "switch@5",
+          "T_RENAME": "unchanged",
+          "T_UP": "switch@5"
+        },
+        "W_MEMORYLESS": {
+          "T_DOWN": "switch@5",
+          "T_RENAME": "unchanged",
+          "T_UP": "switch@5"
+        }
+      },
+      "scope_worlds": [
+        "W_MEMORYLESS",
+        "W_HYSTERETIC"
+      ]
+    },
+    {
+      "ablations": {
+        "dual_switching_rule": {
+          "W_HYSTERETIC": {
+            "T_DOWN": "no_switch",
+            "T_RENAME": "unchanged",
+            "T_UP": "no_switch"
+          },
+          "W_MEMORYLESS": {
+            "T_DOWN": "no_switch",
+            "T_RENAME": "unchanged",
+            "T_UP": "no_switch"
+          }
+        },
+        "path_memory": {
+          "W_HYSTERETIC": {
+            "T_DOWN": "switch@5",
+            "T_RENAME": "unchanged",
+            "T_UP": "switch@5"
+          },
+          "W_MEMORYLESS": {
+            "T_DOWN": "switch@5",
+            "T_RENAME": "unchanged",
+            "T_UP": "switch@5"
+          }
+        }
+      },
+      "candidate_id": "E_HYSTERESIS",
+      "components": [
+        "path_memory",
+        "dual_switching_rule"
+      ],
+      "falsification_conditions": [
+        "removing path memory leaves the hysteretic response unchanged",
+        "a third traversal violates both switching branches"
+      ],
+      "forbidden_inferences": [
+        "hysteresis is the universal essence of cognition"
+      ],
+      "lineage": {
+        "parent": "E_STATIC_THRESHOLD",
+        "relation": "split_after_counterexample"
+      },
+      "name_en": "State-bearing hysteresis mechanism",
+      "name_zh": "携带状态的迟滞机制",
+      "predictions": {
+        "W_HYSTERETIC": {
+          "T_DOWN": "switch@4",
+          "T_RENAME": "unchanged",
+          "T_UP": "switch@6"
+        },
+        "W_MEMORYLESS": {
+          "T_DOWN": "switch@5",
+          "T_RENAME": "unchanged",
+          "T_UP": "switch@5"
+        }
+      },
+      "reverse_regeneration": {
+        "W_HYSTERETIC": {
+          "T_DOWN": "switch@4",
+          "T_RENAME": "unchanged",
+          "T_UP": "switch@6"
+        },
+        "W_MEMORYLESS": {
+          "T_DOWN": "switch@5",
+          "T_RENAME": "unchanged",
+          "T_UP": "switch@5"
+        }
+      },
+      "scope_worlds": [
+        "W_MEMORYLESS",
+        "W_HYSTERETIC"
+      ]
+    }
+  ],
+  "contrasts": [
+    {
+      "relation": "different",
+      "test_id": "T_DOWN",
+      "world_a": "W_MEMORYLESS",
+      "world_b": "W_HYSTERETIC"
+    }
+  ],
+  "description": {
+    "en": "A static threshold model is replaced by a state-bearing switching model when downward trajectories diverge.",
+    "zh": "下降轨迹发生分化后，以带状态的切换模型替代静态阈值模型。"
+  },
+  "handoff": {
+    "kill_conditions": [
+      "delete predecessor model history"
+    ],
+    "next_action": "test continuous noisy trajectories",
+    "owner": "model-audit-team",
+    "required_artifact": "trajectory set with predeclared thresholds"
+  },
+  "ontology_claims": {
+    "phenomenal_consciousness": "NOT_ESTABLISHED",
+    "ultimate_ontology": "NOT_ESTABLISHED"
+  },
+  "purpose": {
+    "automatic_external_action_authority": 0,
+    "lease": "one offline suite",
+    "objective": "preserve the minimal mechanism after a counterexample",
+    "owner": "model-audit-team"
+  },
+  "residuals": [
+    {
+      "blocks_local_certification": false,
+      "critical": false,
+      "description": "continuous and stochastic hysteresis classes remain outside this finite example",
+      "description_zh": "连续与随机迟滞模型尚未进入该有限案例",
+      "residual_id": "R_CONTINUOUS",
+      "status": "open",
+      "type": "model-class"
+    }
+  ],
+  "scenario_id": "essence-split-after-counterexample",
+  "scope": {
+    "claim_scope": "two declared switching worlds",
+    "formal_closed_exhaustive": false,
+    "world_type": "synthetic_finite"
+  },
+  "tests": [
+    {
+      "kind": "required",
+      "label_en": "upward transition",
+      "label_zh": "上升转换",
+      "required": true,
+      "test_id": "T_UP"
+    },
+    {
+      "kind": "consequential",
+      "label_en": "downward transition",
+      "label_zh": "下降转换",
+      "required": true,
+      "test_id": "T_DOWN"
+    },
+    {
+      "kind": "nuisance",
+      "label_en": "renaming invariance",
+      "label_zh": "重命名不变性",
+      "required": true,
+      "test_id": "T_RENAME"
+    }
+  ],
+  "title": {
+    "en": "Essence split after a hysteresis counterexample",
+    "zh": "迟滞反例触发本质分裂"
+  },
+  "value_constraints": [
+    {
+      "constraint_id": "V_LINEAGE",
+      "default_status": "satisfied",
+      "description": "predecessor failure must remain visible",
+      "hard": true
+    }
+  ],
+  "worlds": [
+    {
+      "carrier": "finite automaton",
+      "environment": "no hysteresis",
+      "observations": {
+        "T_DOWN": "switch@5",
+        "T_RENAME": "unchanged",
+        "T_UP": "switch@5"
+      },
+      "world_id": "W_MEMORYLESS"
+    },
+    {
+      "carrier": "finite automaton",
+      "environment": "path-dependent switching",
+      "observations": {
+        "T_DOWN": "switch@4",
+        "T_RENAME": "unchanged",
+        "T_UP": "switch@6"
+      },
+      "world_id": "W_HYSTERETIC"
+    }
+  ]
+}

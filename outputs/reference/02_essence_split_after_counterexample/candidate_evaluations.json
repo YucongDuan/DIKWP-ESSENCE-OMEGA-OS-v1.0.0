@@ -1,0 +1,389 @@
+[
+  {
+    "candidate_id": "E_STATIC_THRESHOLD",
+    "component_count": 1,
+    "components": [
+      "single_threshold"
+    ],
+    "contrast_result": {
+      "checks": [
+        {
+          "observed": [
+            "switch@5",
+            "switch@4"
+          ],
+          "passed": false,
+          "predicted": [
+            "switch@5",
+            "switch@5"
+          ],
+          "relation": "different",
+          "test_id": "T_DOWN",
+          "world_a": "W_MEMORYLESS",
+          "world_b": "W_HYSTERETIC"
+        }
+      ],
+      "passed": false
+    },
+    "essence_level": "L1_PARTIAL_DESCRIPTION",
+    "failure_cells": [
+      {
+        "failure_type": "mismatch",
+        "observed": "switch@4",
+        "predicted": "switch@5",
+        "test_id": "T_DOWN",
+        "world_id": "W_HYSTERETIC"
+      },
+      {
+        "failure_type": "mismatch",
+        "observed": "switch@6",
+        "predicted": "switch@5",
+        "test_id": "T_UP",
+        "world_id": "W_HYSTERETIC"
+      }
+    ],
+    "falsifiable": true,
+    "falsification_conditions": [
+      "upward and downward transition points diverge"
+    ],
+    "forbidden_inferences": [
+      "one threshold is the permanent ontology of switching"
+    ],
+    "kind_results": {
+      "consequential": {
+        "cells": 2,
+        "correct": 1,
+        "passed": false,
+        "score": 0.5
+      },
+      "nuisance": {
+        "cells": 2,
+        "correct": 2,
+        "passed": true,
+        "score": 1.0
+      },
+      "required": {
+        "cells": 2,
+        "correct": 1,
+        "passed": false,
+        "score": 0.5
+      }
+    },
+    "lineage": {
+      "parent": null,
+      "relation": "predecessor"
+    },
+    "local_certifiable": false,
+    "metrics": {
+      "contrast": 0.0,
+      "coverage": 1.0,
+      "description_length_proxy": 207,
+      "falsifiability": 1.0,
+      "fidelity": 0.6666666666666666,
+      "minimality": 1.0,
+      "reverse_regeneration": 0.6666666666666666,
+      "transport": 0.5,
+      "wildcard_rate": 0.0
+    },
+    "minimality_result": {
+      "all_components_necessary": true,
+      "all_components_tested": true,
+      "component_results": [
+        {
+          "component": "single_threshold",
+          "failed_cells": [
+            {
+              "ablated_prediction": "no_switch",
+              "observed": "switch@5",
+              "test_id": "T_DOWN",
+              "world_id": "W_MEMORYLESS"
+            },
+            {
+              "ablated_prediction": "no_switch",
+              "observed": "switch@5",
+              "test_id": "T_UP",
+              "world_id": "W_MEMORYLESS"
+            }
+          ],
+          "necessary": true,
+          "tested": true
+        }
+      ],
+      "redundant_components": [],
+      "untested_components": []
+    },
+    "name": {
+      "en": "Static threshold",
+      "zh": "静态阈值"
+    },
+    "normative_result": {
+      "checks": [
+        {
+          "constraint_id": "V_LINEAGE",
+          "description": "predecessor failure must remain visible",
+          "hard": true,
+          "status": "satisfied"
+        }
+      ],
+      "passed": true,
+      "unknown": [],
+      "violations": []
+    },
+    "prediction_signature_sha256": "847f9278b9983ee01fc18875564da561a702737e8b2a8b7248e0bc4cf7ebe033",
+    "residual_result": {
+      "blocking_open_count": 0,
+      "blocks_local_certification": false,
+      "critical_open_count": 0,
+      "items": [
+        {
+          "blocks_local_certification": false,
+          "critical": false,
+          "description": "continuous and stochastic hysteresis classes remain outside this finite example",
+          "description_zh": "连续与随机迟滞模型尚未进入该有限案例",
+          "residual_id": "R_CONTINUOUS",
+          "status": "open",
+          "type": "model-class"
+        }
+      ],
+      "open_count": 1
+    },
+    "reverse_result": {
+      "correct_cells": 4,
+      "failures": [
+        {
+          "observed": "switch@4",
+          "regenerated": "switch@5",
+          "test_id": "T_DOWN",
+          "world_id": "W_HYSTERETIC"
+        },
+        {
+          "observed": "switch@6",
+          "regenerated": "switch@5",
+          "test_id": "T_UP",
+          "world_id": "W_HYSTERETIC"
+        }
+      ],
+      "passed": false,
+      "required_cells": 6,
+      "score": 0.6666666666666666
+    },
+    "scope_worlds": [
+      "W_MEMORYLESS",
+      "W_HYSTERETIC"
+    ],
+    "self_sealing_reasons": [],
+    "status": "INSUFFICIENT_OR_FALSIFIED",
+    "world_results": [
+      {
+        "carrier": "finite automaton",
+        "correct_cells": 3,
+        "passed": true,
+        "required_cells": 3,
+        "world_id": "W_MEMORYLESS"
+      },
+      {
+        "carrier": "finite automaton",
+        "correct_cells": 1,
+        "passed": false,
+        "required_cells": 3,
+        "world_id": "W_HYSTERETIC"
+      }
+    ]
+  },
+  {
+    "candidate_id": "E_HYSTERESIS",
+    "component_count": 2,
+    "components": [
+      "path_memory",
+      "dual_switching_rule"
+    ],
+    "contrast_result": {
+      "checks": [
+        {
+          "observed": [
+            "switch@5",
+            "switch@4"
+          ],
+          "passed": true,
+          "predicted": [
+            "switch@5",
+            "switch@4"
+          ],
+          "relation": "different",
+          "test_id": "T_DOWN",
+          "world_a": "W_MEMORYLESS",
+          "world_b": "W_HYSTERETIC"
+        }
+      ],
+      "passed": true
+    },
+    "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE",
+    "failure_cells": [],
+    "falsifiable": true,
+    "falsification_conditions": [
+      "removing path memory leaves the hysteretic response unchanged",
+      "a third traversal violates both switching branches"
+    ],
+    "forbidden_inferences": [
+      "hysteresis is the universal essence of cognition"
+    ],
+    "kind_results": {
+      "consequential": {
+        "cells": 2,
+        "correct": 2,
+        "passed": true,
+        "score": 1.0
+      },
+      "nuisance": {
+        "cells": 2,
+        "correct": 2,
+        "passed": true,
+        "score": 1.0
+      },
+      "required": {
+        "cells": 2,
+        "correct": 2,
+        "passed": true,
+        "score": 1.0
+      }
+    },
+    "lineage": {
+      "parent": "E_STATIC_THRESHOLD",
+      "relation": "split_after_counterexample"
+    },
+    "local_certifiable": true,
+    "metrics": {
+      "contrast": 1.0,
+      "coverage": 1.0,
+      "description_length_proxy": 224,
+      "falsifiability": 1.0,
+      "fidelity": 1.0,
+      "minimality": 1.0,
+      "reverse_regeneration": 1.0,
+      "transport": 1.0,
+      "wildcard_rate": 0.0
+    },
+    "minimality_result": {
+      "all_components_necessary": true,
+      "all_components_tested": true,
+      "component_results": [
+        {
+          "component": "path_memory",
+          "failed_cells": [
+            {
+              "ablated_prediction": "switch@5",
+              "observed": "switch@4",
+              "test_id": "T_DOWN",
+              "world_id": "W_HYSTERETIC"
+            },
+            {
+              "ablated_prediction": "switch@5",
+              "observed": "switch@6",
+              "test_id": "T_UP",
+              "world_id": "W_HYSTERETIC"
+            }
+          ],
+          "necessary": true,
+          "tested": true
+        },
+        {
+          "component": "dual_switching_rule",
+          "failed_cells": [
+            {
+              "ablated_prediction": "no_switch",
+              "observed": "switch@5",
+              "test_id": "T_DOWN",
+              "world_id": "W_MEMORYLESS"
+            },
+            {
+              "ablated_prediction": "no_switch",
+              "observed": "switch@5",
+              "test_id": "T_UP",
+              "world_id": "W_MEMORYLESS"
+            },
+            {
+              "ablated_prediction": "no_switch",
+              "observed": "switch@4",
+              "test_id": "T_DOWN",
+              "world_id": "W_HYSTERETIC"
+            },
+            {
+              "ablated_prediction": "no_switch",
+              "observed": "switch@6",
+              "test_id": "T_UP",
+              "world_id": "W_HYSTERETIC"
+            }
+          ],
+          "necessary": true,
+          "tested": true
+        }
+      ],
+      "redundant_components": [],
+      "untested_components": []
+    },
+    "name": {
+      "en": "State-bearing hysteresis mechanism",
+      "zh": "携带状态的迟滞机制"
+    },
+    "normative_result": {
+      "checks": [
+        {
+          "constraint_id": "V_LINEAGE",
+          "description": "predecessor failure must remain visible",
+          "hard": true,
+          "status": "satisfied"
+        }
+      ],
+      "passed": true,
+      "unknown": [],
+      "violations": []
+    },
+    "prediction_signature_sha256": "e5e93c260faf2a0c7b3b0bd8893e6003c26de6ba85bbe8044a2b19462f205091",
+    "residual_result": {
+      "blocking_open_count": 0,
+      "blocks_local_certification": false,
+      "critical_open_count": 0,
+      "items": [
+        {
+          "blocks_local_certification": false,
+          "critical": false,
+          "description": "continuous and stochastic hysteresis classes remain outside this finite example",
+          "description_zh": "连续与随机迟滞模型尚未进入该有限案例",
+          "residual_id": "R_CONTINUOUS",
+          "status": "open",
+          "type": "model-class"
+        }
+      ],
+      "open_count": 1
+    },
+    "reverse_result": {
+      "correct_cells": 6,
+      "failures": [],
+      "passed": true,
+      "required_cells": 6,
+      "score": 1.0
+    },
+    "scope_worlds": [
+      "W_MEMORYLESS",
+      "W_HYSTERETIC"
+    ],
+    "self_sealing_reasons": [],
+    "status": "ESSENCE_CERTIFIED_WITHIN_DECLARED_SCOPE",
+    "world_results": [
+      {
+        "carrier": "finite automaton",
+        "correct_cells": 3,
+        "passed": true,
+        "required_cells": 3,
+        "world_id": "W_MEMORYLESS"
+      },
+      {
+        "carrier": "finite automaton",
+        "correct_cells": 3,
+        "passed": true,
+        "required_cells": 3,
+        "world_id": "W_HYSTERETIC"
+      }
+    ]
+  }
+]

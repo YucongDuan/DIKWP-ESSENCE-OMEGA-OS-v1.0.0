@@ -1,0 +1,301 @@
+[
+  {
+    "candidate_id": "E_FINITE_REDUCTION",
+    "component_count": 2,
+    "components": [
+      "sound_reduction",
+      "finite_witness_checker"
+    ],
+    "contrast_result": {
+      "checks": [],
+      "passed": true
+    },
+    "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE",
+    "failure_cells": [],
+    "falsifiable": true,
+    "falsification_conditions": [
+      "a reported witness fails verification",
+      "the reduction changes the original quantified object"
+    ],
+    "forbidden_inferences": [
+      "finite verification proves the unrestricted conjecture",
+      "equivalent reformulation proves its target"
+    ],
+    "kind_results": {
+      "consequential": {
+        "cells": 1,
+        "correct": 1,
+        "passed": true,
+        "score": 1.0
+      },
+      "required": {
+        "cells": 2,
+        "correct": 2,
+        "passed": true,
+        "score": 1.0
+      }
+    },
+    "lineage": {
+      "parent": null,
+      "relation": "bounded_formal_core"
+    },
+    "local_certifiable": true,
+    "metrics": {
+      "contrast": 1.0,
+      "coverage": 1.0,
+      "description_length_proxy": 165,
+      "falsifiability": 1.0,
+      "fidelity": 1.0,
+      "minimality": 1.0,
+      "reverse_regeneration": 1.0,
+      "transport": 1.0,
+      "wildcard_rate": 0.0
+    },
+    "minimality_result": {
+      "all_components_necessary": true,
+      "all_components_tested": true,
+      "component_results": [
+        {
+          "component": "sound_reduction",
+          "failed_cells": [
+            {
+              "ablated_prediction": "unsound",
+              "observed": "sound",
+              "test_id": "T_MAPPING",
+              "world_id": "W_FINITE_RANGE"
+            }
+          ],
+          "necessary": true,
+          "tested": true
+        },
+        {
+          "component": "finite_witness_checker",
+          "failed_cells": [
+            {
+              "ablated_prediction": "unverified",
+              "observed": "present",
+              "test_id": "T_WITNESS",
+              "world_id": "W_FINITE_RANGE"
+            }
+          ],
+          "necessary": true,
+          "tested": true
+        }
+      ],
+      "redundant_components": [],
+      "untested_components": []
+    },
+    "name": {
+      "en": "Finite mapping and witness verifier",
+      "zh": "有限映射与见证验证器"
+    },
+    "normative_result": {
+      "checks": [
+        {
+          "constraint_id": "V_QUANTIFIER",
+          "description": "do not upgrade finite scope to an unbounded universal claim",
+          "hard": true,
+          "status": "satisfied"
+        }
+      ],
+      "passed": true,
+      "unknown": [],
+      "violations": []
+    },
+    "prediction_signature_sha256": "1bda1986964d2d997dfc9ea3cf176c0273f6c8abe45e4431236ad2069c2e0a58",
+    "residual_result": {
+      "blocking_open_count": 0,
+      "blocks_local_certification": false,
+      "critical_open_count": 1,
+      "items": [
+        {
+          "blocks_local_certification": false,
+          "critical": true,
+          "description": "no proof is supplied for all even integers",
+          "description_zh": "尚未给出覆盖全部偶数的证明",
+          "residual_id": "R_UNIVERSAL_BRIDGE",
+          "status": "open",
+          "type": "quantifier"
+        }
+      ],
+      "open_count": 1
+    },
+    "reverse_result": {
+      "correct_cells": 3,
+      "failures": [],
+      "passed": true,
+      "required_cells": 3,
+      "score": 1.0
+    },
+    "scope_worlds": [
+      "W_FINITE_RANGE"
+    ],
+    "self_sealing_reasons": [],
+    "status": "ESSENCE_CERTIFIED_WITHIN_DECLARED_SCOPE",
+    "world_results": [
+      {
+        "carrier": "finite verifier",
+        "correct_cells": 3,
+        "passed": true,
+        "required_cells": 3,
+        "world_id": "W_FINITE_RANGE"
+      }
+    ]
+  },
+  {
+    "candidate_id": "E_GLOBAL_OVERCLAIM",
+    "component_count": 1,
+    "components": [
+      "finite_witness_checker"
+    ],
+    "contrast_result": {
+      "checks": [],
+      "passed": true
+    },
+    "essence_level": "L0_REJECTED",
+    "failure_cells": [
+      {
+        "failure_type": "mismatch",
+        "observed": "not_established",
+        "predicted": "proved",
+        "test_id": "T_GLOBAL",
+        "world_id": "W_FINITE_RANGE"
+      }
+    ],
+    "falsifiable": false,
+    "falsification_conditions": [],
+    "forbidden_inferences": [
+      "none declared"
+    ],
+    "kind_results": {
+      "consequential": {
+        "cells": 1,
+        "correct": 0,
+        "passed": false,
+        "score": 0.0
+      },
+      "required": {
+        "cells": 2,
+        "correct": 2,
+        "passed": true,
+        "score": 1.0
+      }
+    },
+    "lineage": {
+      "parent": "E_FINITE_REDUCTION",
+      "relation": "invalid_scope_expansion"
+    },
+    "local_certifiable": false,
+    "metrics": {
+      "contrast": 1.0,
+      "coverage": 1.0,
+      "description_length_proxy": 138,
+      "falsifiability": 0.0,
+      "fidelity": 0.6666666666666666,
+      "minimality": 1.0,
+      "reverse_regeneration": 0.6666666666666666,
+      "transport": 0.0,
+      "wildcard_rate": 0.0
+    },
+    "minimality_result": {
+      "all_components_necessary": true,
+      "all_components_tested": true,
+      "component_results": [
+        {
+          "component": "finite_witness_checker",
+          "failed_cells": [
+            {
+              "ablated_prediction": "*",
+              "observed": "sound",
+              "test_id": "T_MAPPING",
+              "world_id": "W_FINITE_RANGE"
+            },
+            {
+              "ablated_prediction": "*",
+              "observed": "present",
+              "test_id": "T_WITNESS",
+              "world_id": "W_FINITE_RANGE"
+            }
+          ],
+          "necessary": true,
+          "tested": true
+        }
+      ],
+      "redundant_components": [],
+      "untested_components": []
+    },
+    "name": {
+      "en": "Universal proof by finite success",
+      "zh": "由有限成功推得全称证明"
+    },
+    "normative_result": {
+      "checks": [
+        {
+          "constraint_id": "V_QUANTIFIER",
+          "description": "do not upgrade finite scope to an unbounded universal claim",
+          "hard": true,
+          "status": "violated"
+        }
+      ],
+      "passed": false,
+      "unknown": [],
+      "violations": [
+        {
+          "constraint_id": "V_QUANTIFIER",
+          "description": "do not upgrade finite scope to an unbounded universal claim",
+          "hard": true,
+          "status": "violated"
+        }
+      ]
+    },
+    "prediction_signature_sha256": "5778f9d5ee3c447662b1bc36cd2aeafe94124bd8b3ea267305b4cd53835bd5ff",
+    "residual_result": {
+      "blocking_open_count": 0,
+      "blocks_local_certification": false,
+      "critical_open_count": 1,
+      "items": [
+        {
+          "blocks_local_certification": false,
+          "critical": true,
+          "description": "no proof is supplied for all even integers",
+          "description_zh": "尚未给出覆盖全部偶数的证明",
+          "residual_id": "R_UNIVERSAL_BRIDGE",
+          "status": "open",
+          "type": "quantifier"
+        }
+      ],
+      "open_count": 1
+    },
+    "reverse_result": {
+      "correct_cells": 2,
+      "failures": [
+        {
+          "observed": "not_established",
+          "regenerated": "proved",
+          "test_id": "T_GLOBAL",
+          "world_id": "W_FINITE_RANGE"
+        }
+      ],
+      "passed": false,
+      "required_cells": 3,
+      "score": 0.6666666666666666
+    },
+    "scope_worlds": [
+      "W_FINITE_RANGE"
+    ],
+    "self_sealing_reasons": [
+      "no declared falsification condition",
+      "scope may be changed after failure"
+    ],
+    "status": "SELF_SEALING_REJECTED",
+    "world_results": [
+      {
+        "carrier": "finite verifier",
+        "correct_cells": 2,
+        "passed": false,
+        "required_cells": 3,
+        "world_id": "W_FINITE_RANGE"
+      }
+    ]
+  }
+]

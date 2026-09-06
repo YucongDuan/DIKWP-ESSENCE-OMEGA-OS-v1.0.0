@@ -1,0 +1,6 @@
+candidate_id,component,tested,necessary,failed_world,failed_test,observed,ablated_prediction
+E_BOUNDED_CAUSE,mechanism,True,True,W_ON,T_CAUSE_ON,effect,no_effect
+E_BOUNDED_CAUSE,activation_condition,True,True,W_ON,T_CAUSE_OFF,not_applicable,effect
+E_BOUNDED_CAUSE,activation_condition,True,True,W_OFF,T_CAUSE_OFF,no_effect,effect
+E_BOUNDED_CAUSE,activation_condition,True,True,W_OFF,T_CAUSE_ON,not_applicable,effect
+E_ALL_EXPLAINING,mysterious_essence,True,False,,,,

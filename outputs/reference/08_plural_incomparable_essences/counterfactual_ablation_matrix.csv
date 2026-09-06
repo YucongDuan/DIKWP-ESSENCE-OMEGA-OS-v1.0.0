@@ -1,0 +1,3 @@
+candidate_id,component,tested,necessary,failed_world,failed_test,observed,ablated_prediction
+E_SYMBOLIC,rewrite_rule,True,True,W_OBS,T_OUTPUT,pattern_A,no_pattern
+E_DYNAMICAL,attractor_relation,True,True,W_OBS,T_OUTPUT,pattern_A,no_pattern

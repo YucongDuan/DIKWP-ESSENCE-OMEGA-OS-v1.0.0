@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/dikwp-essence-omega/probe.schema.json",
+  "title": "Discriminating Probe",
+  "type": "object",
+  "required": ["probe_id", "owner", "authorized", "reversible", "lease_valid", "harm", "irreversibility", "predictions_by_candidate"],
+  "properties": {
+    "probe_id": {"type": "string", "minLength": 1},
+    "description": {"type": "string"},
+    "owner": {"type": "string", "minLength": 1},
+    "authorized": {"type": "boolean"},
+    "reversible": {"type": "boolean"},
+    "lease_valid": {"type": "boolean"},
+    "cost": {"type": "number", "minimum": 0},
+    "harm": {"type": "number", "minimum": 0},
+    "irreversibility": {"type": "number", "minimum": 0},
+    "harm_limit": {"type": "number", "minimum": 0},
+    "irreversibility_limit": {"type": "number", "minimum": 0},
+    "stop_condition": {"type": "string"},
+    "predictions_by_candidate": {"type": "object"}
+  },
+  "additionalProperties": false
+}

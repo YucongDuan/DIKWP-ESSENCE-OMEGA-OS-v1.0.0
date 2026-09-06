@@ -1,0 +1,19 @@
+{
+  "frontier_status": "OPEN",
+  "open_items": [
+    {
+      "blocks_local_certification": false,
+      "critical": false,
+      "description": "shared halt consequence does not reveal every private meaning of refusal",
+      "description_zh": "共同停止后果并不揭示拒绝的全部私人意义",
+      "residual_id": "R_PRIVATE_MEANING",
+      "status": "open",
+      "type": "cross-agent"
+    }
+  ],
+  "rule": "a residual must be typed, scoped, attributable, and linked to a reopening or settlement condition",
+  "settled_items": [],
+  "type_counts": {
+    "cross-agent": 1
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "kill_conditions": [
+    "choose a winner solely by vocabulary preference"
+  ],
+  "next_action": "design a path-sensitive intervention that distinguishes the two mechanisms",
+  "owner": "plural-model-team",
+  "required_artifact": "pre-registered discriminating probe"
+}

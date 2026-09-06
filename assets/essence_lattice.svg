@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="t d">
+<title id="t">Essence lattice</title><desc id="d">Candidates rise from rejected or partial descriptions through predictive, causal, cross-world, and reversible-generative levels while an ultimate ontology remains open.</desc>
+<defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071525"/><stop offset="1" stop-color="#16354d"/></linearGradient><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#57d9cf"/></marker></defs>
+<rect width="1200" height="720" fill="url(#b)"/>
+<text x="600" y="55" text-anchor="middle" fill="#fff" font-family="Arial" font-size="32" font-weight="700">ESSENCE LATTICE · NOT A LADDER OF METAPHYSICAL STATUS</text>
+<g font-family="Arial" text-anchor="middle">
+<rect x="420" y="100" width="360" height="76" rx="18" fill="#1b5065" stroke="#63e2d8"/><text x="600" y="132" fill="#fff" font-size="22" font-weight="700">L5 · Reversible-generative essence</text><text x="600" y="158" fill="#c6f5ef" font-size="15">reverse return + declared-world transport</text>
+<rect x="420" y="220" width="360" height="76" rx="18" fill="#1b455d" stroke="#63e2d8"/><text x="600" y="252" fill="#fff" font-size="22" font-weight="700">L4 · Cross-world core</text><text x="600" y="278" fill="#c6f5ef" font-size="15">carrier invariance + consequential sensitivity</text>
+<rect x="420" y="340" width="360" height="76" rx="18" fill="#233e59" stroke="#f2c25e"/><text x="600" y="372" fill="#fff" font-size="22" font-weight="700">L3 · Causal-minimal core</text><text x="600" y="398" fill="#ffe7af" font-size="15">every retained component is necessary</text>
+<rect x="420" y="460" width="360" height="76" rx="18" fill="#37364f" stroke="#c596f9"/><text x="600" y="492" fill="#fff" font-size="22" font-weight="700">L2 · Predictive core</text><text x="600" y="518" fill="#ead8ff" font-size="15">fit without established minimality</text>
+<rect x="420" y="580" width="360" height="76" rx="18" fill="#4a2f43" stroke="#ff8199"/><text x="600" y="612" fill="#fff" font-size="22" font-weight="700">L0–L1 · Rejected or partial</text><text x="600" y="638" fill="#ffd0d8" font-size="15">wildcard · scope escape · missing consequence</text>
+<g stroke="#57d9cf" stroke-width="3" marker-end="url(#a)"><path d="M600 580V536"/><path d="M600 460V416"/><path d="M600 340V296"/><path d="M600 220V176"/></g>
+<rect x="845" y="100" width="285" height="556" rx="22" fill="#0c2030" stroke="#ff8199" stroke-dasharray="8 7"/>
+<text x="987" y="145" fill="#fff" font-size="24" font-weight="700">LΩ · OPEN</text>
+<text x="987" y="185" fill="#ffd0d8" font-size="16">Ultimate ontology</text>
+<text x="987" y="220" fill="#ffd0d8" font-size="16">True life</text>
+<text x="987" y="255" fill="#ffd0d8" font-size="16">Phenomenal consciousness</text>
+<text x="987" y="290" fill="#ffd0d8" font-size="16">Unique final value</text>
+<text x="987" y="350" fill="#9fc3d3" font-size="15">No finite certificate</text>
+<text x="987" y="375" fill="#9fc3d3" font-size="15">automatically crosses</text>
+<text x="987" y="400" fill="#9fc3d3" font-size="15">this boundary.</text>
+<rect x="70" y="100" width="285" height="556" rx="22" fill="#0c2030" stroke="#63e2d8" stroke-dasharray="8 7"/>
+<text x="212" y="145" fill="#fff" font-size="24" font-weight="700">PLURALITY</text>
+<text x="212" y="190" fill="#c6f5ef" font-size="16">Non-isomorphic candidates</text>
+<text x="212" y="225" fill="#c6f5ef" font-size="16">may remain tied.</text>
+<text x="212" y="285" fill="#9fc3d3" font-size="15">The lattice records:</text>
+<text x="212" y="320" fill="#9fc3d3" font-size="15">component subsets</text>
+<text x="212" y="350" fill="#9fc3d3" font-size="15">observational equivalence</text>
+<text x="212" y="380" fill="#9fc3d3" font-size="15">successor splits</text>
+<text x="212" y="410" fill="#9fc3d3" font-size="15">Pareto dominance</text>
+<text x="212" y="470" fill="#ffe7af" font-size="15">A safe discriminating probe</text>
+<text x="212" y="495" fill="#ffe7af" font-size="15">is preferred over a forced winner.</text>
+</g>
+</svg>

@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">DIKWP-ESSENCE-OMEGA-OS architecture</title>
+  <desc id="desc">Declared worlds and candidates pass through falsification, ablation, transport, reverse regeneration, DIKWP semantic responsibility, and residual preservation to produce bounded essence certificates and safe probes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#071525"/><stop offset="1" stop-color="#132a40"/></linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#31d7cf"/><stop offset="1" stop-color="#4a8cff"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity=".35"/></filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#66e3dc"/></marker>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <text x="800" y="64" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#fff">DIKWP-ESSENCE-OMEGA-OS</text>
+  <text x="800" y="102" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#9adbd8">Open ultimate-essence runtime · bounded causal-generative invariants</text>
+
+  <g filter="url(#shadow)" font-family="Arial, sans-serif">
+    <rect x="70" y="180" width="290" height="190" rx="22" fill="#102f45" stroke="#4a8cff" stroke-width="2"/>
+    <text x="215" y="220" text-anchor="middle" font-size="23" font-weight="700" fill="#fff">DECLARED WORLD FAMILY</text>
+    <text x="100" y="265" font-size="18" fill="#c8e8f2">• worlds &amp; carriers</text>
+    <text x="100" y="300" font-size="18" fill="#c8e8f2">• tests &amp; contrasts</text>
+    <text x="100" y="335" font-size="18" fill="#c8e8f2">• observations &amp; scope</text>
+
+    <rect x="70" y="490" width="290" height="190" rx="22" fill="#102f45" stroke="#d796ff" stroke-width="2"/>
+    <text x="215" y="530" text-anchor="middle" font-size="23" font-weight="700" fill="#fff">ESSENCE CANDIDATES</text>
+    <text x="100" y="575" font-size="18" fill="#eadbff">• components</text>
+    <text x="100" y="610" font-size="18" fill="#eadbff">• predictions &amp; lineage</text>
+    <text x="100" y="645" font-size="18" fill="#eadbff">• falsifiers &amp; boundaries</text>
+
+    <rect x="475" y="155" width="650" height="555" rx="34" fill="#0b2235" stroke="url(#cyan)" stroke-width="3"/>
+    <text x="800" y="205" text-anchor="middle" font-size="28" font-weight="700" fill="#fff">ESSENCE FORGE</text>
+
+    <rect x="525" y="245" width="250" height="92" rx="18" fill="#173d51" stroke="#54d8ce"/>
+    <text x="650" y="281" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">1 · Falsification</text>
+    <text x="650" y="309" text-anchor="middle" font-size="15" fill="#b7dedb">no wildcard · no scope escape</text>
+
+    <rect x="825" y="245" width="250" height="92" rx="18" fill="#173d51" stroke="#54d8ce"/>
+    <text x="950" y="281" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">2 · Causal Ablation</text>
+    <text x="950" y="309" text-anchor="middle" font-size="15" fill="#b7dedb">every retained part is necessary</text>
+
+    <rect x="525" y="380" width="250" height="92" rx="18" fill="#173d51" stroke="#54d8ce"/>
+    <text x="650" y="416" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">3 · World Transport</text>
+    <text x="650" y="444" text-anchor="middle" font-size="15" fill="#b7dedb">nuisance invariant · contrast sensitive</text>
+
+    <rect x="825" y="380" width="250" height="92" rx="18" fill="#173d51" stroke="#54d8ce"/>
+    <text x="950" y="416" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">4 · Reverse Return</text>
+    <text x="950" y="444" text-anchor="middle" font-size="15" fill="#b7dedb">candidate regenerates consequences</text>
+
+    <rect x="525" y="515" width="250" height="120" rx="18" fill="#173d51" stroke="#f5bd57"/>
+    <text x="650" y="552" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">5 · DIKWP Network</text>
+    <text x="650" y="582" text-anchor="middle" font-size="15" fill="#ffe4a9">D / I / K / W / P</text>
+    <text x="650" y="607" text-anchor="middle" font-size="15" fill="#ffe4a9">25 route kinds · append-only</text>
+
+    <rect x="825" y="515" width="250" height="120" rx="18" fill="#173d51" stroke="#ff7c96"/>
+    <text x="950" y="552" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">6 · Residual Frontier</text>
+    <text x="950" y="582" text-anchor="middle" font-size="15" fill="#ffc6d0">causal · value · permission</text>
+    <text x="950" y="607" text-anchor="middle" font-size="15" fill="#ffc6d0">ontological · phenomenal</text>
+
+    <rect x="1240" y="190" width="290" height="190" rx="22" fill="#102f45" stroke="#55d9a1" stroke-width="2"/>
+    <text x="1385" y="230" text-anchor="middle" font-size="23" font-weight="700" fill="#fff">BOUNDED CERTIFICATE</text>
+    <text x="1270" y="275" font-size="18" fill="#c9f5df">• selected plural cores</text>
+    <text x="1270" y="310" font-size="18" fill="#c9f5df">• status vector</text>
+    <text x="1270" y="345" font-size="18" fill="#c9f5df">• forbidden inferences</text>
+
+    <rect x="1240" y="490" width="290" height="190" rx="22" fill="#102f45" stroke="#f5bd57" stroke-width="2"/>
+    <text x="1385" y="530" text-anchor="middle" font-size="23" font-weight="700" fill="#fff">SAFE NEXT PROBE</text>
+    <text x="1270" y="575" font-size="18" fill="#ffe4a9">• named authority</text>
+    <text x="1270" y="610" font-size="18" fill="#ffe4a9">• reversible &amp; leased</text>
+    <text x="1270" y="645" font-size="18" fill="#ffe4a9">• external action authority = 0</text>
+  </g>
+
+  <g stroke="#66e3dc" stroke-width="4" fill="none" marker-end="url(#arrow)">
+    <path d="M360 275 C410 275 425 300 475 300"/>
+    <path d="M360 585 C410 585 425 555 475 555"/>
+    <path d="M1125 300 C1175 300 1190 285 1240 285"/>
+    <path d="M1125 555 C1175 555 1190 585 1240 585"/>
+  </g>
+
+  <rect x="210" y="760" width="1180" height="82" rx="20" fill="#091b2a" stroke="#ff7c96" stroke-width="2"/>
+  <text x="800" y="795" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#fff">GLOBAL FIREWALL</text>
+  <text x="800" y="825" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#ffc6d0">Local causal sufficiency ≠ final ontology ≠ true life ≠ phenomenal consciousness ≠ legitimate external authority</text>
+</svg>

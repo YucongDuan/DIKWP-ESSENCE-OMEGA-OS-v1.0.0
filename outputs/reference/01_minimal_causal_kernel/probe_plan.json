@@ -1,0 +1,12 @@
+{
+  "active_candidate_ids": [
+    "E_FEEDBACK_GATE",
+    "E_OVERCOMPLETE"
+  ],
+  "aggregate_score_used": false,
+  "automatic_external_action_authority": 0,
+  "evaluated_probes": [],
+  "selected_probe_id": null,
+  "selection_rule": "hard authorization/reversibility/lease/risk filter, then lexicographic discrimination-harm-irreversibility-cost order",
+  "status": "NO_SAFE_DISCRIMINATING_PROBE_DECLARED"
+}

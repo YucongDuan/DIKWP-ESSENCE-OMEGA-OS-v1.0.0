@@ -1,0 +1,8 @@
+{
+  "kill_conditions": [
+    "delete predecessor model history"
+  ],
+  "next_action": "test continuous noisy trajectories",
+  "owner": "model-audit-team",
+  "required_artifact": "trajectory set with predeclared thresholds"
+}

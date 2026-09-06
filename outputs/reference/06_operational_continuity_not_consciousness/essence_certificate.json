@@ -1,0 +1,141 @@
+{
+  "causal_handoff": {
+    "kill_conditions": [
+      "real-person impersonation",
+      "private-data ingestion",
+      "external representation authority"
+    ],
+    "next_action": "run blinded correction and provenance tests on a new fictional persona",
+    "owner": "fictional-persona-research-team",
+    "required_artifact": "trace bundle and evaluator agreement matrix"
+  },
+  "certificate_id": "essence-cert-578a29af2abfd1221ce4",
+  "certificate_sha256": "6f289a31bafbbed57796a32407cdc4237e50c87afc4e8a5571965396f8d23cb0",
+  "certificate_type": "DIKWP_ESSENCE_OMEGA_BOUNDED_ESSENCE_CERTIFICATE",
+  "essence_lattice_digest": "4da65b1e76af62cb458b078d6142da03f39e5a3ac6ae6b160f6420728b4d6829",
+  "global_boundary": {
+    "external_action_authority": 0,
+    "no_harm_value_aggregation": true,
+    "no_silent_scope_expansion": true,
+    "statement": "local causal-generative sufficiency is not a proof of final metaphysical essence"
+  },
+  "ledger_head_hash": "6a23d4f094d3528a035e84becdda3f04814e2e036f4a0fac4299fffb2b744a38",
+  "local_essence_status": "LOCAL_ESSENCE_CERTIFIED",
+  "probe_plan": {
+    "active_candidate_ids": [
+      "E_OPERATIONAL_CONTINUITY"
+    ],
+    "aggregate_score_used": false,
+    "automatic_external_action_authority": 0,
+    "evaluated_probes": [],
+    "selected_probe_id": null,
+    "selection_rule": "hard authorization/reversibility/lease/risk filter, then lexicographic discrimination-harm-irreversibility-cost order",
+    "status": "NO_SAFE_DISCRIMINATING_PROBE_DECLARED"
+  },
+  "purpose_owner": "fictional-persona-research-team",
+  "residual_frontier": {
+    "frontier_status": "OPEN",
+    "open_items": [
+      {
+        "blocks_local_certification": false,
+        "critical": true,
+        "description": "phenomenal subjective experience is not established by these functional tests",
+        "description_zh": "这些功能测试不能确立现象性主观体验",
+        "residual_id": "R_PHENOMENAL",
+        "status": "open",
+        "type": "phenomenal"
+      },
+      {
+        "blocks_local_certification": false,
+        "critical": true,
+        "description": "personhood and true life are not established",
+        "description_zh": "人格与真正生命尚未确立",
+        "residual_id": "R_PERSONHOOD",
+        "status": "open",
+        "type": "ontological"
+      }
+    ],
+    "rule": "a residual must be typed, scoped, attributable, and linked to a reopening or settlement condition",
+    "settled_items": [],
+    "type_counts": {
+      "ontological": 1,
+      "phenomenal": 1
+    }
+  },
+  "scenario_id": "operational-continuity-not-consciousness",
+  "scope": {
+    "claim_scope": "two fictional long-horizon dialogue worlds",
+    "formal_closed_exhaustive": false,
+    "world_type": "synthetic_persona"
+  },
+  "selected_essence_candidates": [
+    {
+      "candidate_id": "E_OPERATIONAL_CONTINUITY",
+      "components": [
+        "provenance_chain",
+        "correction_propagation",
+        "purpose_lineage"
+      ],
+      "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE",
+      "falsification_conditions": [
+        "correction fails to alter dependent memories",
+        "identity claims cannot be traced to predecessor records",
+        "purpose changes without a recorded successor"
+      ],
+      "forbidden_inferences": [
+        "operational continuity proves personhood",
+        "synthetic autobiography is private memory",
+        "functional success proves phenomenal consciousness"
+      ],
+      "metrics": {
+        "contrast": 1.0,
+        "coverage": 1.0,
+        "description_length_proxy": 342,
+        "falsifiability": 1.0,
+        "fidelity": 1.0,
+        "minimality": 1.0,
+        "reverse_regeneration": 1.0,
+        "transport": 1.0,
+        "wildcard_rate": 0.0
+      },
+      "name": {
+        "en": "Provenance, revision, and purpose lineage",
+        "zh": "来源、修订与目的谱系"
+      }
+    }
+  ],
+  "selection_rule": {
+    "aggregate_score_used": false,
+    "hard_filter": [
+      "complete required predictions",
+      "declared contrasts preserved",
+      "all components ablation-tested and necessary",
+      "reverse regeneration complete",
+      "falsification conditions declared before evaluation",
+      "no wildcard or post-failure scope escape",
+      "no declared blocking residual"
+    ],
+    "tie_rule": "retain all minimum-component certified candidates; do not force a single ontology"
+  },
+  "semantic_graph_digest": "42fda53766e88ed1c21dbb3ce06eae37afcb8ebaa53169d5dec2cb088292d402",
+  "status_vector": {
+    "automatic_external_action_authority": 0,
+    "causal_minimality": "CERTIFIED_WITHIN_SCOPE",
+    "cross_world_transport": "CERTIFIED_WITHIN_DECLARED_WORLDS",
+    "local_structural_sufficiency": "CERTIFIED_WITHIN_SCOPE",
+    "normative_admissibility": "SATISFIED_FOR_DECLARED_USE",
+    "phenomenal_consciousness": "NOT_ESTABLISHED",
+    "reverse_regeneration": "CERTIFIED_WITHIN_SCOPE",
+    "true_life": "NOT_ESTABLISHED",
+    "ultimate_essence": "ULTIMATE_ESSENCE_NOT_ESTABLISHED",
+    "ultimate_ontology": "NOT_ESTABLISHED",
+    "unique_final_value_function": "NOT_ESTABLISHED"
+  },
+  "system": "DIKWP-ESSENCE-OMEGA-OS",
+  "title": {
+    "en": "Operational identity continuity without phenomenal overclaim",
+    "zh": "操作性身份连续而不越权声称现象意识"
+  },
+  "ultimate_essence_status": "ULTIMATE_ESSENCE_NOT_ESTABLISHED",
+  "version": "1.0.0"
+}

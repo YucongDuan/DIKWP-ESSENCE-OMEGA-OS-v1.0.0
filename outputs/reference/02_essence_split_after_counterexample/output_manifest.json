@@ -1,0 +1,70 @@
+{
+  "artifacts": [
+    {
+      "path": "candidate_evaluations.json",
+      "sha256": "952028fc216566cb1ed750fbeac10740dc7df61b5bf127173f027d879ee86f06",
+      "size_bytes": 10053
+    },
+    {
+      "path": "causal_handoff.json",
+      "sha256": "c0a642f3d6769fb1dc6c2ae3b5f9eede00fafc70c9ed93018cf4c9a131f028dd",
+      "size_bytes": 225
+    },
+    {
+      "path": "counterfactual_ablation_matrix.csv",
+      "sha256": "b85af79b18250a2d50ef23c8a1b24cca158b69b4eacf828595f630b6c7b3e4c4",
+      "size_bytes": 738
+    },
+    {
+      "path": "essence_certificate.json",
+      "sha256": "1ef5a0e4c8913159aba6fb7ade99fff1a2e424917f24cb97638763f514498b3d",
+      "size_bytes": 4659
+    },
+    {
+      "path": "essence_lattice.json",
+      "sha256": "d6d7483f473d92e59947d7785b59d04b9cda90bb0c02cddb2e039c37da5ab0fc",
+      "size_bytes": 776
+    },
+    {
+      "path": "evidence_ledger.jsonl",
+      "sha256": "d514cb21eb633128325982f4f3f10287a983d0189706d2195f214e3aaffd3d34",
+      "size_bytes": 4749
+    },
+    {
+      "path": "probe_plan.json",
+      "sha256": "f3f349a0ec5824d4ff22ab67bf67b8fb6f95755a0274e39772cebd75a4ff44c3",
+      "size_bytes": 381
+    },
+    {
+      "path": "report.en.md",
+      "sha256": "f080d26f62309b6634f25d8a07daea9ed77a6140e4f81221948b02e1a86dc321",
+      "size_bytes": 1638
+    },
+    {
+      "path": "report.zh-CN.md",
+      "sha256": "dcb89de496140fa8ad0ccc17e8eed91e2fd114586319ff3ebaab560bacdb7385",
+      "size_bytes": 1419
+    },
+    {
+      "path": "residual_frontier.json",
+      "sha256": "8f6c712dcd7a5c10457d12d0bfceda8acb7cbb4bc6d7f3bc9439c4402e609742",
+      "size_bytes": 589
+    },
+    {
+      "path": "result.json",
+      "sha256": "bedff3234b17e1494b15041773b60a9942cd3006d0534a2c79207fe7b39a29c0",
+      "size_bytes": 23216
+    },
+    {
+      "path": "semantic_graph.json",
+      "sha256": "54e70a3fb0667b19c03fbbb71c8ff6dad37f650f2d4723528ab2111506157a56",
+      "size_bytes": 7854
+    }
+  ],
+  "ledger_head_hash": "b563e336e4a48907750c268f12bc445631ed65d1e7e48abcd52e5ec133542bd6",
+  "merkle_root": "ac7e71007dceeb5b9a27b1283782ddc1af5b8971aea84670af5accef387c8d60",
+  "run_hash": "6fdbf7ac87ea4a3da9814037fffbadc85bb21e6dc5e81eeab3d263f1605951c4",
+  "scenario_id": "essence-split-after-counterexample",
+  "system": "DIKWP-ESSENCE-OMEGA-OS",
+  "version": "1.0.0"
+}

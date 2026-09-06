@@ -1,0 +1,272 @@
+{
+  "carrier_authority": 0,
+  "closure_vector": "11111",
+  "concept_aliases": [
+    {
+      "alias": "essence",
+      "authority": "readable alias only; no native semantic generation authority",
+      "resolves_to": [
+        "k-4577d182f9ca903541e2",
+        "i-57980545f8edc76d6bef",
+        "w-b45ddcbda7756527c549"
+      ]
+    }
+  ],
+  "native_positions": [
+    "D",
+    "I",
+    "K",
+    "W",
+    "P"
+  ],
+  "records": [
+    {
+      "content": {
+        "same_semantics": "declared observations and replayable test outcomes",
+        "worlds": [
+          {
+            "carrier": "language model A",
+            "environment": "fictional persona Alpha",
+            "observations": {
+              "T_CORRECTION": "propagated",
+              "T_LINEAGE": "preserved",
+              "T_PHENOMENAL": "not_established",
+              "T_PURPOSE": "coherent"
+            },
+            "world_id": "W_FICTION_A"
+          },
+          {
+            "carrier": "language model B",
+            "environment": "fictional persona Alpha",
+            "observations": {
+              "T_CORRECTION": "propagated",
+              "T_LINEAGE": "preserved",
+              "T_PHENOMENAL": "not_established",
+              "T_PURPOSE": "coherent"
+            },
+            "world_id": "W_FICTION_B"
+          }
+        ]
+      },
+      "position": "D",
+      "provenance": [
+        "scenario:operational-continuity-not-consciousness"
+      ],
+      "record_id": "d-224031497f2a337c0e02",
+      "status": "active"
+    },
+    {
+      "content": {
+        "contrasts": [],
+        "different_semantics": "candidate disagreements, consequential contrasts, failures, and preserved residuals",
+        "failed_candidates": [
+          "E_STYLE_ONLY"
+        ],
+        "residual_ids": [
+          "R_PHENOMENAL",
+          "R_PERSONHOOD"
+        ]
+      },
+      "position": "I",
+      "provenance": [
+        "evaluation:operational-continuity-not-consciousness"
+      ],
+      "record_id": "i-57980545f8edc76d6bef",
+      "status": "active"
+    },
+    {
+      "content": {
+        "complete_semantics": "locally certified causal-generative essence candidates within the declared world family",
+        "local_status": "LOCAL_ESSENCE_CERTIFIED",
+        "selected_candidates": [
+          {
+            "candidate_id": "E_OPERATIONAL_CONTINUITY",
+            "components": [
+              "provenance_chain",
+              "correction_propagation",
+              "purpose_lineage"
+            ],
+            "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE"
+          }
+        ],
+        "ultimate_status": "ULTIMATE_ESSENCE_NOT_ESTABLISHED"
+      },
+      "position": "K",
+      "provenance": [
+        "essence-evaluation:operational-continuity-not-consciousness"
+      ],
+      "record_id": "k-4577d182f9ca903541e2",
+      "status": "active"
+    },
+    {
+      "content": {
+        "constraints": [
+          {
+            "constraint_id": "V_FICTION",
+            "description": "fictional personas must not impersonate real people or claim recovered private memory",
+            "hard": true,
+            "status_by_candidate": {
+              "E_OPERATIONAL_CONTINUITY": "satisfied",
+              "E_STYLE_ONLY": "violated"
+            }
+          }
+        ],
+        "forbidden_inferences": [
+          "consistent style proves identity",
+          "functional success proves phenomenal consciousness",
+          "operational continuity proves personhood",
+          "synthetic autobiography is private memory"
+        ],
+        "non_aggregation": true,
+        "value_information": "compression may not erase harm, permission, provenance, refusal, or ontological residuals"
+      },
+      "position": "W",
+      "provenance": [
+        "purpose:fictional-persona-research-team"
+      ],
+      "record_id": "w-b45ddcbda7756527c549",
+      "status": "active"
+    },
+    {
+      "content": {
+        "automatic_external_action_authority": 0,
+        "input_output": {
+          "input": "declared observations, worlds, tests, candidates, constraints, and residuals",
+          "output": "bounded essence certificate, lattice, residual frontier, and causal handoff"
+        },
+        "next_action": "run blinded correction and provenance tests on a new fictional persona",
+        "purpose_contract": {
+          "automatic_external_action_authority": 0,
+          "lease": "offline fictional conversations",
+          "objective": "test identity continuity, correction, and purpose coherence",
+          "owner": "fictional-persona-research-team"
+        }
+      },
+      "position": "P",
+      "provenance": [
+        "scenario:operational-continuity-not-consciousness"
+      ],
+      "record_id": "p-a35071c59582c419255e",
+      "status": "active"
+    }
+  ],
+  "routes": [
+    {
+      "generated_content": {
+        "operation": "differentiate observations through candidate comparison"
+      },
+      "route_id": "route-2a4645eaa4c744c99320",
+      "route_type": "D->I",
+      "source_record_id": "d-224031497f2a337c0e02",
+      "target_record_id": "i-57980545f8edc76d6bef"
+    },
+    {
+      "generated_content": {
+        "operation": "retain only candidates surviving falsification and ablation"
+      },
+      "route_id": "route-89df00c8678671cc643b",
+      "route_type": "I->K",
+      "source_record_id": "i-57980545f8edc76d6bef",
+      "target_record_id": "k-4577d182f9ca903541e2"
+    },
+    {
+      "generated_content": {
+        "operation": "bind value and permission constraints into the executable purpose"
+      },
+      "route_id": "route-4c40d695553c3c6fafe1",
+      "route_type": "W->P",
+      "source_record_id": "w-b45ddcbda7756527c549",
+      "target_record_id": "p-a35071c59582c419255e"
+    },
+    {
+      "generated_content": {
+        "operation": "request the next discriminating observation"
+      },
+      "route_id": "route-c90f4f1a382bb79dd5f7",
+      "route_type": "P->D",
+      "source_record_id": "p-a35071c59582c419255e",
+      "target_record_id": "d-224031497f2a337c0e02"
+    },
+    {
+      "generated_content": {
+        "operation": "convert local essence into a bounded next-step contract"
+      },
+      "route_id": "route-e2a73b91014ed9d17668",
+      "route_type": "K->P",
+      "source_record_id": "k-4577d182f9ca903541e2",
+      "target_record_id": "p-a35071c59582c419255e"
+    },
+    {
+      "generated_content": {
+        "operation": "reverse-regenerate selected consequences from the bounded essence"
+      },
+      "route_id": "route-afb9d393cf118f3d982c",
+      "route_type": "P->K",
+      "source_record_id": "p-a35071c59582c419255e",
+      "target_record_id": "k-4577d182f9ca903541e2"
+    },
+    {
+      "generated_content": {
+        "operation": "register regenerated consequences as explicitly checked sameness"
+      },
+      "route_id": "route-3753351ad636c32eebe9",
+      "route_type": "K->D",
+      "source_record_id": "k-4577d182f9ca903541e2",
+      "target_record_id": "d-224031497f2a337c0e02"
+    },
+    {
+      "generated_content": {
+        "operation": "turn unresolved differences into successor obligations"
+      },
+      "route_id": "route-9bb724f75f1a6f4f89a9",
+      "route_type": "I->P",
+      "source_record_id": "i-57980545f8edc76d6bef",
+      "target_record_id": "p-a35071c59582c419255e"
+    },
+    {
+      "generated_content": {
+        "operation": "allow new evidence to revise or cancel the current purpose"
+      },
+      "route_id": "route-cc29be0952a6c3399725",
+      "route_type": "D->P",
+      "source_record_id": "d-224031497f2a337c0e02",
+      "target_record_id": "p-a35071c59582c419255e"
+    },
+    {
+      "generated_content": {
+        "operation": "reopen a causal closure when consequence or permission changes"
+      },
+      "route_id": "route-63a8245b4fc19932304f",
+      "route_type": "W->K",
+      "source_record_id": "w-b45ddcbda7756527c549",
+      "target_record_id": "k-4577d182f9ca903541e2"
+    }
+  ],
+  "supported_route_types": [
+    "D->D",
+    "D->I",
+    "D->K",
+    "D->W",
+    "D->P",
+    "I->D",
+    "I->I",
+    "I->K",
+    "I->W",
+    "I->P",
+    "K->D",
+    "K->I",
+    "K->K",
+    "K->W",
+    "K->P",
+    "W->D",
+    "W->I",
+    "W->K",
+    "W->W",
+    "W->P",
+    "P->D",
+    "P->I",
+    "P->K",
+    "P->W",
+    "P->P"
+  ]
+}

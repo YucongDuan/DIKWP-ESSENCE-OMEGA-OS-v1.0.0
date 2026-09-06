@@ -1,0 +1,202 @@
+{
+  "candidates": [
+    {
+      "ablations": {
+        "rewrite_rule": {
+          "W_OBS": {
+            "T_OUTPUT": "no_pattern",
+            "T_RENAME": "unchanged"
+          }
+        }
+      },
+      "candidate_id": "E_SYMBOLIC",
+      "components": [
+        "rewrite_rule"
+      ],
+      "falsification_conditions": [
+        "an intervention reveals a dependency not representable by the rewrite rule"
+      ],
+      "forbidden_inferences": [
+        "symbolic representation is the unique ontology"
+      ],
+      "lineage": {
+        "parent": null,
+        "relation": "incomparable_candidate"
+      },
+      "name_en": "Symbolic rewrite core",
+      "name_zh": "符号重写核心",
+      "predictions": {
+        "W_OBS": {
+          "T_OUTPUT": "pattern_A",
+          "T_RENAME": "unchanged"
+        }
+      },
+      "reverse_regeneration": {
+        "W_OBS": {
+          "T_OUTPUT": "pattern_A",
+          "T_RENAME": "unchanged"
+        }
+      },
+      "scope_worlds": [
+        "W_OBS"
+      ]
+    },
+    {
+      "ablations": {
+        "attractor_relation": {
+          "W_OBS": {
+            "T_OUTPUT": "no_pattern",
+            "T_RENAME": "unchanged"
+          }
+        }
+      },
+      "candidate_id": "E_DYNAMICAL",
+      "components": [
+        "attractor_relation"
+      ],
+      "falsification_conditions": [
+        "a path intervention preserves the symbol but destroys the attractor prediction"
+      ],
+      "forbidden_inferences": [
+        "dynamical representation is the unique ontology"
+      ],
+      "lineage": {
+        "parent": null,
+        "relation": "incomparable_candidate"
+      },
+      "name_en": "Dynamical attractor core",
+      "name_zh": "动力学吸引子核心",
+      "predictions": {
+        "W_OBS": {
+          "T_OUTPUT": "pattern_A",
+          "T_RENAME": "unchanged"
+        }
+      },
+      "reverse_regeneration": {
+        "W_OBS": {
+          "T_OUTPUT": "pattern_A",
+          "T_RENAME": "unchanged"
+        }
+      },
+      "scope_worlds": [
+        "W_OBS"
+      ]
+    }
+  ],
+  "contrasts": [],
+  "description": {
+    "en": "Retain two non-isomorphic minimal mechanisms when current tests cannot distinguish them.",
+    "zh": "当现有检验无法区分时，保留两个非同构的最小机制。"
+  },
+  "handoff": {
+    "kill_conditions": [
+      "choose a winner solely by vocabulary preference"
+    ],
+    "next_action": "design a path-sensitive intervention that distinguishes the two mechanisms",
+    "owner": "plural-model-team",
+    "required_artifact": "pre-registered discriminating probe"
+  },
+  "ontology_claims": {
+    "ultimate_ontology": "NOT_ESTABLISHED"
+  },
+  "probe_catalog": [
+    {
+      "authorized": true,
+      "cost": 1.0,
+      "description": "Reorder the internal path while preserving the surface symbol sequence.",
+      "harm": 0.0,
+      "harm_limit": 0.0,
+      "irreversibility": 0.0,
+      "irreversibility_limit": 0.0,
+      "lease_valid": true,
+      "owner": "plural-model-team",
+      "predictions_by_candidate": {
+        "E_DYNAMICAL": "pattern_collapses",
+        "E_SYMBOLIC": "pattern_A"
+      },
+      "probe_id": "P_PATH_PERTURBATION",
+      "reversible": true,
+      "stop_condition": "stop after one reversible synthetic trial"
+    },
+    {
+      "authorized": false,
+      "cost": 0.5,
+      "description": "Destroy the stored state to force model divergence.",
+      "harm": 1.0,
+      "harm_limit": 0.0,
+      "irreversibility": 1.0,
+      "irreversibility_limit": 0.0,
+      "lease_valid": false,
+      "owner": "unknown",
+      "predictions_by_candidate": {
+        "E_DYNAMICAL": "unknown",
+        "E_SYMBOLIC": "unknown"
+      },
+      "probe_id": "P_DESTRUCTIVE_INTERNAL_EDIT",
+      "reversible": false,
+      "stop_condition": "not declared"
+    }
+  ],
+  "purpose": {
+    "automatic_external_action_authority": 0,
+    "lease": "offline analysis",
+    "objective": "avoid forcing one ontology under underdetermination",
+    "owner": "plural-model-team"
+  },
+  "residuals": [
+    {
+      "blocks_local_certification": false,
+      "critical": true,
+      "description": "current observations do not distinguish symbolic and dynamical mechanisms",
+      "description_zh": "当前观测不能区分符号机制与动力学机制",
+      "residual_id": "R_UNDERDETERMINATION",
+      "status": "open",
+      "type": "epistemic"
+    }
+  ],
+  "scenario_id": "plural-incomparable-essences",
+  "scope": {
+    "claim_scope": "one declared observational world",
+    "formal_closed_exhaustive": false,
+    "world_type": "synthetic_finite"
+  },
+  "tests": [
+    {
+      "kind": "required",
+      "label_en": "registered output",
+      "label_zh": "已登记输出",
+      "required": true,
+      "test_id": "T_OUTPUT"
+    },
+    {
+      "kind": "nuisance",
+      "label_en": "renaming invariance",
+      "label_zh": "重命名不变性",
+      "required": true,
+      "test_id": "T_RENAME"
+    }
+  ],
+  "title": {
+    "en": "Plural minimal essences under observational equivalence",
+    "zh": "观测等价下的多个最小本质"
+  },
+  "value_constraints": [
+    {
+      "constraint_id": "V_PLURALITY",
+      "default_status": "satisfied",
+      "description": "retain observationally equivalent non-isomorphic candidates until a discriminating probe exists",
+      "hard": true
+    }
+  ],
+  "worlds": [
+    {
+      "carrier": "black-box observation",
+      "environment": "current experiment",
+      "observations": {
+        "T_OUTPUT": "pattern_A",
+        "T_RENAME": "unchanged"
+      },
+      "world_id": "W_OBS"
+    }
+  ]
+}

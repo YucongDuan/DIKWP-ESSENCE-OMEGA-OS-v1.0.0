@@ -1,0 +1,10 @@
+{
+  "kill_conditions": [
+    "real-person impersonation",
+    "private-data ingestion",
+    "external representation authority"
+  ],
+  "next_action": "run blinded correction and provenance tests on a new fictional persona",
+  "owner": "fictional-persona-research-team",
+  "required_artifact": "trace bundle and evaluator agreement matrix"
+}

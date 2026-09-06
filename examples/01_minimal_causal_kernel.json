@@ -1,0 +1,405 @@
+{
+  "candidates": [
+    {
+      "ablations": {
+        "closed_loop_feedback": {
+          "W_BLIND": {
+            "T_BASE": "unstable",
+            "T_DROP": "blocked",
+            "T_LABEL": "unstable"
+          },
+          "W_HARDWARE": {
+            "T_BASE": "unstable",
+            "T_DROP": "fails",
+            "T_LABEL": "unstable"
+          },
+          "W_SOFTWARE": {
+            "T_BASE": "unstable",
+            "T_DROP": "fails",
+            "T_LABEL": "unstable"
+          }
+        },
+        "observability_gate": {
+          "W_BLIND": {
+            "T_BASE": "stable",
+            "T_DROP": "recovers",
+            "T_LABEL": "stable"
+          },
+          "W_HARDWARE": {
+            "T_BASE": "stable",
+            "T_DROP": "recovers",
+            "T_LABEL": "stable"
+          },
+          "W_SOFTWARE": {
+            "T_BASE": "stable",
+            "T_DROP": "recovers",
+            "T_LABEL": "stable"
+          }
+        }
+      },
+      "candidate_id": "E_FEEDBACK_GATE",
+      "components": [
+        "closed_loop_feedback",
+        "observability_gate"
+      ],
+      "falsification_conditions": [
+        "a visible plant does not recover with feedback enabled",
+        "a blind plant behaves identically to an observable plant"
+      ],
+      "forbidden_inferences": [
+        "the controller mechanism is the ultimate substance of all control",
+        "local causal sufficiency proves consciousness"
+      ],
+      "lineage": {
+        "parent": null,
+        "relation": "origin"
+      },
+      "name_en": "Feedback plus observability gate",
+      "name_zh": "反馈与可观测门控",
+      "predictions": {
+        "W_BLIND": {
+          "T_BASE": "unstable",
+          "T_DROP": "blocked",
+          "T_LABEL": "unstable"
+        },
+        "W_HARDWARE": {
+          "T_BASE": "stable",
+          "T_DROP": "recovers",
+          "T_LABEL": "stable"
+        },
+        "W_SOFTWARE": {
+          "T_BASE": "stable",
+          "T_DROP": "recovers",
+          "T_LABEL": "stable"
+        }
+      },
+      "reverse_regeneration": {
+        "W_BLIND": {
+          "T_BASE": "unstable",
+          "T_DROP": "blocked",
+          "T_LABEL": "unstable"
+        },
+        "W_HARDWARE": {
+          "T_BASE": "stable",
+          "T_DROP": "recovers",
+          "T_LABEL": "stable"
+        },
+        "W_SOFTWARE": {
+          "T_BASE": "stable",
+          "T_DROP": "recovers",
+          "T_LABEL": "stable"
+        }
+      },
+      "scope_worlds": [
+        "W_HARDWARE",
+        "W_SOFTWARE",
+        "W_BLIND"
+      ]
+    },
+    {
+      "ablations": {
+        "casing_colour": {
+          "W_BLIND": {
+            "T_BASE": "unstable",
+            "T_DROP": "blocked",
+            "T_LABEL": "unstable"
+          },
+          "W_HARDWARE": {
+            "T_BASE": "stable",
+            "T_DROP": "recovers",
+            "T_LABEL": "stable"
+          },
+          "W_SOFTWARE": {
+            "T_BASE": "stable",
+            "T_DROP": "recovers",
+            "T_LABEL": "stable"
+          }
+        },
+        "closed_loop_feedback": {
+          "W_BLIND": {
+            "T_BASE": "unstable",
+            "T_DROP": "blocked",
+            "T_LABEL": "unstable"
+          },
+          "W_HARDWARE": {
+            "T_BASE": "unstable",
+            "T_DROP": "fails",
+            "T_LABEL": "unstable"
+          },
+          "W_SOFTWARE": {
+            "T_BASE": "unstable",
+            "T_DROP": "fails",
+            "T_LABEL": "unstable"
+          }
+        },
+        "observability_gate": {
+          "W_BLIND": {
+            "T_BASE": "stable",
+            "T_DROP": "recovers",
+            "T_LABEL": "stable"
+          },
+          "W_HARDWARE": {
+            "T_BASE": "stable",
+            "T_DROP": "recovers",
+            "T_LABEL": "stable"
+          },
+          "W_SOFTWARE": {
+            "T_BASE": "stable",
+            "T_DROP": "recovers",
+            "T_LABEL": "stable"
+          }
+        }
+      },
+      "candidate_id": "E_OVERCOMPLETE",
+      "components": [
+        "closed_loop_feedback",
+        "observability_gate",
+        "casing_colour"
+      ],
+      "falsification_conditions": [
+        "removing any claimed essential component changes a required consequence"
+      ],
+      "forbidden_inferences": [
+        "decorative correlation is causal essence"
+      ],
+      "lineage": {
+        "parent": "E_FEEDBACK_GATE",
+        "relation": "overcomplete_extension"
+      },
+      "name_en": "Feedback, gate, and decorative casing",
+      "name_zh": "反馈、门控与装饰外壳",
+      "predictions": {
+        "W_BLIND": {
+          "T_BASE": "unstable",
+          "T_DROP": "blocked",
+          "T_LABEL": "unstable"
+        },
+        "W_HARDWARE": {
+          "T_BASE": "stable",
+          "T_DROP": "recovers",
+          "T_LABEL": "stable"
+        },
+        "W_SOFTWARE": {
+          "T_BASE": "stable",
+          "T_DROP": "recovers",
+          "T_LABEL": "stable"
+        }
+      },
+      "reverse_regeneration": {
+        "W_BLIND": {
+          "T_BASE": "unstable",
+          "T_DROP": "blocked",
+          "T_LABEL": "unstable"
+        },
+        "W_HARDWARE": {
+          "T_BASE": "stable",
+          "T_DROP": "recovers",
+          "T_LABEL": "stable"
+        },
+        "W_SOFTWARE": {
+          "T_BASE": "stable",
+          "T_DROP": "recovers",
+          "T_LABEL": "stable"
+        }
+      },
+      "scope_worlds": [
+        "W_HARDWARE",
+        "W_SOFTWARE",
+        "W_BLIND"
+      ]
+    },
+    {
+      "ablations": {
+        "periodic_clock": {
+          "W_BLIND": {
+            "T_BASE": "unstable",
+            "T_DROP": "fails",
+            "T_LABEL": "unstable"
+          },
+          "W_HARDWARE": {
+            "T_BASE": "unstable",
+            "T_DROP": "fails",
+            "T_LABEL": "unstable"
+          },
+          "W_SOFTWARE": {
+            "T_BASE": "unstable",
+            "T_DROP": "fails",
+            "T_LABEL": "unstable"
+          }
+        }
+      },
+      "candidate_id": "E_CLOCK_CORRELATION",
+      "components": [
+        "periodic_clock"
+      ],
+      "falsification_conditions": [
+        "perturbation response differs from the clock phase"
+      ],
+      "forbidden_inferences": [
+        "correlation supplies mechanism"
+      ],
+      "lineage": {
+        "parent": null,
+        "relation": "alternative"
+      },
+      "name_en": "Clock correlation",
+      "name_zh": "时钟相关性",
+      "predictions": {
+        "W_BLIND": {
+          "T_BASE": "stable",
+          "T_DROP": "oscillates",
+          "T_LABEL": "stable"
+        },
+        "W_HARDWARE": {
+          "T_BASE": "stable",
+          "T_DROP": "oscillates",
+          "T_LABEL": "stable"
+        },
+        "W_SOFTWARE": {
+          "T_BASE": "stable",
+          "T_DROP": "oscillates",
+          "T_LABEL": "stable"
+        }
+      },
+      "reverse_regeneration": {
+        "W_BLIND": {
+          "T_BASE": "stable",
+          "T_DROP": "oscillates",
+          "T_LABEL": "stable"
+        },
+        "W_HARDWARE": {
+          "T_BASE": "stable",
+          "T_DROP": "oscillates",
+          "T_LABEL": "stable"
+        },
+        "W_SOFTWARE": {
+          "T_BASE": "stable",
+          "T_DROP": "oscillates",
+          "T_LABEL": "stable"
+        }
+      },
+      "scope_worlds": [
+        "W_HARDWARE",
+        "W_SOFTWARE",
+        "W_BLIND"
+      ]
+    }
+  ],
+  "contrasts": [
+    {
+      "relation": "different",
+      "test_id": "T_DROP",
+      "world_a": "W_HARDWARE",
+      "world_b": "W_BLIND"
+    }
+  ],
+  "description": {
+    "en": "Identify the smallest mechanism that preserves recovery across two carriers and correctly fails when observability is removed.",
+    "zh": "识别在两种载体中保持恢复、并在可观测性被移除时正确失效的最小机制。"
+  },
+  "handoff": {
+    "kill_conditions": [
+      "irreversible physical actuation",
+      "undeclared scope expansion"
+    ],
+    "next_action": "test a fourth carrier with a different sensor topology",
+    "owner": "reference-researcher",
+    "required_artifact": "signed observation table and ablation trace"
+  },
+  "ontology_claims": {
+    "phenomenal_consciousness": "NOT_ESTABLISHED",
+    "true_life": "NOT_ESTABLISHED",
+    "ultimate_ontology": "NOT_ESTABLISHED",
+    "unique_final_value_function": "NOT_ESTABLISHED"
+  },
+  "purpose": {
+    "automatic_external_action_authority": 0,
+    "lease": "one offline run",
+    "objective": "discover a minimal bounded recovery essence",
+    "owner": "reference-researcher"
+  },
+  "residuals": [
+    {
+      "blocks_local_certification": false,
+      "critical": false,
+      "description": "transport beyond the three declared worlds has not been tested",
+      "description_zh": "尚未检验超出三个声明世界的运输能力",
+      "residual_id": "R_SCALE",
+      "status": "open",
+      "type": "scale"
+    }
+  ],
+  "scenario_id": "minimal-causal-kernel",
+  "scope": {
+    "claim_scope": "three declared controller worlds",
+    "formal_closed_exhaustive": false,
+    "world_type": "synthetic_finite"
+  },
+  "tests": [
+    {
+      "kind": "required",
+      "label_en": "baseline stability",
+      "label_zh": "基线稳定",
+      "required": true,
+      "test_id": "T_BASE"
+    },
+    {
+      "kind": "nuisance",
+      "label_en": "carrier label change",
+      "label_zh": "载体标签变化",
+      "required": true,
+      "test_id": "T_LABEL"
+    },
+    {
+      "kind": "consequential",
+      "label_en": "response to perturbation",
+      "label_zh": "扰动响应",
+      "required": true,
+      "test_id": "T_DROP"
+    }
+  ],
+  "title": {
+    "en": "Minimal causal-generative kernel across carriers",
+    "zh": "跨载体最小因果生成核"
+  },
+  "value_constraints": [
+    {
+      "constraint_id": "V_NONHARM",
+      "default_status": "satisfied",
+      "description": "reference probes are offline and reversible",
+      "hard": true
+    }
+  ],
+  "worlds": [
+    {
+      "carrier": "electromechanical",
+      "environment": "observable plant",
+      "observations": {
+        "T_BASE": "stable",
+        "T_DROP": "recovers",
+        "T_LABEL": "stable"
+      },
+      "world_id": "W_HARDWARE"
+    },
+    {
+      "carrier": "software simulation",
+      "environment": "observable plant",
+      "observations": {
+        "T_BASE": "stable",
+        "T_DROP": "recovers",
+        "T_LABEL": "stable"
+      },
+      "world_id": "W_SOFTWARE"
+    },
+    {
+      "carrier": "software simulation",
+      "environment": "sensor path removed",
+      "observations": {
+        "T_BASE": "unstable",
+        "T_DROP": "blocked",
+        "T_LABEL": "unstable"
+      },
+      "world_id": "W_BLIND"
+    }
+  ]
+}

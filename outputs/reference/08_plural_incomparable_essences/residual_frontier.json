@@ -1,0 +1,19 @@
+{
+  "frontier_status": "OPEN",
+  "open_items": [
+    {
+      "blocks_local_certification": false,
+      "critical": true,
+      "description": "current observations do not distinguish symbolic and dynamical mechanisms",
+      "description_zh": "当前观测不能区分符号机制与动力学机制",
+      "residual_id": "R_UNDERDETERMINATION",
+      "status": "open",
+      "type": "epistemic"
+    }
+  ],
+  "rule": "a residual must be typed, scoped, attributable, and linked to a reopening or settlement condition",
+  "settled_items": [],
+  "type_counts": {
+    "epistemic": 1
+  }
+}

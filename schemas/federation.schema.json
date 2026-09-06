@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/dikwp-essence-omega/federation.schema.json",
+  "title": "Non-Annexing Essence Federation",
+  "type": "object",
+  "required": ["federation_type", "certificates", "shared_component_core", "local_only_components", "open_residual_types", "boundary", "automatic_external_action_authority", "federation_id", "sha256"],
+  "properties": {
+    "federation_type": {"const": "NON_ANNEXING_ESSENCE_FEDERATION"},
+    "certificates": {"type": "array"},
+    "shared_component_core": {"type": "array", "items": {"type": "string"}},
+    "component_union": {"type": "array", "items": {"type": "string"}},
+    "local_only_components": {"type": "object"},
+    "open_residual_types": {"type": "array", "items": {"type": "string"}},
+    "combined_forbidden_inferences": {"type": "array", "items": {"type": "string"}},
+    "status": {"type": "string"},
+    "boundary": {"type": "string"},
+    "automatic_external_action_authority": {"const": 0},
+    "federation_id": {"type": "string"},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "additionalProperties": true
+}

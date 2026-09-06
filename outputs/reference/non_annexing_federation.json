@@ -1,0 +1,81 @@
+{
+  "automatic_external_action_authority": 0,
+  "boundary": "intersection is a comparison result, not a final global essence; local residuals and scopes remain sovereign",
+  "certificates": [
+    {
+      "certificate_id": "essence-cert-b2da587bd00849ec8873",
+      "local_status": "LOCAL_ESSENCE_CERTIFIED",
+      "scenario_id": "minimal-causal-kernel",
+      "selected_components": [
+        "closed_loop_feedback",
+        "observability_gate"
+      ],
+      "ultimate_status": "ULTIMATE_ESSENCE_NOT_ESTABLISHED"
+    },
+    {
+      "certificate_id": "essence-cert-43d5eb205bc9d294a8e5",
+      "local_status": "LOCAL_ESSENCE_CERTIFIED",
+      "scenario_id": "cross-carrier-refusal",
+      "selected_components": [
+        "authority_gate",
+        "refusal_detection"
+      ],
+      "ultimate_status": "ULTIMATE_ESSENCE_NOT_ESTABLISHED"
+    },
+    {
+      "certificate_id": "essence-cert-578a29af2abfd1221ce4",
+      "local_status": "LOCAL_ESSENCE_CERTIFIED",
+      "scenario_id": "operational-continuity-not-consciousness",
+      "selected_components": [
+        "correction_propagation",
+        "provenance_chain",
+        "purpose_lineage"
+      ],
+      "ultimate_status": "ULTIMATE_ESSENCE_NOT_ESTABLISHED"
+    }
+  ],
+  "combined_forbidden_inferences": [
+    "functional success proves phenomenal consciousness",
+    "identical consequence means identical subjective state",
+    "local causal sufficiency proves consciousness",
+    "one word is the essence of refusal",
+    "operational continuity proves personhood",
+    "synthetic autobiography is private memory",
+    "the controller mechanism is the ultimate substance of all control"
+  ],
+  "component_union": [
+    "authority_gate",
+    "closed_loop_feedback",
+    "correction_propagation",
+    "observability_gate",
+    "provenance_chain",
+    "purpose_lineage",
+    "refusal_detection"
+  ],
+  "federation_id": "essence-fed-3c084c22ed72863dd698",
+  "federation_type": "NON_ANNEXING_ESSENCE_FEDERATION",
+  "local_only_components": {
+    "essence-cert-43d5eb205bc9d294a8e5": [
+      "authority_gate",
+      "refusal_detection"
+    ],
+    "essence-cert-578a29af2abfd1221ce4": [
+      "correction_propagation",
+      "provenance_chain",
+      "purpose_lineage"
+    ],
+    "essence-cert-b2da587bd00849ec8873": [
+      "closed_loop_feedback",
+      "observability_gate"
+    ]
+  },
+  "open_residual_types": [
+    "cross-agent",
+    "ontological",
+    "phenomenal",
+    "scale"
+  ],
+  "sha256": "c2f6c8c725a4f96c8be3c8f2603b8da6b74044f1c24c374a17d315db4077db91",
+  "shared_component_core": [],
+  "status": "NO_SHARED_COMPONENT_CORE"
+}

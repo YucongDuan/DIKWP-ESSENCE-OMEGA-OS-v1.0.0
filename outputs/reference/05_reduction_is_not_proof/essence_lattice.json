@@ -1,0 +1,41 @@
+{
+  "dominance_edges": [],
+  "equivalence_edges": [],
+  "lineage_edges": [
+    {
+      "from": "E_FINITE_REDUCTION",
+      "relation": "invalid_scope_expansion",
+      "to": "E_GLOBAL_OVERCLAIM"
+    }
+  ],
+  "nodes": [
+    {
+      "candidate_id": "E_FINITE_REDUCTION",
+      "components": [
+        "sound_reduction",
+        "finite_witness_checker"
+      ],
+      "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE",
+      "status": "ESSENCE_CERTIFIED_WITHIN_DECLARED_SCOPE"
+    },
+    {
+      "candidate_id": "E_GLOBAL_OVERCLAIM",
+      "components": [
+        "finite_witness_checker"
+      ],
+      "essence_level": "L0_REJECTED",
+      "status": "SELF_SEALING_REJECTED"
+    }
+  ],
+  "pareto_frontier": [
+    "E_FINITE_REDUCTION",
+    "E_GLOBAL_OVERCLAIM"
+  ],
+  "subset_edges": [
+    {
+      "from": "E_GLOBAL_OVERCLAIM",
+      "relation": "component_subset",
+      "to": "E_FINITE_REDUCTION"
+    }
+  ]
+}

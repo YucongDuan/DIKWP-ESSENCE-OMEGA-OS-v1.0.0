@@ -1,0 +1,19 @@
+{
+  "frontier_status": "OPEN",
+  "open_items": [
+    {
+      "blocks_local_certification": false,
+      "critical": true,
+      "description": "no proof is supplied for all even integers",
+      "description_zh": "尚未给出覆盖全部偶数的证明",
+      "residual_id": "R_UNIVERSAL_BRIDGE",
+      "status": "open",
+      "type": "quantifier"
+    }
+  ],
+  "rule": "a residual must be typed, scoped, attributable, and linked to a reopening or settlement condition",
+  "settled_items": [],
+  "type_counts": {
+    "quantifier": 1
+  }
+}

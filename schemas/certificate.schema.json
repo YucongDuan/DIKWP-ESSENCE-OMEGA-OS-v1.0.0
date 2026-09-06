@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/dikwp-essence-omega/certificate.schema.json",
+  "title": "Bounded Essence Certificate",
+  "type": "object",
+  "required": [
+    "certificate_type", "system", "version", "scenario_id", "scope",
+    "selected_essence_candidates", "local_essence_status", "ultimate_essence_status",
+    "status_vector", "residual_frontier", "probe_plan", "ledger_head_hash",
+    "causal_handoff", "global_boundary", "certificate_id", "certificate_sha256"
+  ],
+  "properties": {
+    "certificate_type": {"const": "DIKWP_ESSENCE_OMEGA_BOUNDED_ESSENCE_CERTIFICATE"},
+    "system": {"const": "DIKWP-ESSENCE-OMEGA-OS"},
+    "version": {"type": "string"},
+    "scenario_id": {"type": "string"},
+    "scope": {"type": "object"},
+    "selected_essence_candidates": {"type": "array", "items": {"type": "object"}},
+    "local_essence_status": {"type": "string"},
+    "ultimate_essence_status": {"type": "string"},
+    "status_vector": {"type": "object"},
+    "residual_frontier": {"type": "object"},
+    "probe_plan": {"type": "object"},
+    "selection_rule": {"type": "object"},
+    "semantic_graph_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "essence_lattice_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "ledger_head_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "causal_handoff": {"type": "object"},
+    "global_boundary": {"type": "object"},
+    "certificate_id": {"type": "string"},
+    "certificate_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "additionalProperties": true
+}

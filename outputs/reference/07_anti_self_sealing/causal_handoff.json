@@ -1,0 +1,9 @@
+{
+  "kill_conditions": [
+    "post-hoc scope change",
+    "wildcard prediction"
+  ],
+  "next_action": "introduce an unseen intervention without altering candidate scope",
+  "owner": "epistemic-integrity-team",
+  "required_artifact": "pre-registered prediction and observed outcome"
+}

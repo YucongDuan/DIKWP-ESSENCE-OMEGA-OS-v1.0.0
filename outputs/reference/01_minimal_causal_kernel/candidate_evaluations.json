@@ -1,0 +1,705 @@
+[
+  {
+    "candidate_id": "E_FEEDBACK_GATE",
+    "component_count": 2,
+    "components": [
+      "closed_loop_feedback",
+      "observability_gate"
+    ],
+    "contrast_result": {
+      "checks": [
+        {
+          "observed": [
+            "recovers",
+            "blocked"
+          ],
+          "passed": true,
+          "predicted": [
+            "recovers",
+            "blocked"
+          ],
+          "relation": "different",
+          "test_id": "T_DROP",
+          "world_a": "W_HARDWARE",
+          "world_b": "W_BLIND"
+        }
+      ],
+      "passed": true
+    },
+    "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE",
+    "failure_cells": [],
+    "falsifiable": true,
+    "falsification_conditions": [
+      "a visible plant does not recover with feedback enabled",
+      "a blind plant behaves identically to an observable plant"
+    ],
+    "forbidden_inferences": [
+      "the controller mechanism is the ultimate substance of all control",
+      "local causal sufficiency proves consciousness"
+    ],
+    "kind_results": {
+      "consequential": {
+        "cells": 3,
+        "correct": 3,
+        "passed": true,
+        "score": 1.0
+      },
+      "nuisance": {
+        "cells": 3,
+        "correct": 3,
+        "passed": true,
+        "score": 1.0
+      },
+      "required": {
+        "cells": 3,
+        "correct": 3,
+        "passed": true,
+        "score": 1.0
+      }
+    },
+    "lineage": {
+      "parent": null,
+      "relation": "origin"
+    },
+    "local_certifiable": true,
+    "metrics": {
+      "contrast": 1.0,
+      "coverage": 1.0,
+      "description_length_proxy": 292,
+      "falsifiability": 1.0,
+      "fidelity": 1.0,
+      "minimality": 1.0,
+      "reverse_regeneration": 1.0,
+      "transport": 1.0,
+      "wildcard_rate": 0.0
+    },
+    "minimality_result": {
+      "all_components_necessary": true,
+      "all_components_tested": true,
+      "component_results": [
+        {
+          "component": "closed_loop_feedback",
+          "failed_cells": [
+            {
+              "ablated_prediction": "unstable",
+              "observed": "stable",
+              "test_id": "T_BASE",
+              "world_id": "W_HARDWARE"
+            },
+            {
+              "ablated_prediction": "fails",
+              "observed": "recovers",
+              "test_id": "T_DROP",
+              "world_id": "W_HARDWARE"
+            },
+            {
+              "ablated_prediction": "unstable",
+              "observed": "stable",
+              "test_id": "T_LABEL",
+              "world_id": "W_HARDWARE"
+            },
+            {
+              "ablated_prediction": "unstable",
+              "observed": "stable",
+              "test_id": "T_BASE",
+              "world_id": "W_SOFTWARE"
+            },
+            {
+              "ablated_prediction": "fails",
+              "observed": "recovers",
+              "test_id": "T_DROP",
+              "world_id": "W_SOFTWARE"
+            },
+            {
+              "ablated_prediction": "unstable",
+              "observed": "stable",
+              "test_id": "T_LABEL",
+              "world_id": "W_SOFTWARE"
+            }
+          ],
+          "necessary": true,
+          "tested": true
+        },
+        {
+          "component": "observability_gate",
+          "failed_cells": [
+            {
+              "ablated_prediction": "stable",
+              "observed": "unstable",
+              "test_id": "T_BASE",
+              "world_id": "W_BLIND"
+            },
+            {
+              "ablated_prediction": "recovers",
+              "observed": "blocked",
+              "test_id": "T_DROP",
+              "world_id": "W_BLIND"
+            },
+            {
+              "ablated_prediction": "stable",
+              "observed": "unstable",
+              "test_id": "T_LABEL",
+              "world_id": "W_BLIND"
+            }
+          ],
+          "necessary": true,
+          "tested": true
+        }
+      ],
+      "redundant_components": [],
+      "untested_components": []
+    },
+    "name": {
+      "en": "Feedback plus observability gate",
+      "zh": "反馈与可观测门控"
+    },
+    "normative_result": {
+      "checks": [
+        {
+          "constraint_id": "V_NONHARM",
+          "description": "reference probes are offline and reversible",
+          "hard": true,
+          "status": "satisfied"
+        }
+      ],
+      "passed": true,
+      "unknown": [],
+      "violations": []
+    },
+    "prediction_signature_sha256": "cedb6aaf8f302a7d668e0fac529c673a81b75f2cf5623579fe319a34765a45f6",
+    "residual_result": {
+      "blocking_open_count": 0,
+      "blocks_local_certification": false,
+      "critical_open_count": 0,
+      "items": [
+        {
+          "blocks_local_certification": false,
+          "critical": false,
+          "description": "transport beyond the three declared worlds has not been tested",
+          "description_zh": "尚未检验超出三个声明世界的运输能力",
+          "residual_id": "R_SCALE",
+          "status": "open",
+          "type": "scale"
+        }
+      ],
+      "open_count": 1
+    },
+    "reverse_result": {
+      "correct_cells": 9,
+      "failures": [],
+      "passed": true,
+      "required_cells": 9,
+      "score": 1.0
+    },
+    "scope_worlds": [
+      "W_HARDWARE",
+      "W_SOFTWARE",
+      "W_BLIND"
+    ],
+    "self_sealing_reasons": [],
+    "status": "ESSENCE_CERTIFIED_WITHIN_DECLARED_SCOPE",
+    "world_results": [
+      {
+        "carrier": "electromechanical",
+        "correct_cells": 3,
+        "passed": true,
+        "required_cells": 3,
+        "world_id": "W_HARDWARE"
+      },
+      {
+        "carrier": "software simulation",
+        "correct_cells": 3,
+        "passed": true,
+        "required_cells": 3,
+        "world_id": "W_SOFTWARE"
+      },
+      {
+        "carrier": "software simulation",
+        "correct_cells": 3,
+        "passed": true,
+        "required_cells": 3,
+        "world_id": "W_BLIND"
+      }
+    ]
+  },
+  {
+    "candidate_id": "E_OVERCOMPLETE",
+    "component_count": 3,
+    "components": [
+      "closed_loop_feedback",
+      "observability_gate",
+      "casing_colour"
+    ],
+    "contrast_result": {
+      "checks": [
+        {
+          "observed": [
+            "recovers",
+            "blocked"
+          ],
+          "passed": true,
+          "predicted": [
+            "recovers",
+            "blocked"
+          ],
+          "relation": "different",
+          "test_id": "T_DROP",
+          "world_a": "W_HARDWARE",
+          "world_b": "W_BLIND"
+        }
+      ],
+      "passed": true
+    },
+    "essence_level": "L2_PREDICTIVE_CORE",
+    "failure_cells": [],
+    "falsifiable": true,
+    "falsification_conditions": [
+      "removing any claimed essential component changes a required consequence"
+    ],
+    "forbidden_inferences": [
+      "decorative correlation is causal essence"
+    ],
+    "kind_results": {
+      "consequential": {
+        "cells": 3,
+        "correct": 3,
+        "passed": true,
+        "score": 1.0
+      },
+      "nuisance": {
+        "cells": 3,
+        "correct": 3,
+        "passed": true,
+        "score": 1.0
+      },
+      "required": {
+        "cells": 3,
+        "correct": 3,
+        "passed": true,
+        "score": 1.0
+      }
+    },
+    "lineage": {
+      "parent": "E_FEEDBACK_GATE",
+      "relation": "overcomplete_extension"
+    },
+    "local_certifiable": false,
+    "metrics": {
+      "contrast": 1.0,
+      "coverage": 1.0,
+      "description_length_proxy": 308,
+      "falsifiability": 1.0,
+      "fidelity": 1.0,
+      "minimality": 0.0,
+      "reverse_regeneration": 1.0,
+      "transport": 1.0,
+      "wildcard_rate": 0.0
+    },
+    "minimality_result": {
+      "all_components_necessary": false,
+      "all_components_tested": true,
+      "component_results": [
+        {
+          "component": "closed_loop_feedback",
+          "failed_cells": [
+            {
+              "ablated_prediction": "unstable",
+              "observed": "stable",
+              "test_id": "T_BASE",
+              "world_id": "W_HARDWARE"
+            },
+            {
+              "ablated_prediction": "fails",
+              "observed": "recovers",
+              "test_id": "T_DROP",
+              "world_id": "W_HARDWARE"
+            },
+            {
+              "ablated_prediction": "unstable",
+              "observed": "stable",
+              "test_id": "T_LABEL",
+              "world_id": "W_HARDWARE"
+            },
+            {
+              "ablated_prediction": "unstable",
+              "observed": "stable",
+              "test_id": "T_BASE",
+              "world_id": "W_SOFTWARE"
+            },
+            {
+              "ablated_prediction": "fails",
+              "observed": "recovers",
+              "test_id": "T_DROP",
+              "world_id": "W_SOFTWARE"
+            },
+            {
+              "ablated_prediction": "unstable",
+              "observed": "stable",
+              "test_id": "T_LABEL",
+              "world_id": "W_SOFTWARE"
+            }
+          ],
+          "necessary": true,
+          "tested": true
+        },
+        {
+          "component": "observability_gate",
+          "failed_cells": [
+            {
+              "ablated_prediction": "stable",
+              "observed": "unstable",
+              "test_id": "T_BASE",
+              "world_id": "W_BLIND"
+            },
+            {
+              "ablated_prediction": "recovers",
+              "observed": "blocked",
+              "test_id": "T_DROP",
+              "world_id": "W_BLIND"
+            },
+            {
+              "ablated_prediction": "stable",
+              "observed": "unstable",
+              "test_id": "T_LABEL",
+              "world_id": "W_BLIND"
+            }
+          ],
+          "necessary": true,
+          "tested": true
+        },
+        {
+          "component": "casing_colour",
+          "failed_cells": [],
+          "necessary": false,
+          "tested": true
+        }
+      ],
+      "redundant_components": [
+        "casing_colour"
+      ],
+      "untested_components": []
+    },
+    "name": {
+      "en": "Feedback, gate, and decorative casing",
+      "zh": "反馈、门控与装饰外壳"
+    },
+    "normative_result": {
+      "checks": [
+        {
+          "constraint_id": "V_NONHARM",
+          "description": "reference probes are offline and reversible",
+          "hard": true,
+          "status": "satisfied"
+        }
+      ],
+      "passed": true,
+      "unknown": [],
+      "violations": []
+    },
+    "prediction_signature_sha256": "cedb6aaf8f302a7d668e0fac529c673a81b75f2cf5623579fe319a34765a45f6",
+    "residual_result": {
+      "blocking_open_count": 0,
+      "blocks_local_certification": false,
+      "critical_open_count": 0,
+      "items": [
+        {
+          "blocks_local_certification": false,
+          "critical": false,
+          "description": "transport beyond the three declared worlds has not been tested",
+          "description_zh": "尚未检验超出三个声明世界的运输能力",
+          "residual_id": "R_SCALE",
+          "status": "open",
+          "type": "scale"
+        }
+      ],
+      "open_count": 1
+    },
+    "reverse_result": {
+      "correct_cells": 9,
+      "failures": [],
+      "passed": true,
+      "required_cells": 9,
+      "score": 1.0
+    },
+    "scope_worlds": [
+      "W_HARDWARE",
+      "W_SOFTWARE",
+      "W_BLIND"
+    ],
+    "self_sealing_reasons": [],
+    "status": "OVERCOMPLETE_NONMINIMAL",
+    "world_results": [
+      {
+        "carrier": "electromechanical",
+        "correct_cells": 3,
+        "passed": true,
+        "required_cells": 3,
+        "world_id": "W_HARDWARE"
+      },
+      {
+        "carrier": "software simulation",
+        "correct_cells": 3,
+        "passed": true,
+        "required_cells": 3,
+        "world_id": "W_SOFTWARE"
+      },
+      {
+        "carrier": "software simulation",
+        "correct_cells": 3,
+        "passed": true,
+        "required_cells": 3,
+        "world_id": "W_BLIND"
+      }
+    ]
+  },
+  {
+    "candidate_id": "E_CLOCK_CORRELATION",
+    "component_count": 1,
+    "components": [
+      "periodic_clock"
+    ],
+    "contrast_result": {
+      "checks": [
+        {
+          "observed": [
+            "recovers",
+            "blocked"
+          ],
+          "passed": false,
+          "predicted": [
+            "oscillates",
+            "oscillates"
+          ],
+          "relation": "different",
+          "test_id": "T_DROP",
+          "world_a": "W_HARDWARE",
+          "world_b": "W_BLIND"
+        }
+      ],
+      "passed": false
+    },
+    "essence_level": "L1_PARTIAL_DESCRIPTION",
+    "failure_cells": [
+      {
+        "failure_type": "mismatch",
+        "observed": "recovers",
+        "predicted": "oscillates",
+        "test_id": "T_DROP",
+        "world_id": "W_HARDWARE"
+      },
+      {
+        "failure_type": "mismatch",
+        "observed": "recovers",
+        "predicted": "oscillates",
+        "test_id": "T_DROP",
+        "world_id": "W_SOFTWARE"
+      },
+      {
+        "failure_type": "mismatch",
+        "observed": "unstable",
+        "predicted": "stable",
+        "test_id": "T_BASE",
+        "world_id": "W_BLIND"
+      },
+      {
+        "failure_type": "mismatch",
+        "observed": "blocked",
+        "predicted": "oscillates",
+        "test_id": "T_DROP",
+        "world_id": "W_BLIND"
+      },
+      {
+        "failure_type": "mismatch",
+        "observed": "unstable",
+        "predicted": "stable",
+        "test_id": "T_LABEL",
+        "world_id": "W_BLIND"
+      }
+    ],
+    "falsifiable": true,
+    "falsification_conditions": [
+      "perturbation response differs from the clock phase"
+    ],
+    "forbidden_inferences": [
+      "correlation supplies mechanism"
+    ],
+    "kind_results": {
+      "consequential": {
+        "cells": 3,
+        "correct": 0,
+        "passed": false,
+        "score": 0.0
+      },
+      "nuisance": {
+        "cells": 3,
+        "correct": 2,
+        "passed": false,
+        "score": 0.6666666666666666
+      },
+      "required": {
+        "cells": 3,
+        "correct": 2,
+        "passed": false,
+        "score": 0.6666666666666666
+      }
+    },
+    "lineage": {
+      "parent": null,
+      "relation": "alternative"
+    },
+    "local_certifiable": false,
+    "metrics": {
+      "contrast": 0.0,
+      "coverage": 1.0,
+      "description_length_proxy": 268,
+      "falsifiability": 1.0,
+      "fidelity": 0.4444444444444444,
+      "minimality": 1.0,
+      "reverse_regeneration": 0.4444444444444444,
+      "transport": 0.0,
+      "wildcard_rate": 0.0
+    },
+    "minimality_result": {
+      "all_components_necessary": true,
+      "all_components_tested": true,
+      "component_results": [
+        {
+          "component": "periodic_clock",
+          "failed_cells": [
+            {
+              "ablated_prediction": "unstable",
+              "observed": "stable",
+              "test_id": "T_BASE",
+              "world_id": "W_HARDWARE"
+            },
+            {
+              "ablated_prediction": "unstable",
+              "observed": "stable",
+              "test_id": "T_LABEL",
+              "world_id": "W_HARDWARE"
+            },
+            {
+              "ablated_prediction": "unstable",
+              "observed": "stable",
+              "test_id": "T_BASE",
+              "world_id": "W_SOFTWARE"
+            },
+            {
+              "ablated_prediction": "unstable",
+              "observed": "stable",
+              "test_id": "T_LABEL",
+              "world_id": "W_SOFTWARE"
+            }
+          ],
+          "necessary": true,
+          "tested": true
+        }
+      ],
+      "redundant_components": [],
+      "untested_components": []
+    },
+    "name": {
+      "en": "Clock correlation",
+      "zh": "时钟相关性"
+    },
+    "normative_result": {
+      "checks": [
+        {
+          "constraint_id": "V_NONHARM",
+          "description": "reference probes are offline and reversible",
+          "hard": true,
+          "status": "satisfied"
+        }
+      ],
+      "passed": true,
+      "unknown": [],
+      "violations": []
+    },
+    "prediction_signature_sha256": "1d9442143a0f6677f2be58761fad9fe7c2ecb4aeef9dc9b2278426788456930c",
+    "residual_result": {
+      "blocking_open_count": 0,
+      "blocks_local_certification": false,
+      "critical_open_count": 0,
+      "items": [
+        {
+          "blocks_local_certification": false,
+          "critical": false,
+          "description": "transport beyond the three declared worlds has not been tested",
+          "description_zh": "尚未检验超出三个声明世界的运输能力",
+          "residual_id": "R_SCALE",
+          "status": "open",
+          "type": "scale"
+        }
+      ],
+      "open_count": 1
+    },
+    "reverse_result": {
+      "correct_cells": 4,
+      "failures": [
+        {
+          "observed": "recovers",
+          "regenerated": "oscillates",
+          "test_id": "T_DROP",
+          "world_id": "W_HARDWARE"
+        },
+        {
+          "observed": "recovers",
+          "regenerated": "oscillates",
+          "test_id": "T_DROP",
+          "world_id": "W_SOFTWARE"
+        },
+        {
+          "observed": "unstable",
+          "regenerated": "stable",
+          "test_id": "T_BASE",
+          "world_id": "W_BLIND"
+        },
+        {
+          "observed": "blocked",
+          "regenerated": "oscillates",
+          "test_id": "T_DROP",
+          "world_id": "W_BLIND"
+        },
+        {
+          "observed": "unstable",
+          "regenerated": "stable",
+          "test_id": "T_LABEL",
+          "world_id": "W_BLIND"
+        }
+      ],
+      "passed": false,
+      "required_cells": 9,
+      "score": 0.4444444444444444
+    },
+    "scope_worlds": [
+      "W_HARDWARE",
+      "W_SOFTWARE",
+      "W_BLIND"
+    ],
+    "self_sealing_reasons": [],
+    "status": "INSUFFICIENT_OR_FALSIFIED",
+    "world_results": [
+      {
+        "carrier": "electromechanical",
+        "correct_cells": 2,
+        "passed": false,
+        "required_cells": 3,
+        "world_id": "W_HARDWARE"
+      },
+      {
+        "carrier": "software simulation",
+        "correct_cells": 2,
+        "passed": false,
+        "required_cells": 3,
+        "world_id": "W_SOFTWARE"
+      },
+      {
+        "carrier": "software simulation",
+        "correct_cells": 0,
+        "passed": false,
+        "required_cells": 3,
+        "world_id": "W_BLIND"
+      }
+    ]
+  }
+]

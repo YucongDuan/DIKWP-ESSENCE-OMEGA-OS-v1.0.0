@@ -1,0 +1,271 @@
+{
+  "carrier_authority": 0,
+  "closure_vector": "11111",
+  "concept_aliases": [
+    {
+      "alias": "essence",
+      "authority": "readable alias only; no native semantic generation authority",
+      "resolves_to": [
+        "k-bf07ad5b141294bf55d3",
+        "i-128003ff0fda77b93e2d",
+        "w-528852c9dab40bfc2629"
+      ]
+    }
+  ],
+  "native_positions": [
+    "D",
+    "I",
+    "K",
+    "W",
+    "P"
+  ],
+  "records": [
+    {
+      "content": {
+        "same_semantics": "declared observations and replayable test outcomes",
+        "worlds": [
+          {
+            "carrier": "finite causal graph",
+            "environment": "mechanism present",
+            "observations": {
+              "T_CAUSE_OFF": "not_applicable",
+              "T_CAUSE_ON": "effect"
+            },
+            "world_id": "W_ON"
+          },
+          {
+            "carrier": "finite causal graph",
+            "environment": "mechanism removed",
+            "observations": {
+              "T_CAUSE_OFF": "no_effect",
+              "T_CAUSE_ON": "not_applicable"
+            },
+            "world_id": "W_OFF"
+          }
+        ]
+      },
+      "position": "D",
+      "provenance": [
+        "scenario:anti-self-sealing"
+      ],
+      "record_id": "d-6e13fc749f14bafee5a7",
+      "status": "active"
+    },
+    {
+      "content": {
+        "contrasts": [
+          {
+            "relation": "different",
+            "test_id": "T_CAUSE_OFF",
+            "world_a": "W_ON",
+            "world_b": "W_OFF"
+          }
+        ],
+        "different_semantics": "candidate disagreements, consequential contrasts, failures, and preserved residuals",
+        "failed_candidates": [
+          "E_ALL_EXPLAINING"
+        ],
+        "residual_ids": [
+          "R_OTHER_WORLDS"
+        ]
+      },
+      "position": "I",
+      "provenance": [
+        "evaluation:anti-self-sealing"
+      ],
+      "record_id": "i-128003ff0fda77b93e2d",
+      "status": "active"
+    },
+    {
+      "content": {
+        "complete_semantics": "locally certified causal-generative essence candidates within the declared world family",
+        "local_status": "LOCAL_ESSENCE_CERTIFIED",
+        "selected_candidates": [
+          {
+            "candidate_id": "E_BOUNDED_CAUSE",
+            "components": [
+              "mechanism",
+              "activation_condition"
+            ],
+            "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE"
+          }
+        ],
+        "ultimate_status": "ULTIMATE_ESSENCE_NOT_ESTABLISHED"
+      },
+      "position": "K",
+      "provenance": [
+        "essence-evaluation:anti-self-sealing"
+      ],
+      "record_id": "k-bf07ad5b141294bf55d3",
+      "status": "active"
+    },
+    {
+      "content": {
+        "constraints": [
+          {
+            "constraint_id": "V_FALSIFIABLE",
+            "description": "candidate must declare a possible failure before seeing the result",
+            "hard": true,
+            "status_by_candidate": {
+              "E_ALL_EXPLAINING": "violated",
+              "E_BOUNDED_CAUSE": "satisfied"
+            }
+          }
+        ],
+        "forbidden_inferences": [
+          "none",
+          "this finite causal core explains every possible world"
+        ],
+        "non_aggregation": true,
+        "value_information": "compression may not erase harm, permission, provenance, refusal, or ontological residuals"
+      },
+      "position": "W",
+      "provenance": [
+        "purpose:epistemic-integrity-team"
+      ],
+      "record_id": "w-528852c9dab40bfc2629",
+      "status": "active"
+    },
+    {
+      "content": {
+        "automatic_external_action_authority": 0,
+        "input_output": {
+          "input": "declared observations, worlds, tests, candidates, constraints, and residuals",
+          "output": "bounded essence certificate, lattice, residual frontier, and causal handoff"
+        },
+        "next_action": "introduce an unseen intervention without altering candidate scope",
+        "purpose_contract": {
+          "automatic_external_action_authority": 0,
+          "lease": "offline audit",
+          "objective": "reject self-sealing essence claims",
+          "owner": "epistemic-integrity-team"
+        }
+      },
+      "position": "P",
+      "provenance": [
+        "scenario:anti-self-sealing"
+      ],
+      "record_id": "p-f85053e4ca2d5a3113d4",
+      "status": "active"
+    }
+  ],
+  "routes": [
+    {
+      "generated_content": {
+        "operation": "differentiate observations through candidate comparison"
+      },
+      "route_id": "route-2bcfb6f16c5c41040a35",
+      "route_type": "D->I",
+      "source_record_id": "d-6e13fc749f14bafee5a7",
+      "target_record_id": "i-128003ff0fda77b93e2d"
+    },
+    {
+      "generated_content": {
+        "operation": "retain only candidates surviving falsification and ablation"
+      },
+      "route_id": "route-30bfdeff6b0189cd759f",
+      "route_type": "I->K",
+      "source_record_id": "i-128003ff0fda77b93e2d",
+      "target_record_id": "k-bf07ad5b141294bf55d3"
+    },
+    {
+      "generated_content": {
+        "operation": "bind value and permission constraints into the executable purpose"
+      },
+      "route_id": "route-9af9a5784a8f8a317793",
+      "route_type": "W->P",
+      "source_record_id": "w-528852c9dab40bfc2629",
+      "target_record_id": "p-f85053e4ca2d5a3113d4"
+    },
+    {
+      "generated_content": {
+        "operation": "request the next discriminating observation"
+      },
+      "route_id": "route-2c026cebcd0a40f6cca4",
+      "route_type": "P->D",
+      "source_record_id": "p-f85053e4ca2d5a3113d4",
+      "target_record_id": "d-6e13fc749f14bafee5a7"
+    },
+    {
+      "generated_content": {
+        "operation": "convert local essence into a bounded next-step contract"
+      },
+      "route_id": "route-8c00b8374cf22eaeacb8",
+      "route_type": "K->P",
+      "source_record_id": "k-bf07ad5b141294bf55d3",
+      "target_record_id": "p-f85053e4ca2d5a3113d4"
+    },
+    {
+      "generated_content": {
+        "operation": "reverse-regenerate selected consequences from the bounded essence"
+      },
+      "route_id": "route-da142655b166c0f23c80",
+      "route_type": "P->K",
+      "source_record_id": "p-f85053e4ca2d5a3113d4",
+      "target_record_id": "k-bf07ad5b141294bf55d3"
+    },
+    {
+      "generated_content": {
+        "operation": "register regenerated consequences as explicitly checked sameness"
+      },
+      "route_id": "route-5da496eb2ea7730bd85e",
+      "route_type": "K->D",
+      "source_record_id": "k-bf07ad5b141294bf55d3",
+      "target_record_id": "d-6e13fc749f14bafee5a7"
+    },
+    {
+      "generated_content": {
+        "operation": "turn unresolved differences into successor obligations"
+      },
+      "route_id": "route-9f414df93d1aecb52752",
+      "route_type": "I->P",
+      "source_record_id": "i-128003ff0fda77b93e2d",
+      "target_record_id": "p-f85053e4ca2d5a3113d4"
+    },
+    {
+      "generated_content": {
+        "operation": "allow new evidence to revise or cancel the current purpose"
+      },
+      "route_id": "route-1a6fa922b931f83279d3",
+      "route_type": "D->P",
+      "source_record_id": "d-6e13fc749f14bafee5a7",
+      "target_record_id": "p-f85053e4ca2d5a3113d4"
+    },
+    {
+      "generated_content": {
+        "operation": "reopen a causal closure when consequence or permission changes"
+      },
+      "route_id": "route-6f7e73665c4e5ff3b5f3",
+      "route_type": "W->K",
+      "source_record_id": "w-528852c9dab40bfc2629",
+      "target_record_id": "k-bf07ad5b141294bf55d3"
+    }
+  ],
+  "supported_route_types": [
+    "D->D",
+    "D->I",
+    "D->K",
+    "D->W",
+    "D->P",
+    "I->D",
+    "I->I",
+    "I->K",
+    "I->W",
+    "I->P",
+    "K->D",
+    "K->I",
+    "K->K",
+    "K->W",
+    "K->P",
+    "W->D",
+    "W->I",
+    "W->K",
+    "W->W",
+    "W->P",
+    "P->D",
+    "P->I",
+    "P->K",
+    "P->W",
+    "P->P"
+  ]
+}

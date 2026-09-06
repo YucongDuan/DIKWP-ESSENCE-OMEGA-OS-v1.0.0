@@ -1,0 +1,9 @@
+{
+  "kill_conditions": [
+    "irreversible physical actuation",
+    "undeclared scope expansion"
+  ],
+  "next_action": "test a fourth carrier with a different sensor topology",
+  "owner": "reference-researcher",
+  "required_artifact": "signed observation table and ablation trace"
+}

@@ -1,0 +1,10 @@
+{
+  "kill_conditions": [
+    "real actuation",
+    "missing consent",
+    "expired lease"
+  ],
+  "next_action": "review a written authorization schema",
+  "owner": "named-owner",
+  "required_artifact": "signed and revocable authorization contract"
+}

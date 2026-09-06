@@ -1,0 +1,30 @@
+{
+  "dominance_edges": [],
+  "equivalence_edges": [],
+  "lineage_edges": [],
+  "nodes": [
+    {
+      "candidate_id": "E_OPERATIONAL_CONTINUITY",
+      "components": [
+        "provenance_chain",
+        "correction_propagation",
+        "purpose_lineage"
+      ],
+      "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE",
+      "status": "ESSENCE_CERTIFIED_WITHIN_DECLARED_SCOPE"
+    },
+    {
+      "candidate_id": "E_STYLE_ONLY",
+      "components": [
+        "style_prompt"
+      ],
+      "essence_level": "L1_PARTIAL_DESCRIPTION",
+      "status": "INSUFFICIENT_OR_FALSIFIED"
+    }
+  ],
+  "pareto_frontier": [
+    "E_OPERATIONAL_CONTINUITY",
+    "E_STYLE_ONLY"
+  ],
+  "subset_edges": []
+}

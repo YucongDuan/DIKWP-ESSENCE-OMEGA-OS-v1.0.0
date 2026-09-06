@@ -1,0 +1,256 @@
+[
+  {
+    "candidate_id": "E_SYMBOLIC",
+    "component_count": 1,
+    "components": [
+      "rewrite_rule"
+    ],
+    "contrast_result": {
+      "checks": [],
+      "passed": true
+    },
+    "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE",
+    "failure_cells": [],
+    "falsifiable": true,
+    "falsification_conditions": [
+      "an intervention reveals a dependency not representable by the rewrite rule"
+    ],
+    "forbidden_inferences": [
+      "symbolic representation is the unique ontology"
+    ],
+    "kind_results": {
+      "nuisance": {
+        "cells": 1,
+        "correct": 1,
+        "passed": true,
+        "score": 1.0
+      },
+      "required": {
+        "cells": 1,
+        "correct": 1,
+        "passed": true,
+        "score": 1.0
+      }
+    },
+    "lineage": {
+      "parent": null,
+      "relation": "incomparable_candidate"
+    },
+    "local_certifiable": true,
+    "metrics": {
+      "contrast": 1.0,
+      "coverage": 1.0,
+      "description_length_proxy": 103,
+      "falsifiability": 1.0,
+      "fidelity": 1.0,
+      "minimality": 1.0,
+      "reverse_regeneration": 1.0,
+      "transport": 1.0,
+      "wildcard_rate": 0.0
+    },
+    "minimality_result": {
+      "all_components_necessary": true,
+      "all_components_tested": true,
+      "component_results": [
+        {
+          "component": "rewrite_rule",
+          "failed_cells": [
+            {
+              "ablated_prediction": "no_pattern",
+              "observed": "pattern_A",
+              "test_id": "T_OUTPUT",
+              "world_id": "W_OBS"
+            }
+          ],
+          "necessary": true,
+          "tested": true
+        }
+      ],
+      "redundant_components": [],
+      "untested_components": []
+    },
+    "name": {
+      "en": "Symbolic rewrite core",
+      "zh": "符号重写核心"
+    },
+    "normative_result": {
+      "checks": [
+        {
+          "constraint_id": "V_PLURALITY",
+          "description": "retain observationally equivalent non-isomorphic candidates until a discriminating probe exists",
+          "hard": true,
+          "status": "satisfied"
+        }
+      ],
+      "passed": true,
+      "unknown": [],
+      "violations": []
+    },
+    "prediction_signature_sha256": "2fb253bad7800315d77baff3c30d1332e85a242e80e464273730c43c8c6571f1",
+    "residual_result": {
+      "blocking_open_count": 0,
+      "blocks_local_certification": false,
+      "critical_open_count": 1,
+      "items": [
+        {
+          "blocks_local_certification": false,
+          "critical": true,
+          "description": "current observations do not distinguish symbolic and dynamical mechanisms",
+          "description_zh": "当前观测不能区分符号机制与动力学机制",
+          "residual_id": "R_UNDERDETERMINATION",
+          "status": "open",
+          "type": "epistemic"
+        }
+      ],
+      "open_count": 1
+    },
+    "reverse_result": {
+      "correct_cells": 2,
+      "failures": [],
+      "passed": true,
+      "required_cells": 2,
+      "score": 1.0
+    },
+    "scope_worlds": [
+      "W_OBS"
+    ],
+    "self_sealing_reasons": [],
+    "status": "ESSENCE_CERTIFIED_WITHIN_DECLARED_SCOPE",
+    "world_results": [
+      {
+        "carrier": "black-box observation",
+        "correct_cells": 2,
+        "passed": true,
+        "required_cells": 2,
+        "world_id": "W_OBS"
+      }
+    ]
+  },
+  {
+    "candidate_id": "E_DYNAMICAL",
+    "component_count": 1,
+    "components": [
+      "attractor_relation"
+    ],
+    "contrast_result": {
+      "checks": [],
+      "passed": true
+    },
+    "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE",
+    "failure_cells": [],
+    "falsifiable": true,
+    "falsification_conditions": [
+      "a path intervention preserves the symbol but destroys the attractor prediction"
+    ],
+    "forbidden_inferences": [
+      "dynamical representation is the unique ontology"
+    ],
+    "kind_results": {
+      "nuisance": {
+        "cells": 1,
+        "correct": 1,
+        "passed": true,
+        "score": 1.0
+      },
+      "required": {
+        "cells": 1,
+        "correct": 1,
+        "passed": true,
+        "score": 1.0
+      }
+    },
+    "lineage": {
+      "parent": null,
+      "relation": "incomparable_candidate"
+    },
+    "local_certifiable": true,
+    "metrics": {
+      "contrast": 1.0,
+      "coverage": 1.0,
+      "description_length_proxy": 109,
+      "falsifiability": 1.0,
+      "fidelity": 1.0,
+      "minimality": 1.0,
+      "reverse_regeneration": 1.0,
+      "transport": 1.0,
+      "wildcard_rate": 0.0
+    },
+    "minimality_result": {
+      "all_components_necessary": true,
+      "all_components_tested": true,
+      "component_results": [
+        {
+          "component": "attractor_relation",
+          "failed_cells": [
+            {
+              "ablated_prediction": "no_pattern",
+              "observed": "pattern_A",
+              "test_id": "T_OUTPUT",
+              "world_id": "W_OBS"
+            }
+          ],
+          "necessary": true,
+          "tested": true
+        }
+      ],
+      "redundant_components": [],
+      "untested_components": []
+    },
+    "name": {
+      "en": "Dynamical attractor core",
+      "zh": "动力学吸引子核心"
+    },
+    "normative_result": {
+      "checks": [
+        {
+          "constraint_id": "V_PLURALITY",
+          "description": "retain observationally equivalent non-isomorphic candidates until a discriminating probe exists",
+          "hard": true,
+          "status": "satisfied"
+        }
+      ],
+      "passed": true,
+      "unknown": [],
+      "violations": []
+    },
+    "prediction_signature_sha256": "2fb253bad7800315d77baff3c30d1332e85a242e80e464273730c43c8c6571f1",
+    "residual_result": {
+      "blocking_open_count": 0,
+      "blocks_local_certification": false,
+      "critical_open_count": 1,
+      "items": [
+        {
+          "blocks_local_certification": false,
+          "critical": true,
+          "description": "current observations do not distinguish symbolic and dynamical mechanisms",
+          "description_zh": "当前观测不能区分符号机制与动力学机制",
+          "residual_id": "R_UNDERDETERMINATION",
+          "status": "open",
+          "type": "epistemic"
+        }
+      ],
+      "open_count": 1
+    },
+    "reverse_result": {
+      "correct_cells": 2,
+      "failures": [],
+      "passed": true,
+      "required_cells": 2,
+      "score": 1.0
+    },
+    "scope_worlds": [
+      "W_OBS"
+    ],
+    "self_sealing_reasons": [],
+    "status": "ESSENCE_CERTIFIED_WITHIN_DECLARED_SCOPE",
+    "world_results": [
+      {
+        "carrier": "black-box observation",
+        "correct_cells": 2,
+        "passed": true,
+        "required_cells": 2,
+        "world_id": "W_OBS"
+      }
+    ]
+  }
+]

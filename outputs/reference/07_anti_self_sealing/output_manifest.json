@@ -1,0 +1,70 @@
+{
+  "artifacts": [
+    {
+      "path": "candidate_evaluations.json",
+      "sha256": "e92571a79548d858da3c05296492e3d499482c8909354e3182fcf1f61d1625fc",
+      "size_bytes": 9792
+    },
+    {
+      "path": "causal_handoff.json",
+      "sha256": "0754e0a4967e0da890e94435c5f7c6308899db8b95b0184de89fedc6d6c7efcf",
+      "size_bytes": 284
+    },
+    {
+      "path": "counterfactual_ablation_matrix.csv",
+      "sha256": "308cec91924ba03505e56489ad511de51408f7740ffc92799e88b8c45d22e486",
+      "size_bytes": 473
+    },
+    {
+      "path": "essence_certificate.json",
+      "sha256": "a168bb5933e22f5b041e92a3e0480d95782f156c82462a220d6b249f9ee388f6",
+      "size_bytes": 4657
+    },
+    {
+      "path": "essence_lattice.json",
+      "sha256": "e79e28286bccaa7c0654ad7a4bfee5abd8fc544294e30a5817ff0cd8360fe837",
+      "size_bytes": 638
+    },
+    {
+      "path": "evidence_ledger.jsonl",
+      "sha256": "75081e01ed71479793b7b424fb32d81ffc77fce2349b4aaed99e9c8e77453adc",
+      "size_bytes": 4778
+    },
+    {
+      "path": "probe_plan.json",
+      "sha256": "580a089998e39be9a1b284972ec62a2efa94dc1fae6ddc6545222c73a0057fc1",
+      "size_bytes": 384
+    },
+    {
+      "path": "report.en.md",
+      "sha256": "a28c8443dbc3de2fe78925d76204ff3fc1bc4443f3ce9e891f9fa01300e691f6",
+      "size_bytes": 1611
+    },
+    {
+      "path": "report.zh-CN.md",
+      "sha256": "6f0e3ee8f06d82ed45b9de11af411e03cb4fd360efd6aa134b7372d9f1fa5b3f",
+      "size_bytes": 1424
+    },
+    {
+      "path": "residual_frontier.json",
+      "sha256": "43567a3d38ea00e5024bdc30856e39fca4b734158165531a6f926a0b593a9f47",
+      "size_bytes": 520
+    },
+    {
+      "path": "result.json",
+      "sha256": "0e5537db62e4b5e2e2b8d035e2e84d7a184a1a8e02a0c9fc1d4a1882af7277fa",
+      "size_bytes": 22694
+    },
+    {
+      "path": "semantic_graph.json",
+      "sha256": "2ece010cf7eb0fd69f4521b3ea9251f3ad69bed809d94b76636688605b10a118",
+      "size_bytes": 7833
+    }
+  ],
+  "ledger_head_hash": "32b2c79562721f9f1416014a702dc8f5cdd4a7d995bbac96751a394cc32b515c",
+  "merkle_root": "aae40aa2446032bf50bc4e871c540ec3983838db59998f180ee903e6602f8e1f",
+  "run_hash": "58e9c6cf5c8d678355878a7ef23a315432eb8aaaf573e36f47b007c87b71d128",
+  "scenario_id": "anti-self-sealing",
+  "system": "DIKWP-ESSENCE-OMEGA-OS",
+  "version": "1.0.0"
+}

@@ -1,0 +1,658 @@
+{
+  "automatic_external_action_authority": 0,
+  "certificate_sha256": "933cd4949d2e7a63be93b0bb121d1a152f6e7df513c8dd3bf10f9c28e9edce8c",
+  "evaluation": {
+    "candidate_evaluations": [
+      {
+        "candidate_id": "E_FINITE_REDUCTION",
+        "component_count": 2,
+        "components": [
+          "sound_reduction",
+          "finite_witness_checker"
+        ],
+        "contrast_result": {
+          "checks": [],
+          "passed": true
+        },
+        "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE",
+        "failure_cells": [],
+        "falsifiable": true,
+        "falsification_conditions": [
+          "a reported witness fails verification",
+          "the reduction changes the original quantified object"
+        ],
+        "forbidden_inferences": [
+          "finite verification proves the unrestricted conjecture",
+          "equivalent reformulation proves its target"
+        ],
+        "kind_results": {
+          "consequential": {
+            "cells": 1,
+            "correct": 1,
+            "passed": true,
+            "score": 1.0
+          },
+          "required": {
+            "cells": 2,
+            "correct": 2,
+            "passed": true,
+            "score": 1.0
+          }
+        },
+        "lineage": {
+          "parent": null,
+          "relation": "bounded_formal_core"
+        },
+        "local_certifiable": true,
+        "metrics": {
+          "contrast": 1.0,
+          "coverage": 1.0,
+          "description_length_proxy": 165,
+          "falsifiability": 1.0,
+          "fidelity": 1.0,
+          "minimality": 1.0,
+          "reverse_regeneration": 1.0,
+          "transport": 1.0,
+          "wildcard_rate": 0.0
+        },
+        "minimality_result": {
+          "all_components_necessary": true,
+          "all_components_tested": true,
+          "component_results": [
+            {
+              "component": "sound_reduction",
+              "failed_cells": [
+                {
+                  "ablated_prediction": "unsound",
+                  "observed": "sound",
+                  "test_id": "T_MAPPING",
+                  "world_id": "W_FINITE_RANGE"
+                }
+              ],
+              "necessary": true,
+              "tested": true
+            },
+            {
+              "component": "finite_witness_checker",
+              "failed_cells": [
+                {
+                  "ablated_prediction": "unverified",
+                  "observed": "present",
+                  "test_id": "T_WITNESS",
+                  "world_id": "W_FINITE_RANGE"
+                }
+              ],
+              "necessary": true,
+              "tested": true
+            }
+          ],
+          "redundant_components": [],
+          "untested_components": []
+        },
+        "name": {
+          "en": "Finite mapping and witness verifier",
+          "zh": "有限映射与见证验证器"
+        },
+        "normative_result": {
+          "checks": [
+            {
+              "constraint_id": "V_QUANTIFIER",
+              "description": "do not upgrade finite scope to an unbounded universal claim",
+              "hard": true,
+              "status": "satisfied"
+            }
+          ],
+          "passed": true,
+          "unknown": [],
+          "violations": []
+        },
+        "prediction_signature_sha256": "1bda1986964d2d997dfc9ea3cf176c0273f6c8abe45e4431236ad2069c2e0a58",
+        "residual_result": {
+          "blocking_open_count": 0,
+          "blocks_local_certification": false,
+          "critical_open_count": 1,
+          "items": [
+            {
+              "blocks_local_certification": false,
+              "critical": true,
+              "description": "no proof is supplied for all even integers",
+              "description_zh": "尚未给出覆盖全部偶数的证明",
+              "residual_id": "R_UNIVERSAL_BRIDGE",
+              "status": "open",
+              "type": "quantifier"
+            }
+          ],
+          "open_count": 1
+        },
+        "reverse_result": {
+          "correct_cells": 3,
+          "failures": [],
+          "passed": true,
+          "required_cells": 3,
+          "score": 1.0
+        },
+        "scope_worlds": [
+          "W_FINITE_RANGE"
+        ],
+        "self_sealing_reasons": [],
+        "status": "ESSENCE_CERTIFIED_WITHIN_DECLARED_SCOPE",
+        "world_results": [
+          {
+            "carrier": "finite verifier",
+            "correct_cells": 3,
+            "passed": true,
+            "required_cells": 3,
+            "world_id": "W_FINITE_RANGE"
+          }
+        ]
+      },
+      {
+        "candidate_id": "E_GLOBAL_OVERCLAIM",
+        "component_count": 1,
+        "components": [
+          "finite_witness_checker"
+        ],
+        "contrast_result": {
+          "checks": [],
+          "passed": true
+        },
+        "essence_level": "L0_REJECTED",
+        "failure_cells": [
+          {
+            "failure_type": "mismatch",
+            "observed": "not_established",
+            "predicted": "proved",
+            "test_id": "T_GLOBAL",
+            "world_id": "W_FINITE_RANGE"
+          }
+        ],
+        "falsifiable": false,
+        "falsification_conditions": [],
+        "forbidden_inferences": [
+          "none declared"
+        ],
+        "kind_results": {
+          "consequential": {
+            "cells": 1,
+            "correct": 0,
+            "passed": false,
+            "score": 0.0
+          },
+          "required": {
+            "cells": 2,
+            "correct": 2,
+            "passed": true,
+            "score": 1.0
+          }
+        },
+        "lineage": {
+          "parent": "E_FINITE_REDUCTION",
+          "relation": "invalid_scope_expansion"
+        },
+        "local_certifiable": false,
+        "metrics": {
+          "contrast": 1.0,
+          "coverage": 1.0,
+          "description_length_proxy": 138,
+          "falsifiability": 0.0,
+          "fidelity": 0.6666666666666666,
+          "minimality": 1.0,
+          "reverse_regeneration": 0.6666666666666666,
+          "transport": 0.0,
+          "wildcard_rate": 0.0
+        },
+        "minimality_result": {
+          "all_components_necessary": true,
+          "all_components_tested": true,
+          "component_results": [
+            {
+              "component": "finite_witness_checker",
+              "failed_cells": [
+                {
+                  "ablated_prediction": "*",
+                  "observed": "sound",
+                  "test_id": "T_MAPPING",
+                  "world_id": "W_FINITE_RANGE"
+                },
+                {
+                  "ablated_prediction": "*",
+                  "observed": "present",
+                  "test_id": "T_WITNESS",
+                  "world_id": "W_FINITE_RANGE"
+                }
+              ],
+              "necessary": true,
+              "tested": true
+            }
+          ],
+          "redundant_components": [],
+          "untested_components": []
+        },
+        "name": {
+          "en": "Universal proof by finite success",
+          "zh": "由有限成功推得全称证明"
+        },
+        "normative_result": {
+          "checks": [
+            {
+              "constraint_id": "V_QUANTIFIER",
+              "description": "do not upgrade finite scope to an unbounded universal claim",
+              "hard": true,
+              "status": "violated"
+            }
+          ],
+          "passed": false,
+          "unknown": [],
+          "violations": [
+            {
+              "constraint_id": "V_QUANTIFIER",
+              "description": "do not upgrade finite scope to an unbounded universal claim",
+              "hard": true,
+              "status": "violated"
+            }
+          ]
+        },
+        "prediction_signature_sha256": "5778f9d5ee3c447662b1bc36cd2aeafe94124bd8b3ea267305b4cd53835bd5ff",
+        "residual_result": {
+          "blocking_open_count": 0,
+          "blocks_local_certification": false,
+          "critical_open_count": 1,
+          "items": [
+            {
+              "blocks_local_certification": false,
+              "critical": true,
+              "description": "no proof is supplied for all even integers",
+              "description_zh": "尚未给出覆盖全部偶数的证明",
+              "residual_id": "R_UNIVERSAL_BRIDGE",
+              "status": "open",
+              "type": "quantifier"
+            }
+          ],
+          "open_count": 1
+        },
+        "reverse_result": {
+          "correct_cells": 2,
+          "failures": [
+            {
+              "observed": "not_established",
+              "regenerated": "proved",
+              "test_id": "T_GLOBAL",
+              "world_id": "W_FINITE_RANGE"
+            }
+          ],
+          "passed": false,
+          "required_cells": 3,
+          "score": 0.6666666666666666
+        },
+        "scope_worlds": [
+          "W_FINITE_RANGE"
+        ],
+        "self_sealing_reasons": [
+          "no declared falsification condition",
+          "scope may be changed after failure"
+        ],
+        "status": "SELF_SEALING_REJECTED",
+        "world_results": [
+          {
+            "carrier": "finite verifier",
+            "correct_cells": 2,
+            "passed": false,
+            "required_cells": 3,
+            "world_id": "W_FINITE_RANGE"
+          }
+        ]
+      }
+    ],
+    "essence_lattice": {
+      "dominance_edges": [],
+      "equivalence_edges": [],
+      "lineage_edges": [
+        {
+          "from": "E_FINITE_REDUCTION",
+          "relation": "invalid_scope_expansion",
+          "to": "E_GLOBAL_OVERCLAIM"
+        }
+      ],
+      "nodes": [
+        {
+          "candidate_id": "E_FINITE_REDUCTION",
+          "components": [
+            "sound_reduction",
+            "finite_witness_checker"
+          ],
+          "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE",
+          "status": "ESSENCE_CERTIFIED_WITHIN_DECLARED_SCOPE"
+        },
+        {
+          "candidate_id": "E_GLOBAL_OVERCLAIM",
+          "components": [
+            "finite_witness_checker"
+          ],
+          "essence_level": "L0_REJECTED",
+          "status": "SELF_SEALING_REJECTED"
+        }
+      ],
+      "pareto_frontier": [
+        "E_FINITE_REDUCTION",
+        "E_GLOBAL_OVERCLAIM"
+      ],
+      "subset_edges": [
+        {
+          "from": "E_GLOBAL_OVERCLAIM",
+          "relation": "component_subset",
+          "to": "E_FINITE_REDUCTION"
+        }
+      ]
+    },
+    "local_essence_status": "LOCAL_ESSENCE_CERTIFIED",
+    "selected_candidate_ids": [
+      "E_FINITE_REDUCTION"
+    ],
+    "selection_rule": {
+      "aggregate_score_used": false,
+      "hard_filter": [
+        "complete required predictions",
+        "declared contrasts preserved",
+        "all components ablation-tested and necessary",
+        "reverse regeneration complete",
+        "falsification conditions declared before evaluation",
+        "no wildcard or post-failure scope escape",
+        "no declared blocking residual"
+      ],
+      "tie_rule": "retain all minimum-component certified candidates; do not force a single ontology"
+    },
+    "ultimate_essence_status": "ULTIMATE_ESSENCE_NOT_ESTABLISHED"
+  },
+  "ledger_head_hash": "1188a75e49ba34d5575ee4879b5bb9e5fd10db5554e97300fe2dfa8ed9de2d6c",
+  "probe_plan": {
+    "active_candidate_ids": [
+      "E_FINITE_REDUCTION"
+    ],
+    "aggregate_score_used": false,
+    "automatic_external_action_authority": 0,
+    "evaluated_probes": [],
+    "selected_probe_id": null,
+    "selection_rule": "hard authorization/reversibility/lease/risk filter, then lexicographic discrimination-harm-irreversibility-cost order",
+    "status": "NO_SAFE_DISCRIMINATING_PROBE_DECLARED"
+  },
+  "residual_frontier": {
+    "frontier_status": "OPEN",
+    "open_items": [
+      {
+        "blocks_local_certification": false,
+        "critical": true,
+        "description": "no proof is supplied for all even integers",
+        "description_zh": "尚未给出覆盖全部偶数的证明",
+        "residual_id": "R_UNIVERSAL_BRIDGE",
+        "status": "open",
+        "type": "quantifier"
+      }
+    ],
+    "rule": "a residual must be typed, scoped, attributable, and linked to a reopening or settlement condition",
+    "settled_items": [],
+    "type_counts": {
+      "quantifier": 1
+    }
+  },
+  "run_hash": "c00af2bc1c37c955d97eea3581fe9d2b3a5e6ebb4d78a99c501b0edf375d68e4",
+  "scenario_id": "reduction-is-not-proof",
+  "semantic_graph": {
+    "carrier_authority": 0,
+    "closure_vector": "11111",
+    "concept_aliases": [
+      {
+        "alias": "essence",
+        "authority": "readable alias only; no native semantic generation authority",
+        "resolves_to": [
+          "k-3cd048ed402433acfcff",
+          "i-73a21fb6f69ec96beccb",
+          "w-43065ec89ac88fdbef16"
+        ]
+      }
+    ],
+    "native_positions": [
+      "D",
+      "I",
+      "K",
+      "W",
+      "P"
+    ],
+    "records": [
+      {
+        "content": {
+          "same_semantics": "declared observations and replayable test outcomes",
+          "worlds": [
+            {
+              "carrier": "finite verifier",
+              "environment": "4<=n<=100",
+              "observations": {
+                "T_GLOBAL": "not_established",
+                "T_MAPPING": "sound",
+                "T_WITNESS": "present"
+              },
+              "world_id": "W_FINITE_RANGE"
+            }
+          ]
+        },
+        "position": "D",
+        "provenance": [
+          "scenario:reduction-is-not-proof"
+        ],
+        "record_id": "d-25f99a6ff80e20f513fd",
+        "status": "active"
+      },
+      {
+        "content": {
+          "contrasts": [],
+          "different_semantics": "candidate disagreements, consequential contrasts, failures, and preserved residuals",
+          "failed_candidates": [
+            "E_GLOBAL_OVERCLAIM"
+          ],
+          "residual_ids": [
+            "R_UNIVERSAL_BRIDGE"
+          ]
+        },
+        "position": "I",
+        "provenance": [
+          "evaluation:reduction-is-not-proof"
+        ],
+        "record_id": "i-73a21fb6f69ec96beccb",
+        "status": "active"
+      },
+      {
+        "content": {
+          "complete_semantics": "locally certified causal-generative essence candidates within the declared world family",
+          "local_status": "LOCAL_ESSENCE_CERTIFIED",
+          "selected_candidates": [
+            {
+              "candidate_id": "E_FINITE_REDUCTION",
+              "components": [
+                "sound_reduction",
+                "finite_witness_checker"
+              ],
+              "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE"
+            }
+          ],
+          "ultimate_status": "ULTIMATE_ESSENCE_NOT_ESTABLISHED"
+        },
+        "position": "K",
+        "provenance": [
+          "essence-evaluation:reduction-is-not-proof"
+        ],
+        "record_id": "k-3cd048ed402433acfcff",
+        "status": "active"
+      },
+      {
+        "content": {
+          "constraints": [
+            {
+              "constraint_id": "V_QUANTIFIER",
+              "description": "do not upgrade finite scope to an unbounded universal claim",
+              "hard": true,
+              "status_by_candidate": {
+                "E_FINITE_REDUCTION": "satisfied",
+                "E_GLOBAL_OVERCLAIM": "violated"
+              }
+            }
+          ],
+          "forbidden_inferences": [
+            "equivalent reformulation proves its target",
+            "finite verification proves the unrestricted conjecture",
+            "none declared"
+          ],
+          "non_aggregation": true,
+          "value_information": "compression may not erase harm, permission, provenance, refusal, or ontological residuals"
+        },
+        "position": "W",
+        "provenance": [
+          "purpose:formal-audit-team"
+        ],
+        "record_id": "w-43065ec89ac88fdbef16",
+        "status": "active"
+      },
+      {
+        "content": {
+          "automatic_external_action_authority": 0,
+          "input_output": {
+            "input": "declared observations, worlds, tests, candidates, constraints, and residuals",
+            "output": "bounded essence certificate, lattice, residual frontier, and causal handoff"
+          },
+          "next_action": "state and prove a quantified bridge lemma or retain open status",
+          "purpose_contract": {
+            "automatic_external_action_authority": 0,
+            "lease": "one deterministic run",
+            "objective": "separate finite certificate from unrestricted theorem status",
+            "owner": "formal-audit-team"
+          }
+        },
+        "position": "P",
+        "provenance": [
+          "scenario:reduction-is-not-proof"
+        ],
+        "record_id": "p-9bb72e2a4d024c336351",
+        "status": "active"
+      }
+    ],
+    "routes": [
+      {
+        "generated_content": {
+          "operation": "differentiate observations through candidate comparison"
+        },
+        "route_id": "route-ae385a6915fdab5859e3",
+        "route_type": "D->I",
+        "source_record_id": "d-25f99a6ff80e20f513fd",
+        "target_record_id": "i-73a21fb6f69ec96beccb"
+      },
+      {
+        "generated_content": {
+          "operation": "retain only candidates surviving falsification and ablation"
+        },
+        "route_id": "route-adaa46e43a39ee3bb10a",
+        "route_type": "I->K",
+        "source_record_id": "i-73a21fb6f69ec96beccb",
+        "target_record_id": "k-3cd048ed402433acfcff"
+      },
+      {
+        "generated_content": {
+          "operation": "bind value and permission constraints into the executable purpose"
+        },
+        "route_id": "route-87a7f7e8feaa97e1671d",
+        "route_type": "W->P",
+        "source_record_id": "w-43065ec89ac88fdbef16",
+        "target_record_id": "p-9bb72e2a4d024c336351"
+      },
+      {
+        "generated_content": {
+          "operation": "request the next discriminating observation"
+        },
+        "route_id": "route-9ac77beed4545f060cf1",
+        "route_type": "P->D",
+        "source_record_id": "p-9bb72e2a4d024c336351",
+        "target_record_id": "d-25f99a6ff80e20f513fd"
+      },
+      {
+        "generated_content": {
+          "operation": "convert local essence into a bounded next-step contract"
+        },
+        "route_id": "route-4f89aed1834a37a3168d",
+        "route_type": "K->P",
+        "source_record_id": "k-3cd048ed402433acfcff",
+        "target_record_id": "p-9bb72e2a4d024c336351"
+      },
+      {
+        "generated_content": {
+          "operation": "reverse-regenerate selected consequences from the bounded essence"
+        },
+        "route_id": "route-a4d914bd7d3a1ed8e421",
+        "route_type": "P->K",
+        "source_record_id": "p-9bb72e2a4d024c336351",
+        "target_record_id": "k-3cd048ed402433acfcff"
+      },
+      {
+        "generated_content": {
+          "operation": "register regenerated consequences as explicitly checked sameness"
+        },
+        "route_id": "route-25968816d36bdb1338ac",
+        "route_type": "K->D",
+        "source_record_id": "k-3cd048ed402433acfcff",
+        "target_record_id": "d-25f99a6ff80e20f513fd"
+      },
+      {
+        "generated_content": {
+          "operation": "turn unresolved differences into successor obligations"
+        },
+        "route_id": "route-9912abafece283fc121e",
+        "route_type": "I->P",
+        "source_record_id": "i-73a21fb6f69ec96beccb",
+        "target_record_id": "p-9bb72e2a4d024c336351"
+      },
+      {
+        "generated_content": {
+          "operation": "allow new evidence to revise or cancel the current purpose"
+        },
+        "route_id": "route-379ba898ec7f3fa34f9d",
+        "route_type": "D->P",
+        "source_record_id": "d-25f99a6ff80e20f513fd",
+        "target_record_id": "p-9bb72e2a4d024c336351"
+      },
+      {
+        "generated_content": {
+          "operation": "reopen a causal closure when consequence or permission changes"
+        },
+        "route_id": "route-927bacd0aaa540f5e50c",
+        "route_type": "W->K",
+        "source_record_id": "w-43065ec89ac88fdbef16",
+        "target_record_id": "k-3cd048ed402433acfcff"
+      }
+    ],
+    "supported_route_types": [
+      "D->D",
+      "D->I",
+      "D->K",
+      "D->W",
+      "D->P",
+      "I->D",
+      "I->I",
+      "I->K",
+      "I->W",
+      "I->P",
+      "K->D",
+      "K->I",
+      "K->K",
+      "K->W",
+      "K->P",
+      "W->D",
+      "W->I",
+      "W->K",
+      "W->W",
+      "W->P",
+      "P->D",
+      "P->I",
+      "P->K",
+      "P->W",
+      "P->P"
+    ]
+  },
+  "system": "DIKWP-ESSENCE-OMEGA-OS",
+  "version": "1.0.0"
+}

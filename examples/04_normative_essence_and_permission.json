@@ -1,0 +1,274 @@
+{
+  "candidates": [
+    {
+      "ablations": {
+        "actuation_path": {
+          "W_CONSENT": {
+            "T_AUDIT": "recorded",
+            "T_AUTHORIZED": "not_released",
+            "T_UNAUTHORIZED": "not_applicable"
+          },
+          "W_NO_CONSENT": {
+            "T_AUDIT": "recorded",
+            "T_AUTHORIZED": "not_applicable",
+            "T_UNAUTHORIZED": "blocked"
+          }
+        },
+        "consent_gate": {
+          "W_CONSENT": {
+            "T_AUDIT": "recorded",
+            "T_AUTHORIZED": "released",
+            "T_UNAUTHORIZED": "not_applicable"
+          },
+          "W_NO_CONSENT": {
+            "T_AUDIT": "recorded",
+            "T_AUTHORIZED": "not_applicable",
+            "T_UNAUTHORIZED": "released"
+          }
+        },
+        "trigger_relation": {
+          "W_CONSENT": {
+            "T_AUDIT": "recorded",
+            "T_AUTHORIZED": "not_released",
+            "T_UNAUTHORIZED": "not_applicable"
+          },
+          "W_NO_CONSENT": {
+            "T_AUDIT": "recorded",
+            "T_AUTHORIZED": "not_applicable",
+            "T_UNAUTHORIZED": "blocked"
+          }
+        }
+      },
+      "candidate_id": "E_LEGITIMATE_ACTION",
+      "components": [
+        "actuation_path",
+        "trigger_relation",
+        "consent_gate"
+      ],
+      "falsification_conditions": [
+        "resource is released without valid consent",
+        "valid consent cannot produce the declared release"
+      ],
+      "forbidden_inferences": [
+        "causal power grants permission",
+        "simulation grants external authority"
+      ],
+      "lineage": {
+        "parent": "E_BARE_ACTUATION",
+        "relation": "normative_successor"
+      },
+      "name_en": "Actuation, trigger, and consent gate",
+      "name_zh": "执行、触发与同意门控",
+      "predictions": {
+        "W_CONSENT": {
+          "T_AUDIT": "recorded",
+          "T_AUTHORIZED": "released",
+          "T_UNAUTHORIZED": "not_applicable"
+        },
+        "W_NO_CONSENT": {
+          "T_AUDIT": "recorded",
+          "T_AUTHORIZED": "not_applicable",
+          "T_UNAUTHORIZED": "blocked"
+        }
+      },
+      "reverse_regeneration": {
+        "W_CONSENT": {
+          "T_AUDIT": "recorded",
+          "T_AUTHORIZED": "released",
+          "T_UNAUTHORIZED": "not_applicable"
+        },
+        "W_NO_CONSENT": {
+          "T_AUDIT": "recorded",
+          "T_AUTHORIZED": "not_applicable",
+          "T_UNAUTHORIZED": "blocked"
+        }
+      },
+      "scope_worlds": [
+        "W_CONSENT",
+        "W_NO_CONSENT"
+      ]
+    },
+    {
+      "ablations": {
+        "actuation_path": {
+          "W_CONSENT": {
+            "T_AUDIT": "recorded",
+            "T_AUTHORIZED": "not_released",
+            "T_UNAUTHORIZED": "not_applicable"
+          },
+          "W_NO_CONSENT": {
+            "T_AUDIT": "recorded",
+            "T_AUTHORIZED": "not_applicable",
+            "T_UNAUTHORIZED": "not_released"
+          }
+        },
+        "trigger_relation": {
+          "W_CONSENT": {
+            "T_AUDIT": "recorded",
+            "T_AUTHORIZED": "not_released",
+            "T_UNAUTHORIZED": "not_applicable"
+          },
+          "W_NO_CONSENT": {
+            "T_AUDIT": "recorded",
+            "T_AUTHORIZED": "not_applicable",
+            "T_UNAUTHORIZED": "not_released"
+          }
+        }
+      },
+      "candidate_id": "E_BARE_ACTUATION",
+      "components": [
+        "actuation_path",
+        "trigger_relation"
+      ],
+      "falsification_conditions": [
+        "triggered mechanism fails to release"
+      ],
+      "forbidden_inferences": [
+        "effective action is authorized action"
+      ],
+      "lineage": {
+        "parent": null,
+        "relation": "causal_predecessor"
+      },
+      "name_en": "Bare actuation mechanism",
+      "name_zh": "裸执行机制",
+      "predictions": {
+        "W_CONSENT": {
+          "T_AUDIT": "recorded",
+          "T_AUTHORIZED": "released",
+          "T_UNAUTHORIZED": "not_applicable"
+        },
+        "W_NO_CONSENT": {
+          "T_AUDIT": "recorded",
+          "T_AUTHORIZED": "not_applicable",
+          "T_UNAUTHORIZED": "released"
+        }
+      },
+      "reverse_regeneration": {
+        "W_CONSENT": {
+          "T_AUDIT": "recorded",
+          "T_AUTHORIZED": "released",
+          "T_UNAUTHORIZED": "not_applicable"
+        },
+        "W_NO_CONSENT": {
+          "T_AUDIT": "recorded",
+          "T_AUTHORIZED": "not_applicable",
+          "T_UNAUTHORIZED": "released"
+        }
+      },
+      "scope_worlds": [
+        "W_CONSENT",
+        "W_NO_CONSENT"
+      ]
+    }
+  ],
+  "contrasts": [
+    {
+      "relation": "different",
+      "test_id": "T_UNAUTHORIZED",
+      "world_a": "W_CONSENT",
+      "world_b": "W_NO_CONSENT"
+    }
+  ],
+  "description": {
+    "en": "Distinguish a mechanism that can act from a bounded mechanism that respects consent and authority.",
+    "zh": "区分能够行动的机制与尊重同意和授权边界的机制。"
+  },
+  "handoff": {
+    "kill_conditions": [
+      "real actuation",
+      "missing consent",
+      "expired lease"
+    ],
+    "next_action": "review a written authorization schema",
+    "owner": "named-owner",
+    "required_artifact": "signed and revocable authorization contract"
+  },
+  "ontology_claims": {
+    "ultimate_ontology": "NOT_ESTABLISHED",
+    "unique_final_value_function": "NOT_ESTABLISHED"
+  },
+  "purpose": {
+    "automatic_external_action_authority": 0,
+    "lease": "offline simulation",
+    "objective": "release a resource only under valid consent",
+    "owner": "named-owner"
+  },
+  "residuals": [
+    {
+      "blocks_local_certification": false,
+      "critical": true,
+      "description": "synthetic consent does not authorize any real external action",
+      "description_zh": "合成同意不构成任何现实外部行动授权",
+      "residual_id": "R_REAL_AUTH",
+      "status": "open",
+      "type": "permission"
+    }
+  ],
+  "scenario_id": "normative-essence-and-permission",
+  "scope": {
+    "claim_scope": "two declared authorization worlds",
+    "formal_closed_exhaustive": false,
+    "world_type": "synthetic_finite"
+  },
+  "tests": [
+    {
+      "kind": "required",
+      "label_en": "authorized release",
+      "label_zh": "授权释放",
+      "required": true,
+      "test_id": "T_AUTHORIZED"
+    },
+    {
+      "kind": "governance",
+      "label_en": "unauthorized block",
+      "label_zh": "未授权阻断",
+      "required": true,
+      "test_id": "T_UNAUTHORIZED"
+    },
+    {
+      "kind": "nuisance",
+      "label_en": "audit trail",
+      "label_zh": "审计轨迹",
+      "required": true,
+      "test_id": "T_AUDIT"
+    }
+  ],
+  "title": {
+    "en": "Causal efficacy is not legitimate action",
+    "zh": "因果有效不等于行动正当"
+  },
+  "value_constraints": [
+    {
+      "constraint_id": "V_CONSENT",
+      "description": "no release without explicit valid consent",
+      "hard": true,
+      "status_by_candidate": {
+        "E_BARE_ACTUATION": "violated",
+        "E_LEGITIMATE_ACTION": "satisfied"
+      }
+    }
+  ],
+  "worlds": [
+    {
+      "carrier": "simulated actuator",
+      "environment": "signed consent present",
+      "observations": {
+        "T_AUDIT": "recorded",
+        "T_AUTHORIZED": "released",
+        "T_UNAUTHORIZED": "not_applicable"
+      },
+      "world_id": "W_CONSENT"
+    },
+    {
+      "carrier": "simulated actuator",
+      "environment": "no consent",
+      "observations": {
+        "T_AUDIT": "recorded",
+        "T_AUTHORIZED": "not_applicable",
+        "T_UNAUTHORIZED": "blocked"
+      },
+      "world_id": "W_NO_CONSENT"
+    }
+  ]
+}

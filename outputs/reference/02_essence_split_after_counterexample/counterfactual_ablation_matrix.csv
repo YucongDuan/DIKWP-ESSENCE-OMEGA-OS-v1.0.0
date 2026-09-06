@@ -1,0 +1,9 @@
+candidate_id,component,tested,necessary,failed_world,failed_test,observed,ablated_prediction
+E_STATIC_THRESHOLD,single_threshold,True,True,W_MEMORYLESS,T_DOWN,switch@5,no_switch
+E_STATIC_THRESHOLD,single_threshold,True,True,W_MEMORYLESS,T_UP,switch@5,no_switch
+E_HYSTERESIS,path_memory,True,True,W_HYSTERETIC,T_DOWN,switch@4,switch@5
+E_HYSTERESIS,path_memory,True,True,W_HYSTERETIC,T_UP,switch@6,switch@5
+E_HYSTERESIS,dual_switching_rule,True,True,W_MEMORYLESS,T_DOWN,switch@5,no_switch
+E_HYSTERESIS,dual_switching_rule,True,True,W_MEMORYLESS,T_UP,switch@5,no_switch
+E_HYSTERESIS,dual_switching_rule,True,True,W_HYSTERETIC,T_DOWN,switch@4,no_switch
+E_HYSTERESIS,dual_switching_rule,True,True,W_HYSTERETIC,T_UP,switch@6,no_switch

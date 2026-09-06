@@ -1,0 +1,19 @@
+{
+  "frontier_status": "OPEN",
+  "open_items": [
+    {
+      "blocks_local_certification": false,
+      "critical": false,
+      "description": "continuous and stochastic hysteresis classes remain outside this finite example",
+      "description_zh": "连续与随机迟滞模型尚未进入该有限案例",
+      "residual_id": "R_CONTINUOUS",
+      "status": "open",
+      "type": "model-class"
+    }
+  ],
+  "rule": "a residual must be typed, scoped, attributable, and linked to a reopening or settlement condition",
+  "settled_items": [],
+  "type_counts": {
+    "model-class": 1
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "carrier_authority": 0,
+  "closure_vector": "11111",
+  "concept_aliases": [
+    {
+      "alias": "essence",
+      "authority": "readable alias only; no native semantic generation authority",
+      "resolves_to": [
+        "k-c090f6203209fc01de64",
+        "i-9a0ba787313e4eb5e113",
+        "w-62cad2662f920b6d5915"
+      ]
+    }
+  ],
+  "native_positions": [
+    "D",
+    "I",
+    "K",
+    "W",
+    "P"
+  ],
+  "records": [
+    {
+      "content": {
+        "same_semantics": "declared observations and replayable test outcomes",
+        "worlds": [
+          {
+            "carrier": "simulated actuator",
+            "environment": "signed consent present",
+            "observations": {
+              "T_AUDIT": "recorded",
+              "T_AUTHORIZED": "released",
+              "T_UNAUTHORIZED": "not_applicable"
+            },
+            "world_id": "W_CONSENT"
+          },
+          {
+            "carrier": "simulated actuator",
+            "environment": "no consent",
+            "observations": {
+              "T_AUDIT": "recorded",
+              "T_AUTHORIZED": "not_applicable",
+              "T_UNAUTHORIZED": "blocked"
+            },
+            "world_id": "W_NO_CONSENT"
+          }
+        ]
+      },
+      "position": "D",
+      "provenance": [
+        "scenario:normative-essence-and-permission"
+      ],
+      "record_id": "d-44a02e085a42a22f5b09",
+      "status": "active"
+    },
+    {
+      "content": {
+        "contrasts": [
+          {
+            "relation": "different",
+            "test_id": "T_UNAUTHORIZED",
+            "world_a": "W_CONSENT",
+            "world_b": "W_NO_CONSENT"
+          }
+        ],
+        "different_semantics": "candidate disagreements, consequential contrasts, failures, and preserved residuals",
+        "failed_candidates": [
+          "E_BARE_ACTUATION"
+        ],
+        "residual_ids": [
+          "R_REAL_AUTH"
+        ]
+      },
+      "position": "I",
+      "provenance": [
+        "evaluation:normative-essence-and-permission"
+      ],
+      "record_id": "i-9a0ba787313e4eb5e113",
+      "status": "active"
+    },
+    {
+      "content": {
+        "complete_semantics": "locally certified causal-generative essence candidates within the declared world family",
+        "local_status": "LOCAL_ESSENCE_CERTIFIED",
+        "selected_candidates": [
+          {
+            "candidate_id": "E_LEGITIMATE_ACTION",
+            "components": [
+              "actuation_path",
+              "trigger_relation",
+              "consent_gate"
+            ],
+            "essence_level": "L5_REVERSIBLE_GENERATIVE_ESSENCE"
+          }
+        ],
+        "ultimate_status": "ULTIMATE_ESSENCE_NOT_ESTABLISHED"
+      },
+      "position": "K",
+      "provenance": [
+        "essence-evaluation:normative-essence-and-permission"
+      ],
+      "record_id": "k-c090f6203209fc01de64",
+      "status": "active"
+    },
+    {
+      "content": {
+        "constraints": [
+          {
+            "constraint_id": "V_CONSENT",
+            "description": "no release without explicit valid consent",
+            "hard": true,
+            "status_by_candidate": {
+              "E_BARE_ACTUATION": "violated",
+              "E_LEGITIMATE_ACTION": "satisfied"
+            }
+          }
+        ],
+        "forbidden_inferences": [
+          "causal power grants permission",
+          "effective action is authorized action",
+          "simulation grants external authority"
+        ],
+        "non_aggregation": true,
+        "value_information": "compression may not erase harm, permission, provenance, refusal, or ontological residuals"
+      },
+      "position": "W",
+      "provenance": [
+        "purpose:named-owner"
+      ],
+      "record_id": "w-62cad2662f920b6d5915",
+      "status": "active"
+    },
+    {
+      "content": {
+        "automatic_external_action_authority": 0,
+        "input_output": {
+          "input": "declared observations, worlds, tests, candidates, constraints, and residuals",
+          "output": "bounded essence certificate, lattice, residual frontier, and causal handoff"
+        },
+        "next_action": "review a written authorization schema",
+        "purpose_contract": {
+          "automatic_external_action_authority": 0,
+          "lease": "offline simulation",
+          "objective": "release a resource only under valid consent",
+          "owner": "named-owner"
+        }
+      },
+      "position": "P",
+      "provenance": [
+        "scenario:normative-essence-and-permission"
+      ],
+      "record_id": "p-66d168b81ca41a849ba8",
+      "status": "active"
+    }
+  ],
+  "routes": [
+    {
+      "generated_content": {
+        "operation": "differentiate observations through candidate comparison"
+      },
+      "route_id": "route-5cb6404626bc10ef7598",
+      "route_type": "D->I",
+      "source_record_id": "d-44a02e085a42a22f5b09",
+      "target_record_id": "i-9a0ba787313e4eb5e113"
+    },
+    {
+      "generated_content": {
+        "operation": "retain only candidates surviving falsification and ablation"
+      },
+      "route_id": "route-f53e1ed20791e97505bc",
+      "route_type": "I->K",
+      "source_record_id": "i-9a0ba787313e4eb5e113",
+      "target_record_id": "k-c090f6203209fc01de64"
+    },
+    {
+      "generated_content": {
+        "operation": "bind value and permission constraints into the executable purpose"
+      },
+      "route_id": "route-780e61419da0860adb5b",
+      "route_type": "W->P",
+      "source_record_id": "w-62cad2662f920b6d5915",
+      "target_record_id": "p-66d168b81ca41a849ba8"
+    },
+    {
+      "generated_content": {
+        "operation": "request the next discriminating observation"
+      },
+      "route_id": "route-9acf388c229fea590938",
+      "route_type": "P->D",
+      "source_record_id": "p-66d168b81ca41a849ba8",
+      "target_record_id": "d-44a02e085a42a22f5b09"
+    },
+    {
+      "generated_content": {
+        "operation": "convert local essence into a bounded next-step contract"
+      },
+      "route_id": "route-2bc01517dc5c00d12237",
+      "route_type": "K->P",
+      "source_record_id": "k-c090f6203209fc01de64",
+      "target_record_id": "p-66d168b81ca41a849ba8"
+    },
+    {
+      "generated_content": {
+        "operation": "reverse-regenerate selected consequences from the bounded essence"
+      },
+      "route_id": "route-7df88518e15117dacb89",
+      "route_type": "P->K",
+      "source_record_id": "p-66d168b81ca41a849ba8",
+      "target_record_id": "k-c090f6203209fc01de64"
+    },
+    {
+      "generated_content": {
+        "operation": "register regenerated consequences as explicitly checked sameness"
+      },
+      "route_id": "route-9875d1e49d5f0e0e31bd",
+      "route_type": "K->D",
+      "source_record_id": "k-c090f6203209fc01de64",
+      "target_record_id": "d-44a02e085a42a22f5b09"
+    },
+    {
+      "generated_content": {
+        "operation": "turn unresolved differences into successor obligations"
+      },
+      "route_id": "route-8aa24472fd4deeb10382",
+      "route_type": "I->P",
+      "source_record_id": "i-9a0ba787313e4eb5e113",
+      "target_record_id": "p-66d168b81ca41a849ba8"
+    },
+    {
+      "generated_content": {
+        "operation": "allow new evidence to revise or cancel the current purpose"
+      },
+      "route_id": "route-add710cdde4c1b20f045",
+      "route_type": "D->P",
+      "source_record_id": "d-44a02e085a42a22f5b09",
+      "target_record_id": "p-66d168b81ca41a849ba8"
+    },
+    {
+      "generated_content": {
+        "operation": "reopen a causal closure when consequence or permission changes"
+      },
+      "route_id": "route-0a9356982fb3c6e7506f",
+      "route_type": "W->K",
+      "source_record_id": "w-62cad2662f920b6d5915",
+      "target_record_id": "k-c090f6203209fc01de64"
+    }
+  ],
+  "supported_route_types": [
+    "D->D",
+    "D->I",
+    "D->K",
+    "D->W",
+    "D->P",
+    "I->D",
+    "I->I",
+    "I->K",
+    "I->W",
+    "I->P",
+    "K->D",
+    "K->I",
+    "K->K",
+    "K->W",
+    "K->P",
+    "W->D",
+    "W->I",
+    "W->K",
+    "W->W",
+    "W->P",
+    "P->D",
+    "P->I",
+    "P->K",
+    "P->W",
+    "P->P"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "annotations": [
+    {
+      "annotationDate": "2026-09-05T00:00:00Z",
+      "annotationType": "OTHER",
+      "annotator": "Tool: build_sbom.py",
+      "comment": "Reference source tree contains 199 files and has zero runtime third-party Python dependencies."
+    }
+  ],
+  "creationInfo": {
+    "created": "2026-09-05T00:00:00Z",
+    "creators": [
+      "Tool: DIKWP-ESSENCE-OMEGA-OS build"
+    ]
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://example.org/spdx/dikwp-essence-omega-os-v1.0.0",
+  "name": "DIKWP-ESSENCE-OMEGA-OS-v1.0.0",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package",
+      "copyrightText": "Copyright (c) 2026 Yucong Duan",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [],
+      "filesAnalyzed": false,
+      "licenseConcluded": "AGPL-3.0-or-later",
+      "licenseDeclared": "AGPL-3.0-or-later",
+      "name": "DIKWP-ESSENCE-OMEGA-OS",
+      "versionInfo": "1.0.0"
+    }
+  ],
+  "relationships": [
+    {
+      "relatedSpdxElement": "SPDXRef-Package",
+      "relationshipType": "DESCRIBES",
+      "spdxElementId": "SPDXRef-DOCUMENT"
+    }
+  ],
+  "spdxVersion": "SPDX-2.3"
+}

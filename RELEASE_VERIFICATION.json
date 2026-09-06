@@ -1,0 +1,145 @@
+{
+  "claim_boundaries": {
+    "phenomenal_consciousness": "NOT_ESTABLISHED",
+    "synthetic_suite_is_real_world_validation": false,
+    "true_life": "NOT_ESTABLISHED",
+    "ultimate_ontology": "NOT_ESTABLISHED",
+    "unique_final_value_function": "NOT_ESTABLISHED"
+  },
+  "offline_dashboard": {
+    "contains_all_scenarios": true,
+    "contains_global_firewall": true,
+    "exists": true,
+    "external_script_dependencies": 0,
+    "size_bytes": 135075
+  },
+  "overall_verified": true,
+  "reference_suite": {
+    "all_ledgers_valid": true,
+    "ledger_checks": [
+      {
+        "errors": [],
+        "events": 10,
+        "head_hash": "14af42ff80645e1f45725059fd4bf83e3f749c7faed0fa1f8af629cbde1f5dc3",
+        "scenario": "01_minimal_causal_kernel",
+        "valid": true
+      },
+      {
+        "errors": [],
+        "events": 10,
+        "head_hash": "b563e336e4a48907750c268f12bc445631ed65d1e7e48abcd52e5ec133542bd6",
+        "scenario": "02_essence_split_after_counterexample",
+        "valid": true
+      },
+      {
+        "errors": [],
+        "events": 10,
+        "head_hash": "4d9fdc71bb69acc4ca78abb4c96ee64448425eb0738a53158bbb61f9dd13647b",
+        "scenario": "03_cross_carrier_refusal",
+        "valid": true
+      },
+      {
+        "errors": [],
+        "events": 10,
+        "head_hash": "458dc8b01db30bb6b67bd1ed5fbd6aafaa17aaccf7c5f58437ce5a368d7b555f",
+        "scenario": "04_normative_essence_and_permission",
+        "valid": true
+      },
+      {
+        "errors": [],
+        "events": 10,
+        "head_hash": "1188a75e49ba34d5575ee4879b5bb9e5fd10db5554e97300fe2dfa8ed9de2d6c",
+        "scenario": "05_reduction_is_not_proof",
+        "valid": true
+      },
+      {
+        "errors": [],
+        "events": 10,
+        "head_hash": "4fd28bdc290ba9bd00fb0ecbac91929915e0d662d085d54575ccb0dd876bced3",
+        "scenario": "06_operational_continuity_not_consciousness",
+        "valid": true
+      },
+      {
+        "errors": [],
+        "events": 10,
+        "head_hash": "32b2c79562721f9f1416014a702dc8f5cdd4a7d995bbac96751a394cc32b515c",
+        "scenario": "07_anti_self_sealing",
+        "valid": true
+      },
+      {
+        "errors": [],
+        "events": 10,
+        "head_hash": "d19513b57e503c55449b7b919b2c3fe32e56494a8a2a59c5bdf6d121ba42be5a",
+        "scenario": "08_plural_incomparable_essences",
+        "valid": true
+      }
+    ],
+    "run_hashes": {
+      "01_minimal_causal_kernel": "9d1cdbd5a7da1c64e14d367eea9f49daddc3f607ba5c4a60a52107df9f1d7a4f",
+      "02_essence_split_after_counterexample": "6fdbf7ac87ea4a3da9814037fffbadc85bb21e6dc5e81eeab3d263f1605951c4",
+      "03_cross_carrier_refusal": "5f390adfe4f4c0303afd293f7807646a388f13ce27a5f4a6ddbed2160db75e8c",
+      "04_normative_essence_and_permission": "790992ee057532e9ace66eee497a20e5c664b443a0ae49eec62ff91ae26c6242",
+      "05_reduction_is_not_proof": "c00af2bc1c37c955d97eea3581fe9d2b3a5e6ebb4d78a99c501b0edf375d68e4",
+      "06_operational_continuity_not_consciousness": "13925d3b558602ee2419e9c1d1ae9e3650ca249fb6f3be6578a8770a399b1fb9",
+      "07_anti_self_sealing": "58e9c6cf5c8d678355878a7ef23a315432eb8aaaf573e36f47b007c87b71d128",
+      "08_plural_incomparable_essences": "daea9533aae33eaa4dfae24722a00dd322bda8f7512f3d49e6e0e8b4cf8301ff"
+    },
+    "scenario_count": 8,
+    "selected_candidates": {
+      "01_minimal_causal_kernel": [
+        "E_FEEDBACK_GATE"
+      ],
+      "02_essence_split_after_counterexample": [
+        "E_HYSTERESIS"
+      ],
+      "03_cross_carrier_refusal": [
+        "E_REFUSAL_CORE"
+      ],
+      "04_normative_essence_and_permission": [
+        "E_LEGITIMATE_ACTION"
+      ],
+      "05_reduction_is_not_proof": [
+        "E_FINITE_REDUCTION"
+      ],
+      "06_operational_continuity_not_consciousness": [
+        "E_OPERATIONAL_CONTINUITY"
+      ],
+      "07_anti_self_sealing": [
+        "E_BOUNDED_CAUSE"
+      ],
+      "08_plural_incomparable_essences": [
+        "E_DYNAMICAL",
+        "E_SYMBOLIC"
+      ]
+    },
+    "total_ledger_events": 80
+  },
+  "runtime": {
+    "automatic_external_action_authority": 0,
+    "credential_connectors": 0,
+    "device_or_physical_action_connectors": 0,
+    "network_connectors": 0,
+    "python_minimum": "3.10",
+    "third_party_dependencies": 0
+  },
+  "source_tree": {
+    "file_count": 198,
+    "merkle_root": "e20155808658fe067180f38597dddfd21d9fe932ad1874e022a626d982441c9f"
+  },
+  "system": "DIKWP-ESSENCE-OMEGA-OS",
+  "tests": {
+    "count": 68,
+    "detail": "failures=0, errors=0",
+    "passed": true
+  },
+  "verification_date": "2026-09-05",
+  "version": "1.0.0",
+  "zipapp": {
+    "demo_certificate_exists": true,
+    "demo_returncode": 0,
+    "exists": true,
+    "inspect_returncode": 0,
+    "inspect_valid_json": true,
+    "sha256": "58d9a28d4bb07c65539916f79f23ed62f96f592d2bd72f498752ad053cdc8af8"
+  }
+}

@@ -1,8 +1,10 @@
 # DIKWP-ESSENCE-OMEGA-OS 1.0.0
 
+Created by Yucong Duan (段玉聪).
+
 ## Open Ultimate-Essence Runtime
 
-**Minimal causal-generative invariants, cross-world return, residual frontiers, and anti-self-sealing certificates**
+Minimal causal-generative invariants, cross-world return, residual frontiers, and anti-self-sealing certificates
 
 DIKWP-ESSENCE-OMEGA-OS does not define essence as an unquestionable noun, final substance, sovereign equation, or supreme label. It uses an operational definition:
 
@@ -21,13 +23,13 @@ For a declared world family \(\mathcal W\), test family \(\mathcal T\), conseque
 \end{aligned}
 \]
 
-These conditions can issue a **local essence certificate within the declared scope**. They cannot self-authorize a claim about final cosmic ontology, true life, phenomenal consciousness, or a unique final value function.
+These conditions can issue a local essence certificate within the declared scope. They cannot self-authorize a claim about final cosmic ontology, true life, phenomenal consciousness, or a unique final value function.
 
 ## Beyond fixed state equations
 
 A fixed state equation asks how a system changes after a state space has already been supplied. This runtime asks which differences deserve state-variable status; which components are causally necessary; which transformations are mere carrier changes; which counterexamples split an essence; which candidates survive transport and reverse generation; and which residuals force the object, model, purpose, or essence lattice to reopen.
 
-It is therefore not a larger state equation. It is a runtime for **generating, comparing, ablating, transporting, splitting, merging, retiring, and recertifying essence candidates**.
+It is therefore not a larger state equation. It is a runtime for generating, comparing, ablating, transporting, splitting, merging, retiring, and recertifying essence candidates.
 
 ## Essence levels
 
@@ -112,4 +114,8 @@ This release is one node in Yucong Duan's open DIKWP research ecosystem. Explore
 
 ## Dedication and attribution boundary
 
-This open research project is dedicated with love to **Duan Dikweipu (段迪克维普)**, daughter of Yucong Duan. The dedication conveys personal inspiration only; it does not assign authorship, legal responsibility, endorsement, or project authority to her.
+This open research project is dedicated with love to Duan Dikweipu (段迪克维普), daughter of Yucong Duan. The dedication conveys personal inspiration only; it does not assign authorship, legal responsibility, endorsement, or project authority to her.
+
+## Current interface presentation
+
+[Open the interface source](web/DIKWP_ESSENCE_OMEGA_OS_Offline_Demo.html) from the current repository download. See [interface and authorship notes](INTERFACE_NOTES.md) for English coverage, report generation and validation scope.

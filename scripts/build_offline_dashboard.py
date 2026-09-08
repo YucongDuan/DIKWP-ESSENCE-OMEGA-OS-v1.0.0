@@ -1,5 +1,11 @@
 from __future__ import annotations
 
+if __package__:
+    from ._ui_presentation import localize_html as _ui_localize_html
+else:
+    from _ui_presentation import localize_html as _ui_localize_html
+
+
 import html
 import json
 from pathlib import Path
@@ -78,7 +84,7 @@ function renderAll(){{const r=RUNS[current],c=r.certificate,e=r.evaluations;
 renderButtons();renderAll();
 </script>
 </body></html>'''
-    TARGET.write_text(html_text, encoding="utf-8")
+    TARGET.write_text(_ui_localize_html(html_text), encoding="utf-8")
     print(TARGET)
 
 
